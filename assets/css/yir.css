@@ -276,7 +276,7 @@ font-size: 1.5vw;
 
 .introtxt { 
     position: relative;
-    top: 0;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -1557,9 +1557,9 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
 
 
-	
+    
 .info-headline.inpanel {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 
@@ -1682,7 +1682,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
        -moz-transition: background-color .3s ease-in-out;
          -o-transition: background-color .3s ease-in-out;
             transition: background-color .3s ease-in-out;
-}	
+}   
 
 
 #nav1 .leftarrow,
@@ -1791,12 +1791,12 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
        -moz-transition: background-color .3s ease-in-out;
          -o-transition: background-color .3s ease-in-out;
             transition: background-color .3s ease-in-out;
-}	
-			
-			
-			
-			
-			    
+}   
+            
+            
+            
+            
+                
 
     .info-summary {
         color: rgb(255, 255, 255);
