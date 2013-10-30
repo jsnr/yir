@@ -275,12 +275,14 @@ font-size: 1.5vw;
     }
 
 .introtxt { 
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: 0;
     width: 100%;
     text-align: center;
-    color: #FFF;
+    color: rgb(255, 255, 255);
     z-index: 50;
+    bottom: 0;
+    height: 100%;
 }
 .introtxt h1 {
     font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -314,6 +316,7 @@ font-size: 1.5vw;
     width: 100%;
     text-transform: uppercase;
     padding-bottom: 20px;
+    line-height: .25;
 }
 
 .introtxt .loadtxt {
@@ -497,9 +500,26 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         margin-top: 22px;
     }
     
-    .no-touch .navbtn.leftarrow:hover, .ie10 .navbtn.leftarrow:hover {
-        background-color: rgba(255,255,255,1);
+    #nav1 .navbtn.leftarrow:hover,
+    #nav2 .navbtn.leftarrow:hover,
+    #nav3 .navbtn.leftarrow:hover,
+    #nav4 .navbtn.leftarrow:hover,
+    #nav5 .navbtn.leftarrow:hover,
+    #nav6 .navbtn.leftarrow:hover,
+    #nav7 .navbtn.leftarrow:hover,
+    #nav8 .navbtn.leftarrow:hover,
+    #nav9 .navbtn.leftarrow:hover,
+    #nav10 .navbtn.leftarrow:hover,
+    #nav12 .navbtn.leftarrow:hover,
+    #nav12 .navbtn.leftarrow:hover,
+    .no-touch .navbtn.leftarrow:hover, 
+    .ie10 .navbtn.leftarrow:hover {
+        background-color: rgba(255,255,255,1) !important;
         background-position: 5px -440px;
+        -webkit-transition: background-color .3s ease-in-out;
+           -moz-transition: background-color .3s ease-in-out;
+             -o-transition: background-color .3s ease-in-out;
+                transition: background-color .3s ease-in-out;
     }
     
     .navbtn.rightarrow {
@@ -508,9 +528,26 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         background-position: 2px -85px;
         margin-top: 22px;
     }
-    .no-touch .navbtn.rightarrow:hover, .ie10 .navbtn.rightarrow:hover {
-        background-color: rgba(255,255,255,1);
+    #nav1 .navbtn.rightarrow:hover,
+    #nav2 .navbtn.rightarrow:hover,
+    #nav3 .navbtn.rightarrow:hover,
+    #nav4 .navbtn.rightarrow:hover,
+    #nav5 .navbtn.rightarrow:hover,
+    #nav6 .navbtn.rightarrow:hover,
+    #nav7 .navbtn.rightarrow:hover,
+    #nav8 .navbtn.rightarrow:hover,
+    #nav9 .navbtn.rightarrow:hover,
+    #nav10 .navbtn.rightarrow:hover,
+    #nav12 .navbtn.rightarrow:hover,
+    #nav12 .navbtn.rightarrow:hover,
+    .no-touch .site-main .navbtn.rightarrow:hover, 
+    .ie10 .site-main  .navbtn.rightarrow:hover {
+        background-color: rgba(255,255,255,1) !important;
         background-position: 2px -405px;
+        -webkit-transition: background-color .3s ease-in-out;
+           -moz-transition: background-color .3s ease-in-out;
+             -o-transition: background-color .3s ease-in-out;
+                transition: background-color .3s ease-in-out;
     }
 
     
@@ -1009,6 +1046,11 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
     .sharetop{
         margin: 0px auto;
+        top: 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        height: 100%;
     }
     .sharetop p{        
         font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
@@ -1020,17 +1062,24 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         letter-spacing: .18em;
         text-align: center;
         display: inline-block;
-
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 27%;
     }
     .shareheadline {
         font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 6em;
         letter-spacing: 10px;
-        line-height: 1.3;
-        margin-top: 19px;
+        line-height: .25;
+        margin-top: -25px;
         word-spacing: -1px;
         font-weight: 100;
         text-transform: uppercase;
+        position: absolute;
+        top: 46%;
+        left: 0;
+        right: 0;
     }
     
     
@@ -1065,7 +1114,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         position: relative;
     }
     .services .introtxt.active {
-        margin-top: -25px;
+        margin-top: 55px;
     }
     .addthis_toolbox.addthis_default_style {
         margin: 50px auto;
@@ -1074,6 +1123,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         right: 0;
         position: absolute;
         width: auto;
+        top: 50%;
     }
     .addthis_default_style .addthis_separator, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m, .addthis_default_style .at300bs {
         float: none;
@@ -1518,229 +1568,229 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav1 .bottomNavBar,
 #nav1 .slideinfo {
     background-color: rgba(17,33,58, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav2 .info-headline,
 #nav2 .info-plus,
 #nav2 .bottomNavBar,
 #nav2 .slideinfo {
     background-color: rgba(45,52,98, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav3 .info-headline,
 #nav3 .info-plus,
 #nav3 .bottomNavBar,
 #nav3 .slideinfo {
     background-color: rgba(72,55,89, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav4 .info-headline,
 #nav4 .info-plus,
 #nav4 .bottomNavBar,
 #nav4 .slideinfo {
     background-color: rgba(67,49,91, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav5 .info-headline,
 #nav5 .info-plus,
 #nav5 .bottomNavBar,
 #nav5 .slideinfo {
     background-color: rgba(89,47,87, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav6 .info-headline,
 #nav6 .info-plus,
 #nav6 .bottomNavBar,
 #nav6 .slideinfo {
     background-color: rgba(169,69,54, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav7 .info-headline,
 #nav7 .info-plus,
 #nav7 .bottomNavBar,
 #nav7 .slideinfo {
     background-color: rgba(176,92,45, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav8 .info-headline,
 #nav8 .info-plus,
 #nav8 .bottomNavBar,
 #nav8 .slideinfo {
     background-color: rgba(181,107,32, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav9 .info-headline,
 #nav9 .info-plus,
 #nav9 .bottomNavBar,
 #nav9 .slideinfo {
     background-color: rgba(195,149,12, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav10 .info-headline,
 #nav10 .info-plus,
 #nav10 .bottomNavBar,
 #nav10 .slideinfo {
     background-color: rgba(150,133,43, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav11 .info-headline,
 #nav11 .info-plus,
 #nav11 .bottomNavBar,
 #nav11 .slideinfo {
     background-color: rgba(92,112,85, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 #nav12 .info-headline,
 #nav12 .info-plus,
 #nav12 .bottomNavBar,
 #nav12 .slideinfo {
     background-color: rgba(53,103,104, .85);
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }	
 
 
 #nav1 .leftarrow,
 #nav1 .rightarrow {
     background-color: rgba(45,52,98, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav2 .leftarrow,
 #nav2 .rightarrow {
     background-color: rgba(45,52,98, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav3 .leftarrow,
 #nav3 .rightarrow {
     background-color: rgba(72,55,89, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav4 .leftarrow,
 #nav4 .rightarrow {
     background-color: rgba(67,49,91, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav5 .leftarrow,
 #nav5 .rightarrow {
     background-color: rgba(89,47,87, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav6 .leftarrow,
 #nav6 .rightarrow {
     background-color: rgba(169,69,54, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav7 .leftarrow,
 #nav7 .rightarrow {
     background-color: rgba(176,92,45, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav8 .leftarrow,
 #nav8 .rightarrow {
     background-color: rgba(181,107,32, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav9 .leftarrow,
 #nav9 .rightarrow {
     background-color: rgba(195,149,12, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav10 .leftarrow,
 #nav10 .rightarrow {
     background-color: rgba(150,133,43, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav11 .leftarrow,
 #nav11 .rightarrow {
     background-color: rgba(92,112,85, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }
 
 #nav12 .leftarrow,
 #nav12 .rightarrow {
     background-color: rgba(53,103,104, .85) !important;
-    -webkit-transition: background-color 1s ease-in-out;
-       -moz-transition: background-color 1s ease-in-out;
-         -o-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+         -o-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
 }	
 			
 			
