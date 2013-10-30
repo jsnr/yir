@@ -698,7 +698,7 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
                      
 			        if($(".curslide").text() == "1111111111111"){
 				        $(".info-headline").css("left","0");
-				        $(".info-plus").css("left","-143px");
+				        $(".info-plus").css("left","-93px");
 			        }else{
 			        	$(".info-plus").css("left","-545px");
 			        	$(".info-headline").css("left","-531px");
