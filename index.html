@@ -60,13 +60,10 @@
     <script src="./assets/modernizr.min.js"></script>
     <script src="./assets/jquery.min.js"></script>
     <script src="./assets/mediaelements/mediaelement-and-player.js"></script>
-
 </head>
 <body>
-
-
-
-
+<audio src="./assets/i/index/2013/yir.mp3" type="audio/mp3" id="audioplayer" autoplay="true" loop>                
+</audio>  
 
 <div id="allcomments">
 <script src="http://zor.fyre.co/wjs/v3.0/javascripts/livefyre.js"></script>
@@ -99,9 +96,6 @@
 
 
 
-
-<!--<audio src="./assets/i/index/2013/yir.mp3" type="audio/mp3" id="audioplayer" controls autoplay="autoplay">                
-</audio>  -->
     <!-- Google Tag Manager -->
 
 
@@ -155,7 +149,6 @@
 			</div>
 			
 		</div>
-		
 		<!-- Loading animation container -->
 		<!--preloader beginning -->
 
@@ -2173,11 +2166,8 @@ See More
 <script src="./assets/js/browserdetect.js"></script>
 <script src="./assets/js/hashchange.js"></script>
 <script>
-var $element = $('<audio src="./assets/i/index/2013/yir.mp3" autoplay="true"/>');
-
-var mediaelement = new MediaElement($element.get(0), {
-    startVolume: 0.1
-});
+// using jQuery
+$('audio').mediaelementplayer();
 </script>
 <script>
 	// keep this from breaking
