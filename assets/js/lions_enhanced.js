@@ -1584,7 +1584,7 @@ $("#allcomments").height(commenth);
     // LOADERBAR PROGRESS
     loaderProgress = function(itemURL){
         var loadPercent = LoadDetails.setAsLoaded(itemURL);
-        $('.siteLoader .head_text.light .txt_holder').width(loadPercent+'%');
+        $('.siteLoader .introtxt .h1').width(loadPercent+'%');
     }
     
     // PRELOAD IMAGES

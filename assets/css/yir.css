@@ -280,6 +280,22 @@ em{
     text-transform: uppercase;
     padding-bottom: 20px;
 }
+
+.introtxt .loadtxt {
+    font-family: "Alright Sans LT Thin", Helvetica, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 100;
+    word-spacing: -3px;
+    letter-spacing: 5px;
+/*    -moz-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
+    -webkit-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
+    text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);*/
+    text-align: center;
+    /*color: #FFF;*/
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
 .innerh1 {
     color: #FFFFFF;
     font-family: "Alright Sans LT Thin",Helvetica,Arial,sans-serif;
