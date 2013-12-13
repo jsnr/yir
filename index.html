@@ -59,6 +59,7 @@
     
     <script src="./assets/modernizr.min.js"></script>
     <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/mediaelements/mediaelement-and-player.js"></script>
 
 </head>
 <body>
@@ -99,9 +100,8 @@
 
 
 
-<audio controls preload="none" loop>
-    <source id="mp3_src" src="assets/i/index/2013/yir.mp3" type="audio/mp3">  
-</audio>
+<!--<audio src="./assets/i/index/2013/yir.mp3" type="audio/mp3" id="audioplayer" controls autoplay="autoplay">                
+</audio>  -->
     <!-- Google Tag Manager -->
 
 
@@ -2172,6 +2172,13 @@ See More
 
 <script src="./assets/js/browserdetect.js"></script>
 <script src="./assets/js/hashchange.js"></script>
+<script>
+var $element = $('<audio src="./assets/i/index/2013/yir.mp3" autoplay="true"/>');
+
+var mediaelement = new MediaElement($element.get(0), {
+    startVolume: 0.1
+});
+</script>
 <script>
 	// keep this from breaking
 	if(Modernizr.touch || $('html').hasClass('ie'))$('.fullscreen').remove();
