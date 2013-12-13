@@ -903,10 +903,10 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     
     .slide .buttons li.uparrow {
         width: 35px;
-        height: 35px;
+        height: 40px;
         font-size: 13px;
         padding: 5px 0 0;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 8px -366px;
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 8px -364px;
         float: left;
         border-right: 0 !important;
         opacity: 1;
@@ -917,8 +917,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         }
     .slide .buttons li.downarrow {
         width: 35px;
-        height: 35px;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 8px -318px;
+        height: 40px;
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 8px -316px;
         opacity: 1;
         border-right: 0;
     }
@@ -931,7 +931,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     .slide .buttons li.paginate {
         width: 65px;
         height: 40px;
-        padding: 6px;
+        padding: 8px 6px 6px;
         font-size: 0.75em;
         color: rgba(255, 255, 255, .6);
         opacity: 1;
@@ -939,6 +939,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         border: 0;
         cursor: default;
     }
+    
     .no-touch .bottomNavBar li.paginate:hover {
         
     }
