@@ -324,6 +324,11 @@ em{
     -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;
 }
+#ancient-world_sl h2 {
+text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+}
+
+
 .current.slide h2.title.active, .current.slide .playbtn.active, #entry .introtxt.active {
     opacity: 1;
     -webkit-transition: all 1.0s ease-out .5;
