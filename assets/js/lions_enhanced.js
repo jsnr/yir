@@ -1634,7 +1634,7 @@ $("#allcomments").height(commenth);
     
     // CALLED BY RESIZE FUNCTION
     setHeights = function(target){
-        var vid_ratio = 1080 / 1920;
+        var vid_ratio = 1000 / 1500;
         var gallery_ratio = 1067 / 1600;
         
         var areaHeight = $( '#dragarea_container' ).height();
