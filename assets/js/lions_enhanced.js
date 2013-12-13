@@ -913,8 +913,9 @@ $("#allcomments").height(commenth);
     // Change the gallery slide up or down
     galleryChange = function(dir){
         
-        if($('.navbtn.about').hasClass('open') || slideTitleScreen)return;
-        
+        //if($('.navbtn.about').hasClass('open') || slideTitleScreen)return; // <- changed from JF 
+        if($('.navbtn.about').hasClass('open'))return; // JF fix
+
         var isUp = (dir == "up");
         var cCurrent = $('.slide.current').data('cCurrent');
         
