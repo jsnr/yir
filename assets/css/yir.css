@@ -594,7 +594,7 @@ em{
     background-color: rgba(72,55,89, 1);
 }
 #nav3 .slideinfo {
-    background-color: rgba(72,55,89, .8);
+    background-color: rgba(72,55,89, .85);
 }
 #nav4 .bottomNavBar,
 #nav4 .navbtn,
@@ -999,24 +999,24 @@ em{
         line-height: 30px;
     }
     .bottomNavBar li.mute {
-        position: relative;
-        width: 35px;
-        height: 40px;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 7px -1135px transparent;
+		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 9px -1135px rgba(0, 0, 0, 0.3);
+		height: 40px;
+		position: relative;
+		width: 40px;
     }
     .bottomNavBar li.comments {
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 12px -235px rgb(255, 255, 255);
-        text-align: left;
-        color: rgb(0, 0, 0);
-        text-indent: 20px;
-        opacity: 1;
-        border-right: 1px solid rgba(12, 24, 43, 0.3);
-        line-height: 30px;
+	    background: url("../i/index/2013/icons/comment.png") no-repeat scroll 12px 15px;
+	    color: #FFFFFF;
+	    height: 40px;
+	    line-height: 43px;
+	    text-align: left;
+	    text-indent: 32px;
+	    width: 117px;
     }
     .bottomNavBar li.comments:hover {
-		background: #fff url(../i/index/2013/icons/comment-over.png) no-repeat 12px 15px;
-		color: #000;
-		opacity: 1;
+        background: #fff url('../i/nav_buttons_sprite.png') no-repeat 10px -235px;
+        color: #000;
+        opacity: 1;
 	}
     .mejs-audio .closebtn {
 	    background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -235px rgba(0, 0, 0, 0);
@@ -1028,7 +1028,7 @@ em{
 	 }
         .no-touch .bottomNavBar li.mute:hover, .ie10 .bottomNavBar li.mute:hover, .bottomNavBar li.mute.open {
             opacity: 1;
-            background-position: 7px -1172px;
+            background-position: 9px -1171px;
             background-color: rgba(255,255,255,1);
             border-right: 1px solid rgba(12, 24, 43, 0.3);
         }
@@ -1144,21 +1144,22 @@ em{
         background-position: 9px -237px;
     }
     .bottomNavBar li.fullscreen {
-        width: 35px;
-        height: 35px;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 5px -516px rgba(0, 0, 0, 0);
-        margin-right: 0px;
-        border-right: 0;
+		width: 40px;
+		height: 40px;
+		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -515px transparent;
+		margin-right: 0px;
+		border-right: 0px none;
     }
     .no-touch .bottomNavBar li.fullscreen:hover, .ie10 .bottomNavBar li.fullscreen:hover {
-        background-position: 5px -199px;
+        background-position: 7px -197px;
         background-color: rgba(255,255,255,1);
         color: #000;
         opacity: 1;
+        height: 40px;
     }
     
     .bottomNavBar li.fullscreen.open, .bottomNavBar li.fullscreen.open:hover {
-        background-position: 5px -990px;
+        background-position: 7px -997px;
         background-color: rgba(255,255,255,1);
         color: #000;
         opacity: 1;
@@ -1406,14 +1407,13 @@ em{
     }
 
     .slide .slideinfo h2 {
-	    border-bottom: 1px solid #CFCFCF;
 	    color: #fff;
 	    font-size: 1.1em;
 	    font-weight: 200;
 	    letter-spacing: 2px;
 	    line-height: 1.1;
 	    margin: 0 70px 10px 30px;
-	    padding-bottom: 15px;
+	    padding-bottom: 5px;
 	    text-transform: uppercase;
 	    word-spacing: -1px;
 }
@@ -1427,8 +1427,7 @@ em{
         padding: 0 35px 0 30px;
         font-weight: 400;
         font-size: .9em;
-        line-height: 1.5;
-        
+        line-height: 1.5;        
     }
     
     .slide .slideinfo .infotext p, .slide .slideinfo h2 {
@@ -1439,8 +1438,10 @@ em{
     
     .caption {
         position: absolute;
-        top: 80px;
-        width: 87%;
+        top: 57px;
+        width: 87%;        
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     
 /*    .caption p {
@@ -1455,38 +1456,36 @@ em{
     }*/
     .info-headline {
         color: #fff;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.9em;
         letter-spacing: 1px;
-        text-transform: uppercase;
         line-height: 1.1;
     }
     .info-summary {
-        color: #fff;
-        font-size: 1.2em;
-        line-height: 1.5;
+		color: rgb(255, 255, 255);
+		font-size: 1em;
+		line-height: 1.5;
+		font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;;
+		letter-spacing: .02em;
+		width: 90%;
     }  
     .info-link {
-        background: rgba(255,255,255,.4);
-	    border-radius: 20px;
-	    color: #FFFFFF !important;
-	    display: block;
-	    font-size: 0.7em;
-	    letter-spacing: 1px;
-	    line-height: 2;
-	    margin: 10px 0;
-	    text-align: center;
-	    text-decoration: none !important;
-	    text-transform: uppercase;
-	    width: 100px;
-	    -webkit-transition: all 0.2s ease-in-out;
-	       -moz-transition: all 0.2s ease-in-out;
-	         -o-transition: all 0.2s ease-in-out;
-	            transition: all 0.2s ease-in-out;
+    	background: url(../i/index/2013/icons/morearrow.png) no-repeat 87px center;
+		border: 1px solid #FFFFFF;
+		color: #FFFFFF !important;
+		display: block;
+		font-size: 0.6em;
+		letter-spacing: 0.1em;
+		line-height: 2;
+		margin: 10px 0;
+		padding: 3px;
+		text-decoration: none !important;
+		text-indent: 17px;
+		text-transform: uppercase;
+		width: 128px;	    
     }  
     .info-link:hover {
-    	background: rgba(255,255,255,.2);
-    	box-shadow: 0px 0px 8px rgba(0,0,0,.4);
+    	background: rgba(0,0,0,.2);
     } 
     .info-credit {
     	display: block;
