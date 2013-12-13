@@ -1473,6 +1473,7 @@ $("#allcomments").height(commenth);
                 //console.log('INDEX JUMP -- LOADING CONTENT');
                 var vidSrc = (BrowserDetect.browser == "Firefox") ? $('.slide.current').data('vid-ogg') : $('.slide.current').data('vid-mp4');
                 $('.slide.current video').attr('src', vidSrc);
+                $('.slide.current video')[0].play(); // JF fix
                 $('.slide.current video').on('canplay',function(){ videoLoading = false; });
                 // Should be playing
             }
