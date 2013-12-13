@@ -1482,8 +1482,7 @@ em{
 		text-decoration: none !important;
 		text-indent: 17px;
 		text-transform: uppercase;
-		width: 128px;	
-		font-family: "Helvetica Neue", helvetica, times, sans-serif;    
+		width: 128px;	    
     }  
     .info-link:hover {
     	background: rgba(0,0,0,.2);
