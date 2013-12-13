@@ -275,7 +275,7 @@ em{
     -webkit-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
     text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);*/
     text-align: center;
-    color: #FFF;
+    /*color: #FFF;*/
     width: 100%;
     text-transform: uppercase;
     padding-bottom: 20px;
@@ -547,6 +547,7 @@ em{
 }
 .siteLoader .introtxt {
 	margin-top: 33px;
+	color: rgba(255, 255, 255, 0.4);
 }
 
 .bottomNavBar {
