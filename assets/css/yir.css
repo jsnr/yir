@@ -276,6 +276,7 @@ em{
     text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);*/
     text-align: center;
     /*color: #FFF;*/
+color:#FFF !important; /* CC update 2013-12-13 */
     width: 100%;
     text-transform: uppercase;
     padding-bottom: 20px;
