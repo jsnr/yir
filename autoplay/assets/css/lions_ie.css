@@ -1,0 +1,31 @@
+#entry .instructions {
+    bottom: 10px;
+}
+
+.introtxt .explorebtn {
+    padding: 12px 12px 9px 16px;
+}
+
+.navbtn.about {
+    padding-top: 13px;
+}
+
+.curtitle {
+    padding-top: 12px;
+}
+
+.slide .buttons li.paginate,
+.slide .buttons li.commentary,
+.slide .buttons li.infobtn {
+    padding-top: 13px;
+}
+
+
+.mejs-container .mejs-controls div.mejs-time-rail {
+    width: 88px !important;
+}
+.mejs-container .mejs-controls .mejs-time {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    letter-spacing: 0px;
+}
