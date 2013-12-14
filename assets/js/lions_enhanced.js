@@ -61,19 +61,12 @@
 		});
 			
 		$(document).keyup(function(e) {
-			if (e.keyCode == 37) { // left
+			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
 				$("#overlay").fadeOut(800, "easeInOutQuad");
 	            $(".gallerylabel").delay(800).fadeOut();
 			}   
 		});
-		
-		$(document).keyup(function(e) {
-			if (e.keyCode == 39) { // right
-				$("#overlay").fadeOut(800, "easeInOutQuad");
-	            $(".gallerylabel").delay(800).fadeOut();
-			}   
-		});
-
+		 
 	// END INTERSTITIAL ADS
 
     
