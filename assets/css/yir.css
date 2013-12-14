@@ -193,8 +193,10 @@ em{
     .index_nav .columns {
         position: absolute;
         width: 100%;
-        max-width: 820px;
-        height: 290px;
+/*        max-width: 820px; */
+max-width:70%;
+max-width:70vw;
+        height: 10em;
         margin: auto auto;
         z-index: 1000;
         text-align: left;
@@ -205,6 +207,7 @@ em{
     }
     .index_nav .col {
         float: left;
+width:33%;
     }
 
     #about_idx {
@@ -237,11 +240,13 @@ em{
         text-transform: uppercase;
         font-family: "Alright Sans LT Thin", Helvetica, Arial, sans-serif;
         font-size: 13pt;
-        cursor: pointer;
-        line-height: 1;
-        letter-spacing: 5px;
-        padding: 15px 30px 5px 35px;
-        margin: 0;
+        cursor: pointer;         
+line-height: 1.3em;
+letter-spacing: 3px;
+padding: 15px 20px 5px 20px;
+margin: 0;
+font-size: 1.5vw;
+
     }
 
     .index_nav ul li.current, .index_nav ul li.current.visited {
