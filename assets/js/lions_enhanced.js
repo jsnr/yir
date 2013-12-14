@@ -1049,130 +1049,7 @@ $("#allcomments").height(commenth);
 
 
     
-    // Go to the bucket on the left
-    changeLeft = function(){
-        
-                    $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
-                    $('#allcomments').animate({'right': '-444px'}, 500);
-        
-        if(isTweening||$('.navbtn.about').hasClass('open'))return;
-        
-        if($('.slide.current').attr('id') == 'entry'){
-            $('.leftarrow').delay(1500).show().animate({'left': '0px'}, 800, "easeInOutQuad");
-            $('.rightarrow').delay(1500).show().animate({'right': '0px'}, 800, "easeInOutQuad");
-         //   $('.leftarrow').click();
-         //   $('.rightarrow').click();
-        }
-        
-        // cancel out current slide events/displays
-        closeOutSlide();
-        
-	
-        // This changes the color of the nav depending on which section you are on
-    changenav = function(){    
-            
-            if(window.location.href.indexOf("adventure") > -1) {
-               $("body").attr("id","nav1");       
-            }
-            
-            else if(window.location.href.indexOf("ancient-world") > -1) {
-               $("body").attr("id","nav2");
-            }
-            
-            else if(window.location.href.indexOf("animals") > -1) {
-               $("body").attr("id","nav3");
-            }
-            
-            else if(window.location.href.indexOf("cultures") > -1) {
-               $("body").attr("id","nav4");
-            }
-            
-            else if(window.location.href.indexOf("environment") > -1) {
-               $("body").attr("id","nav5");
-            }
-            
-            else if(window.location.href.indexOf("geopolitics") > -1) {
-               $("body").attr("id","nav6");
-            }
-            
-            else if(window.location.href.indexOf("science") > -1) {
-               $("body").attr("id","nav7");
-            }
-            
-            else if(window.location.href.indexOf("space") > -1) {
-               $("body").attr("id","nav8");
-            }
-            
-            else if(window.location.href.indexOf("photography") > -1) {
-               $("body").attr("id","nav9");
-            }
-            
-            else if(window.location.href.indexOf("technology") > -1) {
-               $("body").attr("id","nav10");
-            }
-            
-            else if(window.location.href.indexOf("travel") > -1) {
-               $("body").attr("id","nav11");
-            }
-            
-            else if(window.location.href.indexOf("your-favorites") > -1) {
-               $("body").attr("id","nav12");
-            }
-               
-                    
-    } 
-    
-    changenav();
-
-        // Set next slide
-        if($('.slide.current').data('cID') == 2||$('.slide.current').attr('id') == "entry"){
-            currentSlide = dataList.length;
-           // $('.bottomNavBar').animate({bottom: -35}, 200);
-            $('.slide.current').removeClass('current').addClass('previous').find('h2.active, .playbtn.active').removeClass('active');
-            $('#' + $(dataList[currentSlide-1]).attr('id') + '_sl').addClass('current');
-			
-            
-        } else  {
-            currentSlide--;
-            $('.slide.current').addClass('previous').find('h2.active, .playbtn.active').removeClass('active').end().removeClass('current').prev().addClass('current');
-           
-            
-        }
-        
-        // set address for next slide
-        var addressVal = $('.slide.current h2.title').text().toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
-        if($('.slide.current').attr('id') == 'about')addressVal = 'about';
-        $.address.value(addressVal); 
-        
-        // show slide, pass direction
-        showSlide(-1);
-    }
-    
-
-
-    
-    // Go to the bucket on the right
-    changeRight = function(){
-    
-                    $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
-                    $('#allcomments').animate({'right': '-444px'}, 500);
-        if(isTweening||$('.navbtn.about').hasClass('open'))return;
-        // alert($('.slide.current').attr('id'));
-        
-        if($('.slide.current').attr('id') == 'entry'){
-            $('.leftarrow').delay(1500).show().animate({'left': '0px'}, 800, "easeInOutQuad");
-            $('.rightarrow').delay(1500).show().animate({'right': '0px'}, 800, "easeInOutQuad");
-        }
-        /* switch body id based on current category
-         var currentcat = $('.slide.current').attr('id');
-         if(currentcat == "adventure_sl")  {$("body").id("nav2");}
-         if(currentcat == "animals_sl")    {$("body").id("nav3");} */
-        
-        // cancel out current slide events/displays
-        closeOutSlide();
-        
-	    // This changes the color of the nav depending on which section you are on
-    changenav = function(){    
+   changenav = function(){    
             
 	        if(window.location.href.indexOf("adventure") > -1) {
 		       $("body").attr("id","nav1");       
@@ -1225,7 +1102,80 @@ $("#allcomments").height(commenth);
 		    		
 	} 
 	
+	
+    // Go to the bucket on the left
+    changeLeft = function(){
+        
+                    $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
+                    $('#allcomments').animate({'right': '-444px'}, 500);
+        
+        if(isTweening||$('.navbtn.about').hasClass('open'))return;
+        
+        if($('.slide.current').attr('id') == 'entry'){
+            $('.leftarrow').delay(1500).show().animate({'left': '0px'}, 800, "easeInOutQuad");
+            $('.rightarrow').delay(1500).show().animate({'right': '0px'}, 800, "easeInOutQuad");
+         //   $('.leftarrow').click();
+         //   $('.rightarrow').click();
+        }
+        
+        // cancel out current slide events/displays
+        closeOutSlide();
+        
+	
+        // This changes the color of the nav depending on which section you are on
+   
+    changenav();
+
+        // Set next slide
+        if($('.slide.current').data('cID') == 2||$('.slide.current').attr('id') == "entry"){
+            currentSlide = dataList.length;
+           // $('.bottomNavBar').animate({bottom: -35}, 200);
+            $('.slide.current').removeClass('current').addClass('previous').find('h2.active, .playbtn.active').removeClass('active');
+            $('#' + $(dataList[currentSlide-1]).attr('id') + '_sl').addClass('current');
+			
+            
+        } else  {
+            currentSlide--;
+            $('.slide.current').addClass('previous').find('h2.active, .playbtn.active').removeClass('active').end().removeClass('current').prev().addClass('current');
+           
+            
+        }
+        
+        // set address for next slide
+        var addressVal = $('.slide.current h2.title').text().toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
+        if($('.slide.current').attr('id') == 'about')addressVal = 'about';
+        $.address.value(addressVal); 
+        
+        // show slide, pass direction
+        showSlide(-1);
+    }
+    
+
+    
+    // Go to the bucket on the right
+    changeRight = function(){
+    
+                    $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
+                    $('#allcomments').animate({'right': '-444px'}, 500);
+        if(isTweening||$('.navbtn.about').hasClass('open'))return;
+        // alert($('.slide.current').attr('id'));
+        
+        if($('.slide.current').attr('id') == 'entry'){
+            $('.leftarrow').delay(1500).show().animate({'left': '0px'}, 800, "easeInOutQuad");
+            $('.rightarrow').delay(1500).show().animate({'right': '0px'}, 800, "easeInOutQuad");
+        }
+        /* switch body id based on current category
+         var currentcat = $('.slide.current').attr('id');
+         if(currentcat == "adventure_sl")  {$("body").id("nav2");}
+         if(currentcat == "animals_sl")    {$("body").id("nav3");} */
+        
+        // cancel out current slide events/displays
+        closeOutSlide();
+        
 	changenav();
+	    // This changes the color of the nav depending on which section you are on
+ 
+	
 	
 	
 			   
