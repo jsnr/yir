@@ -968,7 +968,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 	    background: url("../i/index/2013/i.png") no-repeat scroll 12px 12px rgba(0, 0, 0, 0);
 	    border-left: 1px solid rgba(255, 255, 255, 0.15);
 	    height: 40px;
-	    line-height: 30px;
+	    line-height: 31px;
 	    padding: 6px 0 6px 20px;
 	    width: 105px;
     }
@@ -983,13 +983,12 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
     
     .slide .buttons li.infobtn.open {
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 12px -235px rgb(255, 255, 255);
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 9px -235px rgb(255, 255, 255);
         text-align: left;
         color: rgb(0, 0, 0);
-        text-indent: 20px;
+        text-indent: 12px;
         opacity: 1;
         border-right: 1px solid rgba(12, 24, 43, 0.3);
-        line-height: 30px;
     }
     
     .slide .buttons li.commentary {
@@ -1030,7 +1029,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         height: 40px;
         padding: 6px 15px 0 35px;
         background: url('../i/nav_buttons_sprite.png') no-repeat scroll 12px -478px transparent;
-        line-height: 30px;
+        line-height: 31px;
     }
     .bottomNavBar li.mute {
 		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 9px -1135px rgba(0, 0, 0, 0.3);
@@ -1048,9 +1047,15 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 	    width: 117px;
     }
     .bottomNavBar li.comments:hover {
-        background: #fff url('../i/nav_buttons_sprite.png') no-repeat 10px -235px;
+	    background: url("../i/index/2013/icons/comment-over.png") no-repeat scroll 12px 15px;
         color: #000;
         opacity: 1;
+	}
+    .bottomNavBar li.comments.open {
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 9px -235px rgb(255, 255, 255) !important;
+        color: #000;
+        opacity: 1;
+        border-right: 1px solid rgba(12, 24, 43, 0.3);
 	}
     .mejs-audio .closebtn {
 	    background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -235px rgba(0, 0, 0, 0);
@@ -1167,7 +1172,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
             cursor: pointer;
         }
     .no-touch .bottomNavBar li.share:hover, .ie10 .bottomNavBar li.share:hover, .bottomNavBar li.share.open {
-        background-position: 8px -158px;
+        background-position: 12px -158px;
         background-color: rgba(255,255,255,1);
         color: #000;
         opacity: 1;
@@ -1180,12 +1185,12 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     .bottomNavBar li.fullscreen {
 		width: 40px;
 		height: 40px;
-		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -515px transparent;
+		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -987px transparent;
 		margin-right: 0px;
 		border-right: 0px none;
     }
     .no-touch .bottomNavBar li.fullscreen:hover, .ie10 .bottomNavBar li.fullscreen:hover {
-        background-position: 7px -197px;
+        background-position: 7px -987px;
         background-color: rgba(255,255,255,1);
         color: #000;
         opacity: 1;
@@ -1193,7 +1198,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
     
     .bottomNavBar li.fullscreen.open, .bottomNavBar li.fullscreen.open:hover {
-        background-position: 7px -997px;
+        background-position: 7px -987px;
         background-color: rgba(255,255,255,1);
         color: #000;
         opacity: 1;
