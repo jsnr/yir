@@ -1068,6 +1068,61 @@ $("#allcomments").height(commenth);
         closeOutSlide();
         
 	
+        // This changes the color of the nav depending on which section you are on
+    changenav = function(){    
+            
+            if(window.location.href.indexOf("adventure") > -1) {
+               $("body").attr("id","nav1");       
+            }
+            
+            else if(window.location.href.indexOf("ancient-world") > -1) {
+               $("body").attr("id","nav2");
+            }
+            
+            else if(window.location.href.indexOf("animals") > -1) {
+               $("body").attr("id","nav3");
+            }
+            
+            else if(window.location.href.indexOf("cultures") > -1) {
+               $("body").attr("id","nav4");
+            }
+            
+            else if(window.location.href.indexOf("environment") > -1) {
+               $("body").attr("id","nav5");
+            }
+            
+            else if(window.location.href.indexOf("geopolitics") > -1) {
+               $("body").attr("id","nav6");
+            }
+            
+            else if(window.location.href.indexOf("science") > -1) {
+               $("body").attr("id","nav7");
+            }
+            
+            else if(window.location.href.indexOf("space") > -1) {
+               $("body").attr("id","nav8");
+            }
+            
+            else if(window.location.href.indexOf("photography") > -1) {
+               $("body").attr("id","nav9");
+            }
+            
+            else if(window.location.href.indexOf("technology") > -1) {
+               $("body").attr("id","nav10");
+            }
+            
+            else if(window.location.href.indexOf("travel") > -1) {
+               $("body").attr("id","nav11");
+            }
+            
+            else if(window.location.href.indexOf("your-favorites") > -1) {
+               $("body").attr("id","nav12");
+            }
+               
+                    
+    } 
+    
+    changenav();
 
         // Set next slide
         if($('.slide.current').data('cID') == 2||$('.slide.current').attr('id') == "entry"){
