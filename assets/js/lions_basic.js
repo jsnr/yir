@@ -168,7 +168,7 @@
                 
                           }
             
-            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Index', 'Close']);
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Index', 'Close']);
         });
         
         // Set up click events on index items, deep links to content
@@ -177,7 +177,7 @@
            // load that slide !!
            loadSlide($(this).data('cID'))
            $('.index_nav .close_btn').click();
-           if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Index', $(this).text()]);
+           if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Index', $(this).text()]);
            return false;    
         });
     }
@@ -528,7 +528,7 @@
                     $(this).text('Details');                    $(this).removeClass('open');
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-471px'}, 500, function(){ $('.slideinfo', slide).hide(); });
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Caption', 'Close']);
+                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                    } else {
                     $(this).addClass('open');
                     $(this).text('Close');                    
@@ -539,7 +539,7 @@
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500)
                     //$('.navbtn.index').fadeOut(250);
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Caption', 'Open']);
+                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });
                                     
@@ -550,13 +550,13 @@
                     $(this).removeClass('open');
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-471px'}, 500, function(){ $('.slideinfo', slide).hide(); });
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Caption', 'Close']);
+                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
                     $(this).addClass('open');
                     $(this).text('Close');
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500)
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Caption', 'Open']);
+                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });
             
@@ -596,7 +596,7 @@ $("#allcomments").height(commenth);
                     var newPos = -$('.commentpane', slide).width();
                     $('.commentpane', slide).animate({'right': '-471px'}, 500, function(){ $('.commentpane', slide).hide(); });
                     //$('.navbtn.index').fadeIn(750);
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Caption', 'Close']);
+                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
                     $(this).addClass('open');
                     $(this).addClass('cpx');
@@ -607,7 +607,7 @@ $("#allcomments").height(commenth);
                     $('.commentpane', slide).show();
                     $('.commentpane', slide).animate({'right': '0'}, 500)
                     //$('.navbtn.index').fadeOut(250);
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Caption', 'Open']);
+                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });
             
@@ -684,7 +684,7 @@ $("#allcomments").height(commenth);
     setGalleryControls = function(target){
         $('.uparrow', target).click(function(e){
 //            galleryChange('up');
-//            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Gallery', 'Gallery_up']);
+//            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Gallery', 'Gallery_up']);
  
                 if($('.navbtn.about').hasClass('open')){
                     captionScroll('down');
@@ -696,7 +696,7 @@ $("#allcomments").height(commenth);
         
         $('.downarrow', target).click(function(e){
 //            galleryChange('down');
-//            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Gallery', 'Gallery_down']);
+//            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Gallery', 'Gallery_down']);
  
                 if($('.navbtn.about').hasClass('open')){
                     captionScroll('up');
@@ -718,7 +718,7 @@ $("#allcomments").height(commenth);
         $('.commentary', target).click(function(e){
             var container = $(this);
             if($(container).data('init') && !$(container).hasClass('open')){
-                if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Commentary', 'Start']);
+                if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Commentary', 'Start']);
                 // This only happens if the user has not navigated away from the slide them came back
                 $(container).animate({'width': '190'}, 300, "easeOutSine");
                 $('.mejs-audio', container).animate({'right': 0}, 200, "easeOutSine", function(){ 
@@ -729,7 +729,7 @@ $("#allcomments").height(commenth);
  
  
             } else {
-            	                if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Commentary', 'Start']);
+            	                if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Commentary', 'Start']);
                 // Load the new player upon entry of the slide
                 $('#audioplayer-'+$(target).attr('id')).attr('src',$('.slide.current').data('audio-url')).mediaelementplayer({
                     alwaysShowControls: true, 
@@ -763,7 +763,7 @@ $("#allcomments").height(commenth);
                                 checkMuteAudio();
                                                             });
                             $(mainDiv).animate({'right': '-190'}, 300, "easeOutSine");
-                            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Commentary', 'Stop']);
+                            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Commentary', 'Stop']);
                             e.stopPropagation();
                         });
                         
@@ -939,7 +939,7 @@ $("#allcomments").height(commenth);
             $('.slide.current .bgvideo').removeClass('active');
         }
         
-        if( Modernizr.csstransforms && Modernizr.csstransitions ){
+        if( Modernizr.csstransforms && Modernizr.csstransitionss ){
             $(container).stop().transition({ top:-elementPosition.top },600,"ease-in-out",function(){ isTweening=false; checkPreloaderStatus(); if(cCurrent == 1){ $('.slide.current .bgvidedo').addClass('active');} });
         } else { 
             $(container).animate({ top:-elementPosition.top }, 600, 'easeOutSine', function(){ isTweening=false; checkPreloaderStatus(); if(cCurrent == 1){ $('.slide.current .bgvidedo').addClass('active');} });
@@ -1944,13 +1944,13 @@ if ($(".gallerylabel").length) {
         $('.navbtn.leftarrow').click(function(){
         if($("#overlay").is(":hidden")){
             changeLeft()
-            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Click', 'Left Arrow']);
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Click', 'Left Arrow']);
         }
         });
         $('.navbtn.rightarrow').click(function(){
         if($("#overlay").is(":hidden")){
             changeRight()
-            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Click', 'Right Arrow']);
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Click', 'Right Arrow']);
         }
         });
                 $("#about-nav li a").each(function(){
@@ -2008,7 +2008,7 @@ if ($(".gallerylabel").length) {
             $('.leftarrow').delay(1500).show().animate({'left': '0px'}, 800, "easeInOutQuad");
             $('.rightarrow').delay(1500).show().animate({'right': '0px' }, 800, "easeInOutQuad");
             changeRight();
-            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Click', 'Explore']);
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Click', 'Explore']);
         });
         
         // Show/hide the index screen 
@@ -2025,7 +2025,7 @@ if ($(".gallerylabel").length) {
             
             if($('.slide.current .infobtn').hasClass('open'))$('.slide.current .infobtn').click();           
             if($('.slide.current .comments').hasClass('open'))$('.slide.current .comments').click();
-            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'Index', 'Open']);
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Index', 'Open']);
         });
         
         // Show/hide the about screen 
@@ -2037,7 +2037,7 @@ if ($(".gallerylabel").length) {
                 $('.slide.current h2.title').hide();
                 $('.playbtn').hide();
             }
-            if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'About', 'Open']);
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'About', 'Open']);
         });
         
         $('#about').click(function(e){
@@ -2060,7 +2060,7 @@ if ($(".gallerylabel").length) {
                $('.playbtn').show();
            }
            
-           if(_gaq != undefined)_gaq.push(['_trackEvent', 'Lions', 'About', 'Close']);
+           if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'About', 'Close']);
            
            
         });
