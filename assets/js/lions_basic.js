@@ -1025,6 +1025,100 @@ $("#allcomments").height(commenth);
         
     }
  
+ 
+ 
+        var desiredColor="rgb (0,0,0 )";
+
+   changenav = function(){            
+        // instead of changing ID, let's just use jquery animate on the background-color.
+
+
+		 if(window.location.href.indexOf("adventure") > -1) {
+		  desiredColor="rgb(17,33,58)";
+
+		    }
+		    
+			else if(window.location.href.indexOf("ancient-world") > -1) {
+		  desiredColor="rgb(45,52,98 )";
+
+		    }
+		    
+			else if(window.location.href.indexOf("animals") > -1) { 
+		   desiredColor="rgb(72,55,89 )";
+		    }
+		    
+			else if(window.location.href.indexOf("cultures") > -1) { 
+		   desiredColor="rgb(67,49,91 )";
+		    }
+		    
+			else if(window.location.href.indexOf("environment") > -1) { 
+		  desiredColor="rgb(89,47,87 )";
+		    }
+		    
+			else if(window.location.href.indexOf("geopolitics") > -1) { 
+		  desiredColor="rgb(169,69,54 )";
+		    }
+		    
+			else if(window.location.href.indexOf("science") > -1) { 
+		  desiredColor="rgb(176,92,45 )";
+		    }
+		    
+			else if(window.location.href.indexOf("space") > -1) { 
+		  desiredColor= "rgb(181,107,32 )";
+		    }
+		    
+			else if(window.location.href.indexOf("photography") > -1) { 
+		   desiredColor= "rgb(195,149,12 )";
+
+		    }
+		    
+			else if(window.location.href.indexOf("technology") > -1) { 
+		    desiredColor= "rgb(150,133,43 )";
+
+		    }
+		    
+			else if(window.location.href.indexOf("travel") > -1) { 
+		    desiredColor= "rgb(92,112,85 )";
+
+		    }
+		    
+			else if(window.location.href.indexOf("your-favorites") > -1) { 
+		   desiredColor= "rgb(53,103,104)";
+
+		    }
+		     
+		     
+		      try {
+
+  
+$(".bottomNavBar").css({opacity: 1});
+
+
+ $(".bottomNavBar .slide.previous, .bottomNavBar .slide.next").css({backgroundColor: desiredColor});
+ $(".bottomNavBar").stop().animate({backgroundColor: desiredColor},1000);
+ 
+$(".rightarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
+ 
+$(".leftarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
+ 
+if ($(".slideinfo").length) {
+$(".slideinfo").stop().animate({backgroundColor: desiredColor},1000);
+}
+
+if ($(".gallerylabel").length) {
+	$(".gallerylabel").stop().animate({backgroundColor: desiredColor},1000);
+}
+
+
+ }catch (err){}
+ 
+ 
+ 		
+	} 
+
+
+
+
      
     // Go to the bucket on the left
     changeLeft = function(){
@@ -1043,61 +1137,7 @@ $("#allcomments").height(commenth);
         closeOutSlide();
         
         
-        // This changes the color of the nav depending on which section you are on
-    changenav = function(){    
-            
-            if(window.location.href.indexOf("adventure") > -1) {
-               $("body").attr("id","nav1");       
-            }
-            
-            else if(window.location.href.indexOf("ancient-world") > -1) {
-               $("body").attr("id","nav2");
-            }
-            
-            else if(window.location.href.indexOf("animals") > -1) {
-               $("body").attr("id","nav3");
-            }
-            
-            else if(window.location.href.indexOf("cultures") > -1) {
-               $("body").attr("id","nav4");
-            }
-            
-            else if(window.location.href.indexOf("environment") > -1) {
-               $("body").attr("id","nav5");
-            }
-            
-            else if(window.location.href.indexOf("geopolitics") > -1) {
-               $("body").attr("id","nav6");
-            }
-            
-            else if(window.location.href.indexOf("science") > -1) {
-               $("body").attr("id","nav7");
-            }
-            
-            else if(window.location.href.indexOf("space") > -1) {
-               $("body").attr("id","nav8");
-            }
-            
-            else if(window.location.href.indexOf("photography") > -1) {
-               $("body").attr("id","nav9");
-            }
-            
-            else if(window.location.href.indexOf("technology") > -1) {
-               $("body").attr("id","nav10");
-            }
-            
-            else if(window.location.href.indexOf("travel") > -1) {
-               $("body").attr("id","nav11");
-            }
-            
-            else if(window.location.href.indexOf("your-favorites") > -1) {
-               $("body").attr("id","nav12");
-            }
-               
-                    
-    } 
-    
-    changenav();
+ 
     
     
         // Set next slide
@@ -1119,6 +1159,11 @@ $("#allcomments").height(commenth);
         
         // show slide, pass direction
         showSlide(-1);
+        // This changes the color of the nav depending on which section you are on
+  
+	    setTimeout(changenav,100);
+	
+
     }
     
     // Go to the bucket on the right
@@ -1138,60 +1183,7 @@ $("#allcomments").height(commenth);
         closeOutSlide();
         
         // This changes the color of the nav depending on which section you are on
-    changenav = function(){    
-            
-            if(window.location.href.indexOf("adventure") > -1) {
-               $("body").attr("id","nav1");       
-            }
-            
-            else if(window.location.href.indexOf("ancient-world") > -1) {
-               $("body").attr("id","nav2");
-            }
-            
-            else if(window.location.href.indexOf("animals") > -1) {
-               $("body").attr("id","nav3");
-            }
-            
-            else if(window.location.href.indexOf("cultures") > -1) {
-               $("body").attr("id","nav4");
-            }
-            
-            else if(window.location.href.indexOf("environment") > -1) {
-               $("body").attr("id","nav5");
-            }
-            
-            else if(window.location.href.indexOf("geopolitics") > -1) {
-               $("body").attr("id","nav6");
-            }
-            
-            else if(window.location.href.indexOf("science") > -1) {
-               $("body").attr("id","nav7");
-            }
-            
-            else if(window.location.href.indexOf("space") > -1) {
-               $("body").attr("id","nav8");
-            }
-            
-            else if(window.location.href.indexOf("photography") > -1) {
-               $("body").attr("id","nav9");
-            }
-            
-            else if(window.location.href.indexOf("technology") > -1) {
-               $("body").attr("id","nav10");
-            }
-            
-            else if(window.location.href.indexOf("travel") > -1) {
-               $("body").attr("id","nav11");
-            }
-            
-            else if(window.location.href.indexOf("your-favorites") > -1) {
-               $("body").attr("id","nav12");
-            }
-               
-                    
-    } 
-    
-    changenav();
+  
     
         // set the next slide
         if(currentSlide == dataList.length){
@@ -1229,6 +1221,11 @@ $("#allcomments").height(commenth);
         if($('.slide.current').attr('id') == 'about')addressVal = 'about';
         $.address.value(addressVal); 
         showSlide(1);
+        // This changes the color of the nav depending on which section you are on
+  
+	    setTimeout(changenav,100);
+	
+
     }
     
     
