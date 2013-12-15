@@ -656,7 +656,7 @@ $("#allcomments").height(commenth);
             hideShareButtons();
         });
         
-        var shareURL = 'http://ngm.com/serengeti-lion';
+        var shareURL = 'http://www.nationalgeographic.com/year-in-review-2013/';
         
         $('.services .google').click(function(){
             window.open('https://plus.google.com/share?url='+shareURL, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
@@ -665,7 +665,7 @@ $("#allcomments").height(commenth);
         
         $('.services .twitter').click(function(){
             window.open(
-                  'https://twitter.com/share?url='+shareURL+'&via=NatGeo&hashtags=NatGeoLions', 
+                  'https://twitter.com/share?url='+shareURL+'&via=NatGeo&hashtags=NatGeo2013', 
                   '', 
                   'width=626,height=436');
                   hideShareButtons();
