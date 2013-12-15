@@ -668,7 +668,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         bottom: 0;
         left: 0;
         width: 90px;
-        height: 35px;
+        height: 40px;
         padding: 7px 20px 10px 30px;
         background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -922px rgba(0,0,0, 0.85);
         cursor: pointer;
@@ -1078,7 +1078,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     .bottomNavBar li.fullscreen {
 		width: 40px;
 		height: 40px;
-		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -987px transparent;
+		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -515px transparent;
 		margin-right: 0px;
 		border-right: 0px none;
     }
@@ -1336,11 +1336,12 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     top: 0;
     bottom: 0;
     background-color: #f8f8f8;
+    display: block !important;
     }
 
     .slide .slideinfo h2 {
 	    color: #fff;
-	    font-size: 1.1em;
+	    font-size: .8em;
 	    font-weight: 200;
 	    letter-spacing: 2px;
 	    line-height: 1.1;
@@ -1359,7 +1360,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         padding: 0 35px 0 30px;
         font-weight: 400;
         font-size: .9em;
-        line-height: 1.5;        
+        line-height: 1.5;  
+        overflow: visible;      
     }
     
     .slide .slideinfo .infotext p, .slide .slideinfo h2 {
@@ -1373,7 +1375,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         top: 57px;
         width: 87%;        
         overflow-y: auto;
-        overflow-x: hidden;
+        overflow-x: hidden;        
+        overflow: visible; 
     }
     
 /*    .caption p {
@@ -1388,11 +1391,84 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }*/
     .info-headline {
         color: #fff;
-        font-weight: 500;
+        font-weight: 200;
         font-size: 1.9em;
         letter-spacing: 1px;
         line-height: 1.1;
+        position: relative;
+        left: -531px;
+        padding: 10px 50px 10px 30px;
+        width: 500px;
     }
+	.info-plus {
+		width: 42px;
+		height: 42px;
+		position: absolute;
+		top: 0;
+		left: -44px;
+		background-image: url(../i/index/2013/icons/plus.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: block;
+	}
+	.open-plus {
+		background: url(../i/index/2013/icons/xk.png) no-repeat scroll center center rgb(255, 255, 255) !important;
+	}		
+
+
+#nav1 .info-headline,
+#nav1 .info-plus {
+    background-color: rgba(17,33,58, .8);
+}
+#nav2 .info-headline,
+#nav2 .info-plus {
+    background-color: rgba(45,52,98, .8);
+}
+#nav3 .info-headline,
+#nav3 .info-plus {
+    background-color: rgba(72,55,89, .85);
+}
+#nav4 .info-headline,
+#nav4 .info-plus {
+    background-color: rgba(67,49,91, .8);
+}
+#nav5 .info-headline,
+#nav5 .info-plus {
+    background-color: rgba(89,47,87, .8);
+}
+#nav6 .info-headline,
+#nav6 .info-plus {
+    background-color: rgba(169,69,54, .8);
+}
+#nav7 .info-headline,
+#nav7 .info-plus {
+    background-color: rgba(176,92,45, .8);
+}
+#nav8 .info-headline,
+#nav8 .info-plus {
+    background-color: rgba(181,107,32, .8);
+}
+#nav9 .info-headline,
+#nav9 .info-plus {
+    background-color: rgba(195,149,12, .8);
+}
+#nav10 .info-headline,
+#nav10 .info-plus {
+    background-color: rgba(150,133,43, .8);
+}
+#nav11 .info-headline,
+#nav11 .info-plus {
+    background-color: rgba(92,112,85, .8);
+}
+#nav12 .info-headline,
+#nav12 .info-plus {
+    background-color: rgba(53,103,104, .8);
+}		
+			
+			
+			
+			
+			    
     .info-summary {
 		color: rgb(255, 255, 255);
 		font-size: 1em;
