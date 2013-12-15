@@ -801,7 +801,7 @@ $("#allcomments").height(commenth);
         var audVol = (isMuted) ? 0 : 1;
         var vidVol = (isMuted) ? 0 : ($('.slide.current .commentary').hasClass('open')) ? 0.07 : 1;
         try { $('.slide.current video')[0].volume = vidVol; } catch(err) {}
-        try { $('#audioplayer')[0].volume = audVol; } catch(err) {}
+        try { $('#audioplayer')[0].volume = audVol*0.6; } catch(err) {}
     }
     
     //audioplayer//

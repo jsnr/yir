@@ -68,8 +68,12 @@
     <script src="./assets/mediaelements/mediaelement-and-player.js"></script>
 </head>
 <body>
-<audio src="./assets/YIR.mp3" type="audio/mp3" id="audioplayer" autoplay="true" loop>                
-</audio>  
+<audio src="./assets/YIR.mp3" type="audio/mp3" id="audioplayer" autoplay="true" loop></audio>    
+ 
+ <script>
+  try { $('#audioplayer')[0].volume = 0.6; } catch(err) {}
+  setTimeout(function(){  try { $('#audioplayer')[0].volume = 0.6; } catch(err) {} },500);       
+        </script>
 
 <div id="allcomments">
 <script src="http://zor.fyre.co/wjs/v3.0/javascripts/livefyre.js"></script>
