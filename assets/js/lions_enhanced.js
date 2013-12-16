@@ -8,9 +8,79 @@
     // functions
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
 
+	    // This changes the id of the body depending on which section you are on
+    bodyid = function(){    
+            
+	        if(window.location.href.indexOf("adventure") > -1) {
+		       $("body").attr("id","nav1"); 
+		       $(".shareheadline").text("adventure");       
+		    }
+		    
+			else if(window.location.href.indexOf("ancient-world") > -1) {
+		       $("body").attr("id","nav2");
+		       $(".shareheadline").text("Ancient World"); 
+		    }
+		    
+			else if(window.location.href.indexOf("animals") > -1) {
+		       $("body").attr("id","nav3");
+		       $(".shareheadline").text("Animals"); 
+		    }
+		    
+			else if(window.location.href.indexOf("cultures") > -1) {
+		       $("body").attr("id","nav4");
+		       $(".shareheadline").text("Cultures"); 
+		    }
+		    
+			else if(window.location.href.indexOf("environment") > -1) {
+		       $("body").attr("id","nav5");
+		       $(".shareheadline").text("environment"); 
+		    }
+		    
+			else if(window.location.href.indexOf("geopolitics") > -1) {
+		       $("body").attr("id","nav6");
+		       $(".shareheadline").text("geopolitics"); 
+		    }
+		    
+			else if(window.location.href.indexOf("science") > -1) {
+		       $("body").attr("id","nav7");
+		       $(".shareheadline").text("science"); 
+		    }
+		    
+			else if(window.location.href.indexOf("space") > -1) {
+		       $("body").attr("id","nav8");
+		       $(".shareheadline").text("space"); 
+		    }
+		    
+			else if(window.location.href.indexOf("photography") > -1) {
+		       $("body").attr("id","nav9");
+		       $(".shareheadline").text("photography"); 
+		    }
+		    
+			else if(window.location.href.indexOf("technology") > -1) {
+		       $("body").attr("id","nav10");
+		       $(".shareheadline").text("technology"); 
+		    }
+		    
+			else if(window.location.href.indexOf("travel") > -1) {
+		       $("body").attr("id","nav11");
+		       $(".shareheadline").text("travel"); 
+		    }
+		    
+			else if(window.location.href.indexOf("your-favorites") > -1) {
+		       $("body").attr("id","nav12");
+		       $(".shareheadline").text("Your Favorites"); 
+		    }
+		       
+				    		
+	} 
+	
+	bodyid();
+	$(window).hashchange(function(){
+	    bodyid();
+    });
 	       
 
-	// COMMENT COLLECTION SWITCH
+
 	
 
 
@@ -27,6 +97,7 @@
 		
 		
 		if(hchanges == 4){
+					
 			$('#overlay').fadeIn(800, "easeInOutQuad");
 		
 		}
@@ -336,8 +407,10 @@
             $(this).click(function(){
                 if($(this).hasClass('open')){
                     hideShareButtons();
+                    $(".bottomNavBar").fadeOut();
                 } else {
                     showShareButtons();
+                    $(".bottomNavBar").fadeIn();
                 }
             });
         });
@@ -1653,9 +1726,9 @@ try {                $('.slide.current video')[0].play(); // JF fix
     // LOADERBAR PROGRESS
     loaderProgress = function(itemURL){
         var loadPercent = LoadDetails.setAsLoaded(itemURL);
-        $('.siteLoader .introtxt .h1').width(loadPercent+'%');
+       $('.siteLoader .head_text.light .txt_holder').width(loadPercent+'%');
     }
-    
+        
     // PRELOAD IMAGES
     $(window).load(function(){
         $('.preloader').hide();
