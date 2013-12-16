@@ -35,7 +35,7 @@
 		
 		
 		if(hchanges == 4){
-	
+			$('video,audio').mediaelementplayer('pause');
 			$('#overlay').fadeIn(800, "easeInOutQuad");
 		
 		}

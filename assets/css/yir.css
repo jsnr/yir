@@ -670,7 +670,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         width: 90px;
         height: 40px;
         padding: 7px 20px 10px 30px;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -922px rgba(0,0,0, 0.85);
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -918px rgba(0,0,0, 0.85);
         cursor: pointer;
         text-align: left;
         text-indent: 10px;
@@ -681,31 +681,34 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         white-space: nowrap;
         float: left;
         letter-spacing: 1px;
-        line-height: 2;
+        line-height: 30px;
         background-color: transparent;
         opacity: .85;
+    }
+    .navbtn.index.open {
+    	display: none;
     }        
     .index_nav .close_btn {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 90px;
-        height: 35px;
+        height: 40px;
         padding: 7px 20px 10px 30px;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 12px -237px #FFF;
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 12px -234px #FFF;
         cursor: pointer;
         text-align: left;
-        text-indent: 10px;
+        text-indent: 7px;
         font-size: .70em;
         text-transform: uppercase;
         white-space: nowrap;
         letter-spacing: 1px;
         z-index: 50;
-        line-height: 2;
+        line-height: 30px;
     }
     
     .no-touch .navbtn.index:hover, .ie10 .navbtn.index:hover {
-        background-position: 11px -955px;
+        background-position: 11px -951px;
         background-color: rgba(255,255,255,1);
         color: rgb(0,0,0);
         opacity: 1;
@@ -1336,7 +1339,6 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     top: 0;
     bottom: 0;
     background-color: #f8f8f8;
-    display: block !important;
     }
 
     .slide .slideinfo h2 {
@@ -1395,25 +1397,10 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         font-size: 1.9em;
         letter-spacing: 1px;
         line-height: 1.1;
-        position: relative;
-        left: -531px;
-        padding: 10px 50px 10px 30px;
+        padding: 10px 0;
         width: 500px;
     }
-	.info-plus {
-		width: 42px;
-		height: 42px;
-		position: absolute;
-		top: 0;
-		left: -44px;
-		background-image: url(../i/index/2013/icons/plus.png);
-		background-repeat: no-repeat;
-		background-position: center center;
-		display: block;
-	}
-	.open-plus {
-		background: url(../i/index/2013/icons/xk.png) no-repeat scroll center center rgb(255, 255, 255) !important;
-	}		
+
 
 
 #nav1 .info-headline,
