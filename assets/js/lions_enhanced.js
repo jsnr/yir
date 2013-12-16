@@ -17,7 +17,9 @@
 	// BACKGROUND MUSIC
 	$('audio,video').mediaelementplayer({
 	    success: function (mediaElement, domObject) { 
-	       mediaElement.play();
+	    	try {
+	       mediaElement.play(); } catch (err) {};
+	       
 	    }
 	});
 
@@ -424,8 +426,12 @@
                     video.setAttribute("class", "bgvideo active");
                     video.setAttribute("style", "display: none;");
                     //video.setAttribute("src", vidSrc);
+                    try {
                     video.setAttribute("preload", "false");
-                    video.setAttribute("loop", "true");
+                    
+                   
+                    video.setAttribute("loop", "true");   } catch (err) {
+                        }
                     video.setAttribute("type", vidType);
                     $(video).data('ready',false);
                     $('.playbtn_container', slide).after(video);
@@ -481,9 +487,14 @@
                         video.setAttribute("class", "bgvideo active");
                         video.setAttribute("style", "display: none;");
                         //video.setAttribute("src", vidSrc);
+                        try {
                         video.setAttribute("preload", "false");
-                        video.setAttribute("loop", "true");
+                        
+                        video.setAttribute("loop", "true");   } catch (err) {
+                        }
                         video.setAttribute("type", vidType);
+                         
+                        
                         $(video).data('ready',false);
                         galDiv.prepend(video);
                     //}
@@ -796,8 +807,9 @@ $("#allcomments").height(commenth);
                         });
                         
                         $('.closebtn',mainDiv).click(function(e){
-                            mediaElement.pause();
-                            hideAudioCredit();
+                        try {    mediaElement.pause();
+                        } catch(err) {}
+                        hideAudioCredit();
                             $(container).css('overflow','hidden');
                             $(container).animate({'width': 150}, 100, "easeOutSine", function(){
                                 $(container).removeClass('open');
@@ -999,10 +1011,11 @@ $("#allcomments").height(commenth);
         // cancel video load events
         $('.slide.current video').off('loadstart canplay');
         
+        try {
         if(($('.slide.current video').length != 0 && $('.slide.current video').attr('src') != undefined)||$('.slide.current').attr('id') == 'entry'){
             $('.slide.current video')[0].pause();
             //$('.slide.current video')[0].currentTime = 0; // Set it back to the beginning
-        }
+        }} catch (err) {}
         
         // CLOSE COMMENTARY AND REMOVE AUDIO CONTROLS AND TAG
         autoPlayAudio = false;
@@ -1027,11 +1040,12 @@ $("#allcomments").height(commenth);
         
         if(cType == 'gallery'){startAudioCommentary();} 
         else {startVideo();}
-        
+        try {
         if($('audio',slide).length > 0){
             $('audio',slide)[0].pause();
             $('.mejs-container',slide).remove();
-        }
+        } } catch (err) {}
+        
         
         if($('video',slide).length != 0)$('video', slide).attr('src','').hide(); // remove all previous videos to save memory
         
@@ -1251,7 +1265,11 @@ if ($(".gallerylabel").length) {
     // Load a specific slide, based on id
     loadSlide = function(cID){
         if(isTweening)return;
+        try {
+        
         if($('.slide.current video').length != 0 && $('.slide.current video').attr('src') != undefined)$('.slide.current video')[0].pause();
+        } catch (err) {
+        }
         
         closeOutSlide();
         
@@ -1273,10 +1291,12 @@ if ($(".gallerylabel").length) {
         lastDirection = direction;
         slideTitleScreen = true;
         
-        if($('.slide.previous audio').length > 0){
+        try {if($('.slide.previous audio').length > 0){
             $('.slide.previous audio')[0].pause();
             $('.slide.previous .mejs-container').remove();
         }
+        } catch (err) {}
+        
         
         if(!fullResLoading)loadNextSlide();// Kicks off the process of loading all the rest of the pages. 
         
@@ -1297,7 +1317,8 @@ if ($(".gallerylabel").length) {
         var slideTitle =  (slide.attr('id') == 'about') ? 'About' : $('h2.title', slide).text() + '&nbsp;&nbsp;<span>' + slide.data('typetext') + '</span>'
         
         if(slide.attr('id') == 'entry'){
-            $('#introvid')[0].play();
+        	try{ 
+            $('#introvid')[0].play();} catch (err) {}
             killNav();
         } else {
             //$('.curtitle').addClass('tweening', 250, function(){ $('.curtitle').html( slideTitle ) })
@@ -1475,9 +1496,14 @@ if ($(".gallerylabel").length) {
         
         video.setAttribute("class", "bgvideo active");
         video.setAttribute("src", vidSrc);
-        video.setAttribute("preload", "false");
-        video.setAttribute("loop", "true");
+  try {
+  	      video.setAttribute("preload", "false"); // this bombs out in IE9
+ 
+      video.setAttribute("loop", "true");   } catch (err) {
+                        }
         video.setAttribute("type", vidType);
+      
+                        
         video.setAttribute("style","display: none;");
         
         if(cType == 'video'){
@@ -1494,8 +1520,11 @@ if ($(".gallerylabel").length) {
             
             var audio = document.createElement("audio");
             audio.setAttribute("id", "audioplayer-"+ $('.slide.current').attr('id'));
-            audio.setAttribute('preload', 'false');
-            audio.setAttribute('type', 'audio/mpeg');
+      try {
+      	      audio.setAttribute('preload', 'false');
+      } catch (err) {
+      }
+          audio.setAttribute('type', 'audio/mpeg');
 	        audio.setAttribute("loop", "true");
             $('.slide.current .commentary').append(audio); 
          }
@@ -1517,7 +1546,9 @@ if ($(".gallerylabel").length) {
                 //console.log('INDEX JUMP -- LOADING CONTENT');
                 var vidSrc = (BrowserDetect.browser == "Firefox") ? $('.slide.current').data('vid-ogg') : $('.slide.current').data('vid-mp4');
                 $('.slide.current video').attr('src', vidSrc);
-                $('.slide.current video')[0].play(); // JF fix
+try {                $('.slide.current video')[0].play(); // JF fix
+} catch (err){}
+
                 $('.slide.current video').on('canplay',function(){ videoLoading = false; });
                 // Should be playing
             }
@@ -1604,7 +1635,9 @@ if ($(".gallerylabel").length) {
         } else {
             $(vid).show();
         }
+        try {
         vid.play();
+        } catch (err) {}
         
         $('.slide.current .bottomNavBar').delay(500).animate({ bottom: 0 },"slow", function(){ 
             $('.navbtn.about').fadeIn(200);
@@ -1647,7 +1680,10 @@ if ($(".gallerylabel").length) {
             changeLeft();
             $('.siteLoader').delay(1000).fadeOut(350);
         }else {
-            $('#entry video')[0].play()
+            try{
+            	$('#entry bgvideo')[0].play()
+            } catch(err) {
+            }
             $('.siteLoader').fadeOut(350);
         }
     });
