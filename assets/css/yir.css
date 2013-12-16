@@ -639,7 +639,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     .bottomNavBar ul.sharing {
         float: right;
     }
-    .bottomNavBar li {
+    .navbtn.index, .bottomNavBar li {
         font-family: "Alright Sans LT", Helvetica, Arial, sans-serif;
         color: #FFF;
         float: left;
@@ -652,6 +652,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         border-right: 1px solid rgba(255, 255, 255, 0.15);
         font-size: 0.70em;
     }
+
     
     .no-touch .bottomNavBar li:hover, .no-touch .slide .buttons li:hover, .ie10 .bottomNavBar li:hover, .ie10 .slide .buttons li:hover {
         
@@ -665,7 +666,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 90px;
+        width: 110px;
         height: 40px;
         padding: 7px 20px 10px 30px;
         background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -918px rgba(0,0,0, 0.85);
@@ -703,6 +704,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         letter-spacing: 1px;
         z-index: 50;
         line-height: 30px;
+        font-family: "Alright Sans LT",Helvetica,Arial,sans-serif;
     }
     
     .no-touch .navbtn.index:hover, .ie10 .navbtn.index:hover {
