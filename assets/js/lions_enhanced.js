@@ -78,6 +78,13 @@
 	$(window).hashchange(function(){
 	    bodyid();
     });
+	
+	$(".info-headline").append( "<span class='info-plus'></span>" );
+    
+    
+    
+    
+    
 	       
 
 
@@ -621,7 +628,7 @@
 // ////////////////////  DETAIL PANE  //////////////////// //               
             
             // Size and position the info box from the right side.
-            $('.slideinfo', slide).css({'right':'-471px', 'height': $(window).height() - $('.global-header').height() });
+            $('.slideinfo', slide).css({'right':'-501px', 'height': $(window).height() - $('.global-header').height() });
             $(slide).click(function(e){
                 if(e.originalEvent != undefined && !$(e.originalEvent.target).hasClass('share') && $('.slide.current .share').hasClass('open'))hideShareButtons();
                 if($('.slide.current .infobtn').hasClass('open') ){
@@ -644,7 +651,8 @@
                     $(this).text('Details');
                     $(this).removeClass('open');
                     var newPos = -$('.slideinfo', slide).width();
-                    $('.slideinfo', slide).animate({'right': '-471px'}, 500, function(){ $('.slideinfo', slide).hide(); });
+                    $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
+                    $('.info-headline', slide).animate({left: '-531px'}, 500);
                     //$('.navbtn.index').fadeIn(750);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
@@ -652,10 +660,11 @@
                     $(this).text('Close');                    
                     $('.buttons li.comments', slide).removeClass('open');                    
                     $('.buttons li.comments', slide).removeClass('cpx');                    
-                    $('.commentpane', slide).animate({'right': '-471px'}, 500, function(){ $('.commentpane', slide).hide(); });
+                    $('.commentpane', slide).animate({'right': '-501px'}, 500, function(){ $('.commentpane', slide).hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
                     $('.slideinfo', slide).show();
-                    $('.slideinfo', slide).animate({'right': '0'}, 500)
+                    $('.slideinfo', slide).animate({'right': '0'}, 500);
+                    $('.info-headline', slide).animate({left: '-30px'}, 500);
                     //$('.navbtn.index').fadeOut(250);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
@@ -670,7 +679,7 @@ var commenth = wh - 130;
 $("#allcomments").height(commenth);
             
             // Size and position the comment pane from the right side.
-            $('.commentpane', slide).css({'right':'-471px', 'height': $(window).height() - $('.global-header').height() });
+            $('.commentpane', slide).css({'right':'-501px', 'height': $(window).height() - $('.global-header').height() });
             $(slide).click(function(e){
                 if(e.originalEvent != undefined && !$(e.originalEvent.target).hasClass('share') && $('.slide.current .share').hasClass('open'))hideShareButtons();
                 if($('.slide.current .comments').hasClass('open') ){
@@ -694,7 +703,7 @@ $("#allcomments").height(commenth);
                     $(this).removeClass('open');
                     $("#allcomments").animate({right:-444},500);
                     var newPos = -$('.commentpane', slide).width();
-                    $('.commentpane', slide).animate({'right': '-471px'}, 500, function(){ $('.commentpane', slide).hide(); });
+                    $('.commentpane', slide).animate({'right': '-501px'}, 500, function(){ $('.commentpane', slide).hide(); });
                     //$('.navbtn.index').fadeIn(750);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
@@ -703,7 +712,7 @@ $("#allcomments").height(commenth);
                     $("#allcomments").animate({right:57},500);
                     $('.buttons li.infobtn', slide).removeClass('open');
                     $('.buttons li.infobtn', slide).text('Details');
-                    $('.slideinfo', slide).animate({'right': '-471px'}, 500, function(){ $('.slideinfo', slide).hide(); });
+                    $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     $('.commentpane', slide).show();
                     $('.commentpane', slide).animate({'right': '0'}, 500)
                     //$('.navbtn.index').fadeOut(250);
@@ -1220,7 +1229,7 @@ if ($(".gallerylabel").length) {
     // Go to the bucket on the left
     changeLeft = function(){
         
-                    $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
+                    $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
         
         if(isTweening||$('.navbtn.about').hasClass('open'))return;
@@ -1275,7 +1284,7 @@ if ($(".gallerylabel").length) {
     // Go to the bucket on the right
     changeRight = function(){
     
-                    $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
+                    $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
         if(isTweening||$('.navbtn.about').hasClass('open'))return;
         // alert($('.slide.current').attr('id'));
