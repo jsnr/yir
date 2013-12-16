@@ -828,7 +828,7 @@ $("#allcomments").height(commenth);
         audioCredit = true;
         var itemPos = $('.slide.current .audio_credit').height();
         $('.slide.current .audio_credit').css('bottom',-30).animate({ 'opacity': 1, "bottom": 35}, 750, "easeOutSine", function(){
-            $('.slide.current .audio_credit').delay(3000).animate({ 'opacity': 0, 'bottom': -75,}, 800, "easeOutSine", function(){ audioCredit = false; });
+            $('.slide.current .audio_credit').delay(3000).animate({ 'opacity': 0, 'bottom': -75}, 800, "easeOutSine", function(){ audioCredit = false; });
         });
     }
     
