@@ -3,7 +3,7 @@
     var debug = (window.location.href.substr(0,5) == "file:")
     if(debug)var _gaq = [];
     
-    var dataList, loadedDataList, currentSlide = 0, navActive=false, hasGallery=false, isTweening=false, navtimeout=6, navTimeoutInt, videoLoading=false, isDeepLink=false, isAboutLink=false, titleTimeout, videoLoadTime=0, vidTimer, navHover=false, isMuted=false, isScrolling=false, indexFullRes=false, lastLoadedItem=4, lastLoadedVideo=4, fullResToLoad, fullResLoaded, fullResLoading=false, autoPlayAudio=false, audioCredit=false, lastDirection, allVideosPreloaded=false, slideTitleScreen=false;
+    var dataList, loadedDataList, currentSlide = 0, navActive=false, hasGallery=false, isTweening=false, navtimeout=6, navTimeoutInt, videoLoading=false, isDeepLink=false, isAboutLink=false, titleTimeout, videoLoadTime=0, vidTimer, navHover=false, isMuted=false, isScrolling=false, indexFullRes=false, lastLoadedItem=4, lastLoadedVideo=4, fullResToLoad, fullResLoaded, fullResLoading=false, autoPlayAudio=true, audioCredit=false, lastDirection, allVideosPreloaded=false, slideTitleScreen=false;
     
     // functions
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
@@ -14,14 +14,6 @@
 	
 
 
-	// BACKGROUND MUSIC
-	$('audio,video').mediaelementplayer({
-	    success: function (mediaElement, domObject) { 
-	    	try {
-	       mediaElement.play(); } catch (err) {};
-	       
-	    }
-	});
 
 
 	// INTERSTITIAL ADS	    
@@ -35,7 +27,6 @@
 		
 		
 		if(hchanges == 4){
-			$('video,audio').mediaelementplayer('pause');
 			$('#overlay').fadeIn(800, "easeInOutQuad");
 		
 		}
@@ -2154,4 +2145,11 @@ if($("#overlay").is(":hidden")){
         createSlides();
         
     });
+    
+    
+    
+
+    
+    
+    
 }).call(this);
