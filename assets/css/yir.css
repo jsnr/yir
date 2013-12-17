@@ -372,19 +372,20 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 
 
 .introtxt .explorebtn, #phoneContent .trailerbtn, .playbtn {
-    color: #FFF;
+    color: rgb(255, 255, 255);
     font-size: .85em;
     font-weight: 400;
     letter-spacing: 5px;
     margin: 40px auto 30px;
-    padding: 8px 8px 8px 10px !important;
+    padding: 8px 9px 8px 14px !important;
     text-transform: uppercase;
     width: 115px;
     cursor: pointer;
     text-align: center;
-    border: 2px solid #fff;
-    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: rgba(0,0,0,0);
+    border: 1px solid rgb(255, 255, 255);
+    font-family: 'Alright Sans LT', Helvetica, Arial, sans-serif;
+    background: rgba(0, 0, 0, 0);
+    display: inline-block;
 }
 
 .playbtn {
