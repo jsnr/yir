@@ -3,7 +3,7 @@
     var debug = (window.location.href.substr(0,5) == "file:")
     if(debug)var _gaq = [];
     
-    var dataList, loadedDataList, currentSlide = 0, navActive=false, hasGallery=false, isTweening=false, navtimeout=6, navTimeoutInt, videoLoading=false, isDeepLink=false, isAboutLink=false, titleTimeout, videoLoadTime=0, vidTimer, navHover=false, isMuted=false, isScrolling=false, indexFullRes=false, lastLoadedItem=4, lastLoadedVideo=4, fullResToLoad, fullResLoaded, fullResLoading=false, autoPlayAudio=true, audioCredit=false, lastDirection, allVideosPreloaded=false, slideTitleScreen=false;
+    var dataList, loadedDataList, currentSlide = 0, navActive=false, hasGallery=false, isTweening=false, navtimeout=6, navTimeoutInt, videoLoading=false, isDeepLink=false, isAboutLink=false, titleTimeout, videoLoadTime=0, vidTimer, navHover=false, isMuted=false, isScrolling=false, indexFullRes=false, lastLoadedItem=4, lastLoadedVideo=4, fullResToLoad, fullResLoaded, fullResLoading=false, autoPlayAudio=true, audioCredit=false, lastDirection, allVideosPreloaded=false, slideTitleScreen=false, audioplayer;
     
     // functions
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
@@ -1749,7 +1749,10 @@ if ($(".gallerylabel").length) {
     $(window).load(function(){
         $('.preloader').hide();
         
-        $("#entry .bottomNavBar").delay(3200).animate({ bottom:'+=35px' },"slow");
+         $("#entry .bottomNavBar").delay(3200).animate({ bottom:'+=35px' },"slow", function(){
+            $('#audioplayer').append('<source src="./assets/YIR.ogg" type="audio/ogg" /><source src="./assets/YIR.mp3" type="audio/mpeg" />');
+            audioplayer = new MediaElementPlayer('#audioplayer', {});
+        });
         $(".quoteblock").delay(1300).fadeIn("slow");
         $(".explorebtn").delay(2400).fadeIn("slow");
         
@@ -2230,6 +2233,25 @@ if($("#overlay").is(":hidden")){
         
         // KICK IT ALL OFF BY CREATING THE SLIDES
         createSlides();
+		
+		var lf_animals = '<script src="http://zor.fyre.co/wjs/v3.0/javascripts/livefyre.js" type="text/javascript"></script>';
+        lf_animals += '<script  type="text/javascript">';
+        lf_animals += 'function() {'
+        lf_animals += '    fyre.conv.load({'
+        lf_animals += "        network: 'livefyre.com'"
+        lf_animals += "    }, [{"
+        lf_animals += "        app: 'main',"
+        lf_animals +=   "      siteId: '349436',"
+        lf_animals +=   "      articleId: 'animals',"
+        lf_animals +=   "      el: 'livefyre-app-animals',"
+        lf_animals +=   "      checksum: '3d21166bb46dd3921b0130e22f7a4abc',"
+        lf_animals +=   "      collectionMeta: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL2phby5jby9uZ3MveWlyIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJhbmltYWxzIiwgInRpdGxlIjogIkFuaW1hbHMifQ.S0fj_H2SBklJv67w1EGMSkTwsqv2_POeIQYubziz2CM'"
+        lf_animals +=   '  }], function (widget) {'
+        lf_animals += '     });'
+        lf_animals += '}());'
+        lf_animals += '</script>'
+        
+        $('#allcomments').append(lf_animals);
         
     });
     
