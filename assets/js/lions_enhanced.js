@@ -654,10 +654,10 @@
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     
                     var headpos1 = $('.info-headline', slide).css('right');
-                    if(headpos1 != '-501px'){
-	                    $('.info-headline', slide).animate({left: '-30px'}, 500);
+                    if(headpos1 != '30px'){
+	                    $('.info-headline', slide).css(left: '-30px');
 	                }
-	                alert(headpos1);
+	                else{$('.info-headline', slide).animate({left: '-30px'}, 500);}
 	                
                     $('.info-headline', slide).animate({left: '-531px'}, 500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
