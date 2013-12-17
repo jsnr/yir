@@ -1187,11 +1187,16 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 	overflow: hidden;
 } 
 #allcomments .collection {
+	display: none;
 	width: 100%;
 	height: 100%;
 	position: relative;
 	top: 0;
 }
+
+#allcomments .collection.active {
+    display: block;
+ }
 #nav1 .adventure-comments {
 	top: 0;
 } 
