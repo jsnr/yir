@@ -652,6 +652,12 @@
                     $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
+                    
+                    var headpos = $('.info-headline', slide).css('right');
+                    if(headpos != '-501px'){
+	                    $('.info-headline', slide).animate({left: '-30px'}, 500);
+	                }
+	                
                     $('.info-headline', slide).animate({left: '-531px'}, 500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
@@ -663,7 +669,12 @@
                     $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500);
-                    $('.info-headline', slide).animate({left: '-30px'}, 500);
+                    
+                    var headpos = $('.info-headline', slide).css('right');
+                    if(headpos += '-501px'){
+	                    $('.info-headline', slide).animate({left: '-30px'}, 500);
+	                }
+	                
                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
