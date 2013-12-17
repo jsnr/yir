@@ -655,7 +655,7 @@
                     
                     var headpos1 = $('.info-headline', slide).css('right');
                     if(headpos1 != '30px'){
-	                    $('.info-headline', slide).css(left: '-30px');
+	                    $('.info-headline', slide).css('left','-30px');
 	                }
 	                else{$('.info-headline', slide).animate({left: '-30px'}, 500);}
 	                
