@@ -35,11 +35,11 @@
 
 
 body{
-    font-family: 300 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 300 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow: hidden;
 }
 .site-main{
-    font-family: 300 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 300 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 em{
     font-style: italic;
@@ -79,7 +79,7 @@ em{
 	top: 32% !important;
 }
 .siteLoader .head_text {
-	font-family: "Alright Sans LT Thin",Helvetica,Arial,sans-serif;
+	font-family: "Alright Sans LT Thin",'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 8vw;
 	font-weight: 100;
 	word-spacing: -3px;
@@ -256,7 +256,7 @@ width:33%;
         color: rgb(255, 255, 255);
         font-weight: bold;
         text-transform: uppercase;
-        font-family: "Alright Sans LT Thin", Helvetica, Arial, sans-serif;
+        font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 13pt;
         cursor: pointer;         
 line-height: 1.3em;
@@ -294,7 +294,7 @@ font-size: 1.5vw;
 
 
 .introtxt h1, .slide h2.title {
-    font-family: "Alright Sans LT Thin", Helvetica, Arial, sans-serif;
+    font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 120px;
     font-size: 8vw;
     font-weight: 100;
@@ -311,7 +311,7 @@ font-size: 1.5vw;
 }
 
 .introtxt .loadtxt {
-    font-family: "Alright Sans LT Thin", Helvetica, Arial, sans-serif;
+    font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 120px;
     font-weight: 100;
     word-spacing: -3px;
@@ -383,7 +383,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     cursor: pointer;
     text-align: center;
     border: 2px solid #fff;
-    font-family: 'Alright Sans LT', Helvetica, Arial, sans-serif;
+    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: rgba(0,0,0,0);
 }
 
@@ -455,7 +455,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 .siteLoader .instructions {
     position: absolute;
     bottom: 15px;
-    font-family: "Alright Sans LT", Helvetica, Arial, sans-serif;
+    font-family: "Alright Sans LT", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.70em;
     text-align: center;
     display: block;
@@ -653,14 +653,14 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         float: none;
         margin: 0 auto;
         position: relative;
-        width: 135px;
+        width: 150px;
     }
     
     .bottomNavBar ul.sharing {
         float: right;
     }
     .navbtn.index, .bottomNavBar li {
-        font-family: "Alright Sans LT", Helvetica, Arial, sans-serif;
+        font-family: "Alright Sans LT", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         color: #FFF;
         float: left;
         text-align: center;
@@ -829,36 +829,36 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 
     
     .slide .buttons li.uparrow {
-        width: 35px;
+        width: 40px;
         height: 40px;
         font-size: 13px;
         padding: 5px 0 0;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 8px -364px;
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -364px;
         float: left;
         border-right: 0 !important;
         opacity: 1;
     }
         .no-touch .slide .buttons li.uparrow:hover, .ie10 .slide .buttons li.uparrow:hover {
-            background-position: 8px -46px;
+            background-position: 11px -44px;
             background-color: #fff;
         }
     .slide .buttons li.downarrow {
-        width: 35px;
+        width: 40px;
         height: 40px;
-        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 8px -316px;
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -316px;
         opacity: 1;
         border-right: 0;
     }
         .no-touch .slide .buttons li.downarrow:hover, .ie10 .slide .buttons li.downarrow:hover {
-            background-position: 8px 2px;
+            background-position: 11px 4px;
             background-color: #fff;
             color: #000;
         }
     
     .slide .buttons li.paginate {
-        width: 65px;
+        width: 70px;
         height: 40px;
-        padding: 8px 6px 6px;
+        padding: 8px 8px 6px;
         font-size: 0.75em;
         color: rgba(255, 255, 255, .6);
         opacity: 1;
@@ -1385,7 +1385,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
   
 .slide .slideinfo {
     position: absolute;
-    width: 500px;
+    width: 400px;
     z-index: 50;
     padding: 30px 0px 0;
     top: 0;
@@ -1464,6 +1464,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         left: -531px;
         padding: 10px 50px 10px 30px;
         width: 500px;
+        margin-bottom: 0;
     }
 	.info-plus {
 		width: 42px;
@@ -1555,35 +1556,37 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 			    
     .info-summary {
 		color: rgb(255, 255, 255);
-		font-size: 1em;
+		font-size: 1.2em;
 		line-height: 1.5;
-		font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;;
+		font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
 		letter-spacing: .02em;
 		width: 90%;
     }  
     .info-link {
-    	background: url(../i/index/2013/icons/morearrow.png) no-repeat 87px center;
-		border: 1px solid #FFFFFF;
-		color: #FFFFFF !important;
-		display: block;
-		font-size: 0.6em;
-		letter-spacing: 0.1em;
-		line-height: 2;
-		margin: 10px 0;
-		padding: 3px;
-		text-decoration: none !important;
-		text-indent: 17px;
-		text-transform: uppercase;
-		width: 128px;	
-		font-family: "Helvetica Neue", helvetica, times, sans-serif;    
+    	background: url(../i/nav_buttons_sprite.png) no-repeat 89px -88px;
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255) !important;
+        display: block;
+        font-size: 0.75em;
+        line-height: 2;
+        margin: 10px 0;
+        padding: 7px 3px;
+        text-decoration: none !important;
+        text-indent: 17px;
+        text-transform: uppercase;
+        width: 135px;
+        font-family: "Helvetica Neue", helvetica, times, sans-serif;
+        height: 40px;    
     }  
     .info-link:hover {
-    	background: rgba(0,0,0,.2);
+    	background-color: rgba(0,0,0,.2);
     } 
     .info-credit {
     	display: block;
     	font-size: .7em;
     	opacity: .7;
+        font-family: 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: .75em 0 2em;;
     } 
     .caption p.credit {
         font-size: 0.7em;
@@ -1611,7 +1614,7 @@ section video.active {
 #about {
     background-color: rgba(12,24,43, 0.9);
     color: #FFF;
-    font-family: 'Alright Sans LT', Helvetica, Arial, sans-serif;
+    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
     #about-container{
         max-width: 1200px;
@@ -1963,7 +1966,7 @@ section#the-cause_ct, section#credits_ct, section#the-project_ct{
     font-weight: normal;
     font-size: 1em;
     color: rgb(0,0,0);
-    font-family: 'Alright Sans LT', Helvetica, Arial, sans-serif;
+    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .ie10 .mejs-container .mejs-controls .mejs-time {
