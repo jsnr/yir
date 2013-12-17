@@ -654,7 +654,7 @@
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     
                     var headpos1 = $('.info-headline', slide).css('right');
-                    if(headpos1 != '30px'){
+                    if(headpos1 == '30px'){
 	                    $('.info-headline', slide).css('left','-30px');
 	                }
 	                else{$('.info-headline', slide).animate({left: '-30px'}, 500);}
@@ -672,10 +672,10 @@
                     $('.slideinfo', slide).animate({'right': '0'}, 500);
                     
                     var headpos = $('.info-headline', slide).css('right');
-                    if(headpos += '-501px'){
+                    if(headpos != '30px'){
 	                    $('.info-headline', slide).animate({left: '-30px'}, 500);
 	                }
-	                
+	                alert(headpos);
                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
