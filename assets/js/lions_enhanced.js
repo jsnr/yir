@@ -1732,9 +1732,13 @@ try {                $('.slide.current video')[0].play(); // JF fix
     }
     
     // LOADERBAR PROGRESS
+    var loadtxtw = $('.siteLoader .head_text.light span').width();
+    var spacetoctr = ($(window).innerWidth() - loadtxtw) / 2;
+    $('.siteLoader .head_text span').css('padding-left',spacetoctr);
+    $('.siteLoader .head_text').delay(500).animate({opacity:1},500);
     loaderProgress = function(itemURL){
-        var loadPercent = LoadDetails.setAsLoaded(itemURL);
-       $('.siteLoader .head_text.light .txt_holder').width(loadPercent+'%');
+		var loadPercent = LoadDetails.setAsLoaded(itemURL);
+		$('.siteLoader .head_text.light .txt_holder').width(loadPercent+'%');
     }
         
     // PRELOAD IMAGES

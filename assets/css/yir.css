@@ -84,13 +84,13 @@ em{
 	font-weight: 100;
 	word-spacing: -3px;
 	letter-spacing: 5px;
-	text-align: center;
-	width: 100%;
+	text-align: left;
 	text-transform: uppercase;
 	color: rgba(255,255,255,.4);
 	position: absolute;
 	top: 280px;
 	height: 100px;
+	opacity: 0;
 }
 
 .siteLoader .head_text.light {
