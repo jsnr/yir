@@ -1596,6 +1596,11 @@ if ($(".gallerylabel").length) {
     }
     
     // LOADERBAR PROGRESS
+    // LOADERBAR PROGRESS
+    var loadtxtw = $('.siteLoader .head_text').width();
+    var spacetoctr = ($(window).innerWidth() - loadtxtw) / 2;
+    $('.siteLoader .head_text').css('left',spacetoctr);
+    $('.siteLoader .head_text').delay(500).animate({opacity:1},500);
     loaderProgress = function(itemURL){
         var loadPercent = LoadDetails.setAsLoaded(itemURL);
         $('.siteLoader .introtxt .h1').width(loadPercent+'%');
