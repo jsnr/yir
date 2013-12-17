@@ -657,7 +657,7 @@
                     if(headpos1 != '531px'){
 	                    $('.info-headline', slide).css('left','-531px');
 	                }
-	                
+	                alert(headpos1);
                     $('.info-headline', slide).animate({left: '-531px'}, 500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
@@ -674,6 +674,7 @@
                     if(headpos != '30px'){
 	                    $('.info-headline', slide).animate({left: '-30px'}, 500);
 	                }
+	                alert(headpos);
                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
