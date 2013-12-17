@@ -647,16 +647,16 @@
             
             // set up the infobox to close on click
             $('.buttons li.infobtn, .info-plus', slide).click(function(){
-                if($(this).hasClass('open')){
-                    $(this).text('Details');
-                    $(this).removeClass('open');
+                if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
+                    $('.buttons li.infobtn').text('Details');
+                    $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     $('.info-headline', slide).animate({left: '-531px'}, 500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
-                    $(this).addClass('open');
-                    $(this).text('Close');                    
+                    $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+                    $('.buttons li.infobtn').text('Close');                    
                     $('.buttons li.comments', slide).removeClass('open');                    
                     $('.buttons li.comments', slide).removeClass('cpx');                    
                     $('.commentpane', slide).animate({'right': '-501px'}, 500, function(){ $('.commentpane', slide).hide(); });
@@ -664,6 +664,7 @@
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500);
                     $('.info-headline', slide).animate({left: '-30px'}, 500);
+                    $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });
