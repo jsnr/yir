@@ -8,7 +8,6 @@
     // functions
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
 
-            $(".infobtn").hide();
             	
 	function showCommentStream(hash) {
         // Remove '#/' or '#.' from the URL hash
@@ -668,14 +667,16 @@
             
             // set up the infobox to close on click
             $('.buttons li.infobtn, .info-plus', slide).click(function(){
+                var galwrap = $(".galleryholder").css("top");
                 if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
                     $('.buttons li.infobtn').text('Details');
                     $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
                     var newPos = -$('.slideinfo', slide).width();
-                    $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
-                    
-                    $('.info-headline', slide).animate({left: '-531px'}, 500);
+                    $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });                   
+			    	$(".infobtn").fadeIn(500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
+	                    $('.info-headline', slide).animate({left: '-531px'}, 500);
+                    
                 } else {
                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     $('.buttons li.infobtn').text('Close');                    
@@ -685,9 +686,10 @@
                     $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500);
-                    
-                    $('.info-headline', slide).animate({left: '-30px'}, 500);
+                    $(".infobtn").fadeIn(500);
                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+                   
+                    $('.info-headline', slide).animate({left: '-30px'}, 500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });
@@ -1007,6 +1009,8 @@ $("#allcomments").height(commenth);
     
     // Change the gallery slide up or down
     galleryChange = function(dir){
+    
+    	$('.infobtn').fadeIn(500);
         
         if($('.navbtn.about').hasClass('open'))return; // JF fix
 
@@ -1243,6 +1247,7 @@ if ($(".gallerylabel").length) {
 	
     // Go to the bucket on the left
     changeLeft = function(){
+    	$(".infobtn").hide();
         
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
@@ -1298,6 +1303,7 @@ if ($(".gallerylabel").length) {
     
     // Go to the bucket on the right
     changeRight = function(){
+    	$(".infobtn").hide();
     
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
