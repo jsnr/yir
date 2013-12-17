@@ -930,12 +930,7 @@ $("#allcomments").height(commenth);
         try { $('#audioplayer')[0].volume = audVol*0.6; } catch(err) {}
     }
 	
-	//audioplayer//
 	
-	var audioplayer;
-       (function () {
-       audioplayer = new MediaElementPlayer('#audioplayer', {});
-   });
     
     // Resizes gallery images as needed for screen resizing, etc.
     fixGalleries = function(slide){
