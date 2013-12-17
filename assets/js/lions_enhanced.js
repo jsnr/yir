@@ -1756,10 +1756,8 @@ try {                $('.slide.current video')[0].play(); // JF fix
             changeLeft();
             $('.siteLoader').delay(1000).fadeOut(350);
         }else {
-            try{
-            	$('#entry bgvideo')[0].play()
-            } catch(err) {
-            }
+            //$('#entry bgvideo')[0].play();
+           	$('#introvid')[0].play(); // JF fix
             $('.siteLoader').fadeOut(350);
         }
     });
@@ -2238,3 +2236,5 @@ if($("#overlay").is(":hidden")){
     
     
 }).call(this);
+
+
