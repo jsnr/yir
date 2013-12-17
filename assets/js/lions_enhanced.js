@@ -2231,20 +2231,21 @@ if($("#overlay").is(":hidden")){
 		
 		var lf_animals = '<script src="http://zor.fyre.co/wjs/v3.0/javascripts/livefyre.js" type="text/javascript"></script>';
         lf_animals += '<script  type="text/javascript">';
-        lf_animals += 'function() {'
-        lf_animals += '    fyre.conv.load({'
-        lf_animals += "        network: 'livefyre.com'"
-        lf_animals += "    }, [{"
-        lf_animals += "        app: 'main',"
-        lf_animals +=   "      siteId: '349436',"
-        lf_animals +=   "      articleId: 'animals',"
-        lf_animals +=   "      el: 'livefyre-app-animals',"
-        lf_animals +=   "      checksum: '3d21166bb46dd3921b0130e22f7a4abc',"
-        lf_animals +=   "      collectionMeta: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL2phby5jby9uZ3MveWlyIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJhbmltYWxzIiwgInRpdGxlIjogIkFuaW1hbHMifQ.S0fj_H2SBklJv67w1EGMSkTwsqv2_POeIQYubziz2CM'"
-        lf_animals +=   '  }], function (widget) {'
-        lf_animals += '     });'
-        lf_animals += '}());'
-        lf_animals += '</script>'
+        lf_animals += 'var loadFyre = function() {';
+        lf_animals += '    fyre.conv.load({';
+        lf_animals += "        network: 'livefyre.com'";
+        lf_animals += "    }, [{";
+        lf_animals += "        app: 'main',";
+        lf_animals +=   "      siteId: '349436',";
+        lf_animals +=   "      articleId: 'animals',";
+        lf_animals +=   "      el: 'livefyre-app-animals',";
+        lf_animals +=   "      checksum: '3d21166bb46dd3921b0130e22f7a4abc',";
+        lf_animals +=   "      collectionMeta: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL2phby5jby9uZ3MveWlyIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJhbmltYWxzIiwgInRpdGxlIjogIkFuaW1hbHMifQ.S0fj_H2SBklJv67w1EGMSkTwsqv2_POeIQYubziz2CM'";
+        lf_animals +=   '  }], function (widget) {';
+        lf_animals += '     });';
+        lf_animals += '};';
+        lf_animals += 'setTimeout(loadFyre, 1000);';
+        lf_animals += '</script>';
         
         $('#allcomments').append(lf_animals);
         
