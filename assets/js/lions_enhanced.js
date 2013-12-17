@@ -653,12 +653,6 @@
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     
-                    var headpos1 = $('.info-headline', slide).css('right');
-                    if(headpos1 == '531px'){
-	                    $('.info-headline', slide).css('left','-30px');
-	                }
-	                else{$('.info-headline', slide).animate({left: '-531px'}, 500);}
-	                
                     $('.info-headline', slide).animate({left: '-531px'}, 500);
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
@@ -671,11 +665,6 @@
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500);
                     
-                    var headpos1 = $('.info-headline', slide).css('right');
-                    if(headpos1 == '531px'){
-	                    $('.info-headline', slide).css('left','-30px');
-	                }
-	                else{$('.info-headline', slide).animate({left: '-30px'}, 500);}
                     $('.info-headline', slide).animate({left: '-30px'}, 500);
                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
@@ -842,10 +831,6 @@ $("#allcomments").height(commenth);
                     return;
                 }
                 galleryChange('up'); 
-                  
-             if($('.info-plus', slide).hasClass('open')){
-             	$('.info-headline', slide).css('left','-30px');
-			 }
         });
         
         $('.downarrow', target).click(function(e){
@@ -859,10 +844,6 @@ $("#allcomments").height(commenth);
 					galleryChange('down');
                 } else {
                     galleryChange('down');
-                      
-             if($('.info-plus', slide).hasClass('open')){
-             	$('.info-headline', slide).css('left','-30px');
-			 }
                 }
 
         });
