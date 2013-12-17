@@ -653,8 +653,8 @@
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     
-                    var headpos = $('.info-headline', slide).css('right');
-                    if(headpos != '-501px'){
+                    var headpos1 = $('.info-headline', slide).css('right');
+                    if(headpos1 != '-501px'){
 	                    $('.info-headline', slide).animate({left: '-30px'}, 500);
 	                }
 	                
