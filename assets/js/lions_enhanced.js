@@ -1658,7 +1658,7 @@ if ($(".gallerylabel").length) {
     // HIDE NAV
     killNav = function(){
         clearInterval(navTimeoutInt);
-       $('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .bottomNavBar, .audio_credit').fadeOut();
+       $('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .bottomNavBar, .audio_credit, .infotext').fadeOut();
         
         navActive = false;
         
@@ -1676,7 +1676,7 @@ if ($(".gallerylabel").length) {
         navtimeout = 4;// number of seconds until 
         if($('.slide.current').attr('id') != 'entry'){
             //$('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .curtitle, .bottomNavBar').fadeIn();
-            $('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .bottomNavBar, .audio_credit').fadeIn();
+            $('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .bottomNavBar, .audio_credit, .infotext').fadeIn();
         } else {
             $('.bottomNavBar').fadeIn();
         }
