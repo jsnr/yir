@@ -1618,10 +1618,14 @@ if ($(".gallerylabel").length) {
                 //console.log('INDEX JUMP -- LOADING CONTENT');
                 var vidSrc = (BrowserDetect.browser == "Firefox") ? $('.slide.current').data('vid-ogg') : $('.slide.current').data('vid-mp4');
                 $('.slide.current video').attr('src', vidSrc);
-try {                $('.slide.current video')[0].play(); // JF fix
-} catch (err){}
-
-                $('.slide.current video').on('canplay',function(){ videoLoading = false; });
+				$('.slide.current video')[0].play(); // JF fix
+                //$('.slide.current video').on('canplay',function(){ videoLoading = false; });
+                $('.slide.current video').on('canplay',    // JF fix
+                						function(){ 
+											videoLoading = false;
+											$('.slide.current video').show(); 
+											$('.slide.current gi_wrapper.current').hide(); 
+                						});
                 // Should be playing
             }
         }
