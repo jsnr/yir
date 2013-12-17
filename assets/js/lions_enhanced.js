@@ -653,7 +653,6 @@
                     var newPos = -$('.slideinfo', slide).width();
                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });
                     $('.info-headline', slide).animate({left: '-531px'}, 500);
-                    $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                 } else {
                     $(this).addClass('open');
@@ -665,7 +664,6 @@
                     $('.slideinfo', slide).show();
                     $('.slideinfo', slide).animate({'right': '0'}, 500);
                     $('.info-headline', slide).animate({left: '-30px'}, 500);
-                    $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });
