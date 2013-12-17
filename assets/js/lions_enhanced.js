@@ -681,10 +681,7 @@
                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                 }
             });  
-		            var headpos1 = $('.info-headline', slide).css('right');
-					if(headpos1 == '531px'){
-					    $('.info-headline', slide).css('left','-30px');
-					}
+
 
 // ////////////////////  END DETAIL PANE  //////////////////// //              
             
@@ -846,6 +843,10 @@ $("#allcomments").height(commenth);
                     return;
                 }
                 galleryChange('up'); 
+                	var headpos1 = $('.info-headline', slide).css('right');
+					if(headpos1 == '531px'){
+					    $('.info-headline', slide).css('left','-30px');
+					}
         });
         
         $('.downarrow', target).click(function(e){
@@ -860,7 +861,10 @@ $("#allcomments").height(commenth);
                 } else {
                     galleryChange('down');
                 }
-
+		            var headpos1 = $('.info-headline', slide).css('right');
+					if(headpos1 == '531px'){
+					    $('.info-headline', slide).css('left','-30px');
+					}
         });
     }
     
