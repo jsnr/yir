@@ -1529,7 +1529,7 @@ if ($(".gallerylabel").length) {
     // HIDE NAV
     killNav = function(){
         clearInterval(navTimeoutInt);
-        //$('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .bottomNavBar, .audio_credit').fadeOut();
+       $('.navbtn.leftarrow, .navbtn.rightarrow, .navbtn.index, .navbtn.about, .bottomNavBar, .audio_credit').fadeOut();
         
         navActive = false;
         
