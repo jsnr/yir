@@ -249,7 +249,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
               //  $('.playbtn').show();
                 $('.slide.current .playbtn').click();
             }
-            $('.navbtn.leftarrow').show(); // JF zzzzzz
+            $('.navbtn.leftarrow').show(); // JF 
             $('.navbtn.rightarrow').show(); // JF
 
             if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Index', 'Close']);
@@ -2225,7 +2225,7 @@ if($("#overlay").is(":hidden")){
             if(!indexFullRes)loadIndexFullRes();
             $('.index_nav').fadeIn(300);
 
-            $('.navbtn.leftarrow').hide(); // JF zzzzzz
+            $('.navbtn.leftarrow').hide(); // JF 
             $('.navbtn.rightarrow').hide(); // JF
 
             if(videoLoading||slideTitleScreen){
