@@ -242,7 +242,7 @@
         $('.index_nav .close_btn').click(function(e){
             e.stopPropagation();
             $('.index_nav').fadeOut(300);
-            $('.navbtn.index').removeClass('open');
+            $('.navbtn.index').removeClass('open-index');
             
             if(slideTitleScreen){
                 $('.slide.current h2.title').show();
@@ -2216,7 +2216,7 @@ if($("#overlay").is(":hidden")){
         
         // Show/hide the index screen 
         $('.navbtn.index').click(function(e){
-            $(this).addClass('open');
+            $(this).addClass('open-index');
             if(!indexFullRes)loadIndexFullRes();
             $('.index_nav').fadeIn(300);
             

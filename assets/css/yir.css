@@ -373,9 +373,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     font-weight: 400;
     letter-spacing: 5px;
     margin: 40px auto 30px;
-    padding: 8px 9px 8px 9px !important;
+    padding: 8px 9px 8px 14px !important;
     text-transform: uppercase;
-    width: 115px;
     cursor: pointer;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
@@ -407,8 +406,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
     .no-touch .introtxt .explorebtn:hover, .ie10 .introtxt .explorebtn:hover, .no-touch .playbtn:hover, .ie10 .playbtn:hover {
         color: #fff;
-        background-color: rgba(0,0,0,1);
-        border: 2px solid #FFF;
+        background-color: rgba(0,0,0,.2);
+        border: 1px solid #FFF;
     }
     
     .introtxt .loading_msg {
@@ -701,8 +700,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         background-color: transparent;
         opacity: .85;
     }
-    .navbtn.index.open {
-    	display: none;
+    .navbtn.index.open-index {
+    	display: none !important;
     }        
     .index_nav .close_btn {
         position: absolute;
@@ -714,7 +713,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         background: url('../i/nav_buttons_sprite.png') no-repeat scroll 12px -234px #FFF;
         cursor: pointer;
         text-align: left;
-        text-indent: 7px;
+        text-indent: 10px;
         font-size: .70em;
         text-transform: uppercase;
         white-space: nowrap;
