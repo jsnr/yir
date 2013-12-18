@@ -80,19 +80,19 @@ em{
 }
 .siteLoader .head_text {
 	font-family: "Alright Sans LT Thin",'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 8vw;
+	font-size: 120px;
 	font-weight: 100;
 	word-spacing: -3px;
 	letter-spacing: 5px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	color: rgba(255,255,255,.4);
 	position: absolute;
 	top: 40%;
-	height: 100px;
-	width: 410px;
+	height: 180px;
+	width: 400px;
 	opacity: 0;
-	margin-top: -3px;
+	margin-top: -4px;
 }
 
 .siteLoader .head_text.light {
@@ -103,32 +103,28 @@ em{
     white-space: nowrap;
     overflow: hidden;
     padding: 37px 0 25px;
-    margin-left: 0;
+    margin-left: 55px;
     position: relative;
     left: 0;
     min-height: 100px;
     width: 100%;
+    white-space: nowrap;
 }
 
-.siteLoader .head_text .txt_holder.subtxt {
-    font-size: 1.75vw;
-    letter-spacing: 10px;
-    margin-top: 25px;
+.siteLoader .head_text .subtxt {
+    font-size: 29px;
+    font-weight: 300;
+    letter-spacing: 11px;
+    margin-top: 24px;
+    margin-left: 8px;
     word-spacing: -1px;
-    padding: 0 0 0 8px;
+    padding: 0 0 0 10px;
+    color: rgba(255,255,255, 1);
 }
 
 .siteLoader .head_text.light .txt_holder {
     width: 0;
     text-align: left;
-}
-
-.siteLoader .head_text.light .txt_holder.year_txt {
-    margin-left: 45px;
-}
-
-.siteLoader .head_text.light .txt_holder.subtxt {
-    margin-left: 17px;
 }
 
 .ipad_play {
@@ -296,7 +292,7 @@ font-size: 1.5vw;
 .introtxt h1, .slide h2.title {
     font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 120px;
-    font-size: 8vw;
+    /*font-size: 8vw;*/
     font-weight: 100;
     word-spacing: -3px;
     letter-spacing: 5px;
@@ -377,7 +373,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     font-weight: 400;
     letter-spacing: 5px;
     margin: 40px auto 30px;
-    padding: 8px 9px 8px 14px !important;
+    padding: 8px 9px 8px 9px !important;
     text-transform: uppercase;
     width: 115px;
     cursor: pointer;
