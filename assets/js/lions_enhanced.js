@@ -684,7 +684,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
         		    	$(".infobtn").fadeIn(500);
 
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
-                     $('.info-plus', slide).fadeOut(1).css({left: '-547px'});
+                     $('.info-plus', slide).fadeOut(1).css({left: '-545px'});
                      $('.info-headline', slide).animate({left: '-531px'}, 500);
 
                  } else {
