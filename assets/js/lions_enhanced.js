@@ -668,10 +668,8 @@
             
             // set up the infobox to close on click
             $('.buttons li.infobtn, .info-plus', slide).click(function(){
-                console.log('handleDetails - click info');
                  var galwrap = $(".galleryholder").css("top");
                  if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
-                     console.log('if');
                      $('.buttons li.infobtn').text('Details');
 
                      $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
@@ -687,7 +685,6 @@
                      $('.info-headline', slide).animate({left: '-531px'}, 500);
 
                  } else {
-                     console.log('else');
                      $('.buttons li.infobtn, .info-plus', slide).addClass('open');
 
                      $('.buttons li.infobtn').text('Close');                    
@@ -769,16 +766,6 @@ $("#allcomments").height(commenth);
             
             
         }
-        
-        
-        
-        
-     handleDetails = function(e){
-         
-     }   
-  
-        
-        
         
     
     // Just like it sounds - triggers the fullscreen
