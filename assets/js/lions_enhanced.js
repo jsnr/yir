@@ -707,7 +707,7 @@
                      $(".infobtn").fadeIn(500);
 
                      $('.buttons li.infobtn, .info-plus', slide).addClass('open');
-                     $('.info-plus').fadeOut(1).css({left: '-46px'});
+                     $('.info-plus', slide).fadeOut(1).css({left: '-46px'});
                      $('.info-headline', slide).animate({left: '-30px'}, 500);
                      
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
