@@ -1,8 +1,8 @@
 (function($) {
     // ONLY LOAD IF IS LARGER THAN IPHONE
         if(screen.width > 767){
-        //var url = 'http://www.nationalgeographic.com/assets/tophat_json/?callback=?';
-        var url = 'http://live.wpf.test.nationalgeographic.com/assets/tophat_json/?callback=?';
+        var url = 'http://www.nationalgeographic.com/assets/tophat_json/?callback=?';
+        //var url = 'http://live.wpf.test.nationalgeographic.com/assets/tophat_json/?callback=?';
         $.ajax({
             type: 'GET',
             url: url,
