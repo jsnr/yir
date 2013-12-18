@@ -2122,11 +2122,12 @@ if($("#overlay").is(":hidden")){
         $(window).mouseGesture();
         
         $(document).on('wheelUp', function(e){
+            console.log('wheelUp');
             var cType = $('.slide.current').attr('type');
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
                 if($(".commentpane").is(":hidden")){
-	                galleryChange('up');
+	                galleryChange('down');
 	            }
             }
         });
@@ -2136,7 +2137,7 @@ if($("#overlay").is(":hidden")){
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
                 if($(".commentpane").is(":hidden")){
-	                galleryChange('down');
+	                galleryChange('up');
                 }
             }
         });
@@ -2144,13 +2145,13 @@ if($("#overlay").is(":hidden")){
         $(document).on('wheelLeft', function(e){
             var cType = $('.slide.current').attr('type');
             isScrolling = true;
-            changeLeft();
+            changeRight();
         });
         
         $(document).on('wheelRight', function(e){
             var cType = $('.slide.current').attr('type');
             isScrolling = true;
-            changeRight();
+            changeLeft();
         });
         
         
