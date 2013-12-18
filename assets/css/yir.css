@@ -76,23 +76,23 @@ em{
     right: 0;
 }
 .uptop {
-	top: 32% !important;
+    top: 32% !important;
 }
 .siteLoader .head_text {
-	font-family: "Alright Sans LT Thin",'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 120px;
-	font-weight: 100;
-	word-spacing: -3px;
-	letter-spacing: 5px;
-	text-align: left;
-	text-transform: uppercase;
-	color: rgba(255,255,255,.4);
-	position: absolute;
-	top: 40%;
-	height: 180px;
-	width: 400px;
-	opacity: 0;
-	margin-top: -4px;
+    font-family: "Alright Sans LT Thin",'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 100;
+    word-spacing: -3px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.4);
+    position: absolute;
+    top: 40%;
+    height: 180px;
+    width: 400px;
+    opacity: 0;
+    margin-top: -4px;
 }
 
 .siteLoader .head_text.light {
@@ -283,13 +283,25 @@ font-size: 1.5vw;
     color: #FFF;
     z-index: 50;
 }
+.introtxt h1 {
+    font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 100;
+    word-spacing: -3px;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-indent: 8px;
+}
 
 .slide h2.title {
-	color:#FFF !important; /* CC update 2013-12-13 */
+    color:#FFF !important; /* CC update 2013-12-13 */
 }
 
 
-.introtxt h1, .slide h2.title {
+.slide h2.title {
     font-family: "Alright Sans LT", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 6em;
     /*font-size: 8vw;*/
@@ -337,8 +349,8 @@ font-size: 1.5vw;
     text-align: center;
 }
 .innerh1 span {
-	border-bottom: 1px solid #FFFFFF;
-	display: none;
+    border-bottom: 1px solid #FFFFFF;
+    display: none;
 }
 
 .slide h2.title {
@@ -428,7 +440,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
 
 .introtxt .quoteblock {
-    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Alright Sans LT Thin', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.85em;
     letter-spacing: 10px;
     word-spacing: 0px;
@@ -592,8 +604,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     left: 0;
 }
 .siteLoader .introtxt {
-	margin-top: 33px;
-	color: rgba(255, 255, 255, 0.4);
+    margin-top: 33px;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .bottomNavBar {
@@ -611,10 +623,10 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 .navbtn,
 .playbtn:hover,
 .gallerylabel {
-	-webkit-transition: background-color 1.2s ease-in-out;
-	   -moz-transition: background-color 1.2s ease-in-out;
-	     -o-transition: background-color 1.2s ease-in-out;
-	        transition: background-color 1.2s ease-in-out;
+    -webkit-transition: background-color 1.2s ease-in-out;
+       -moz-transition: background-color 1.2s ease-in-out;
+         -o-transition: background-color 1.2s ease-in-out;
+            transition: background-color 1.2s ease-in-out;
 }*/
 
 
@@ -702,7 +714,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         z-index: 20;
     }
     .navbtn.index.open-index {
-    	display: none !important;
+        display: none !important;
     }        
     .index_nav .close_btn {
         position: absolute;
@@ -878,16 +890,16 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         display: inline;
     }
     .slide .buttons li.infobtn {
-	    background: url("../i/index/2013/i.png") no-repeat scroll 12px 12px rgba(0, 0, 0, 0);
-	    border-left: 1px solid rgba(255, 255, 255, 0.15);
-	    height: 40px;
-	    line-height: 31px;
-	    padding: 6px 0 6px 20px;
-	    width: 105px;
-	    display: none !important;
+        background: url("../i/index/2013/i.png") no-repeat scroll 12px 12px rgba(0, 0, 0, 0);
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        height: 40px;
+        line-height: 31px;
+        padding: 6px 0 6px 20px;
+        width: 105px;
+        display: none !important;
     }
     .slide .buttons li.infobtn:hover {
-    	background-image: url(../i/index/2013/ik.png);
+        background-image: url(../i/index/2013/ik.png);
     }
     .no-touch .slide .buttons li.infobtn:hover, .ie10 .slide .buttons li.infobtn:hover {
         background-color: rgba(255,255,255,1);
@@ -946,40 +958,40 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         line-height: 31px;
     }
     .bottomNavBar li.mute {
-		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 9px -1135px rgba(0, 0, 0, 0.3);
-		height: 40px;
-		position: relative;
-		width: 40px;
+        background: url("../i/nav_buttons_sprite.png") no-repeat scroll 9px -1135px rgba(0, 0, 0, 0.3);
+        height: 40px;
+        position: relative;
+        width: 40px;
     }
     .bottomNavBar li.comments {
-	    background: url("../i/index/2013/icons/comment.png") no-repeat scroll 12px 15px;
-	    color: #FFFFFF;
-	    height: 40px;
-	    line-height: 43px;
-	    text-align: left;
-	    text-indent: 32px;
-	    width: 117px;
-	    display: none;
+        background: url("../i/index/2013/icons/comment.png") no-repeat scroll 12px 15px;
+        color: #FFFFFF;
+        height: 40px;
+        line-height: 43px;
+        text-align: left;
+        text-indent: 32px;
+        width: 117px;
+        display: none;
     }
     .bottomNavBar li.comments:hover {
-	    background: #FFF url("../i/index/2013/icons/comment-over.png") no-repeat scroll 12px 15px;
+        background: #FFF url("../i/index/2013/icons/comment-over.png") no-repeat scroll 12px 15px;
         color: #000;
         opacity: 1;
-	}
+    }
     .bottomNavBar li.comments.open {
         background: url('../i/nav_buttons_sprite.png') no-repeat scroll 9px -235px rgb(255, 255, 255) !important;
         color: #000;
         opacity: 1;
         border-right: 1px solid rgba(12, 24, 43, 0.3);
-	}
+    }
     .mejs-audio .closebtn {
-	    background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -235px rgba(0, 0, 0, 0);
-	    height: 40px;
-	    position: absolute;
-	    right: 0;
-	    width: 35px;
-	    z-index: 2000;
-	 }
+        background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -235px rgba(0, 0, 0, 0);
+        height: 40px;
+        position: absolute;
+        right: 0;
+        width: 35px;
+        z-index: 2000;
+     }
         .no-touch .bottomNavBar li.mute:hover, .ie10 .bottomNavBar li.mute:hover, .bottomNavBar li.mute.open {
             opacity: 1;
             background-position: 9px -1171px;
@@ -1006,8 +1018,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     .sharetop{
         margin: 0px auto;
     }
-    .sharetop p{    	
-		font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
+    .sharetop p{        
+        font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
         font-size: 1.43em;
         text-transform: uppercase;
         font-style: italic;
@@ -1026,14 +1038,14 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
             position: relative;
         }
     .shareheadline {
-		font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-size: 6em;
-		letter-spacing: 10px;
-		line-height: 1.3;
-		margin-top: 37px;
-		word-spacing: -1px;
-		font-weight: 100;
-		text-transform: uppercase;
+        font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 6em;
+        letter-spacing: 10px;
+        line-height: 1.3;
+        margin-top: 37px;
+        word-spacing: -1px;
+        font-weight: 100;
+        text-transform: uppercase;
     }
     
     
@@ -1054,7 +1066,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
                 transition: all 0.2s ease-in-out;
     }
     div.shareclose:hover {
-    	background-color: rgba(255,255,255,.2);
+        background-color: rgba(255,255,255,.2);
     }
     .services h6 {
         font-size: .85em;
@@ -1134,11 +1146,11 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         background-position: 9px -237px;
     }
     .bottomNavBar li.fullscreen {
-		width: 40px;
-		height: 40px;
-		background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -515px transparent;
-		margin-right: 0px;
-		border-right: 0px none;
+        width: 40px;
+        height: 40px;
+        background: url("../i/nav_buttons_sprite.png") no-repeat scroll 7px -515px transparent;
+        margin-right: 0px;
+        border-right: 0px none;
     }
     .no-touch .bottomNavBar li.fullscreen:hover, .ie10 .bottomNavBar li.fullscreen:hover {
         background-position: 7px -987px;
@@ -1181,66 +1193,66 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     
     
 .cpx {
-	background: #fff url(../../../year/assets/i/index/2013/icons/x.png) no-repeat center center !important;
-	opacity: 1 !important;
-	text-indent: -99999px;
+    background: #fff url(../../../year/assets/i/index/2013/icons/x.png) no-repeat center center !important;
+    opacity: 1 !important;
+    text-indent: -99999px;
 } 
 #allcomments {
-	width: 414px;
-	position: absolute;
-	right: -444px;
-	top: 120px;
-	z-index: 999999;
-	background: #F8F8F8;
-	overflow: hidden;
+    width: 414px;
+    position: absolute;
+    right: -444px;
+    top: 120px;
+    z-index: 999999;
+    background: #F8F8F8;
+    overflow: hidden;
     z-index: 20;
 } 
 #allcomments .collection {
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
 }
 
 #allcomments .collection.active {
     display: block;
  }
 #nav1 .adventure-comments {
-	top: 0;
+    top: 0;
 } 
 #nav2 .ancientworld-comments {
-	top: 0;
+    top: 0;
 } 
 #nav3 .animals-comments {
-	top: 0;
+    top: 0;
 } 
 #nav4 .cultures-comments {
-	top: 0;
+    top: 0;
 } 
 #nav5 .environment-comments {
-	top: 0;
+    top: 0;
 } 
 #nav6 .geopolitics-comments {
-	top: 0;
+    top: 0;
 } 
 #nav7 .photography-comments {
-	top: 0;
+    top: 0;
 } 
 #nav8 .science-comments {
-	top: 0;
+    top: 0;
 } 
 #nav9 .space-comments {
-	top: 0;
+    top: 0;
 } 
 #nav10 .technology-comments {
-	top: 0;
+    top: 0;
 } 
 #nav11 .travel-comments {
-	top: 0;
+    top: 0;
 } 
 #nav12 .yourfavorites-comments {
-	top: 0;
+    top: 0;
 } 
 .slide .commentpane {
     position: absolute;
@@ -1261,13 +1273,13 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         line-height: 1.1;
         margin: 0 70px 10px 30px;
 }
-	.slide .commentpane .cphere {
+    .slide .commentpane .cphere {
         color: #182e45;
         padding: 0 35px 0 30px;
         font-size: 1em;
         text-transform: uppercase;
         padding-bottom: 5px;
-	}    
+    }    
     .slide .commentpane .commentarea {
         overflow-y: auto;
         overflow-x: hidden;
@@ -1281,19 +1293,19 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
     .slide .commentpane .commentarea .userblock {
         color: #182e45;
-	    font-size: 1.2em;
-	    font-weight: bold;
-	    height: 25px;
-	    line-height: 28px;
-	    padding-left: 35px;
-	    position: relative;
+        font-size: 1.2em;
+        font-weight: bold;
+        height: 25px;
+        line-height: 28px;
+        padding-left: 35px;
+        position: relative;
     }
     .slide .commentpane .commentarea .userblock .medavatar {
-    	height: 25px;
-    	width: 25px;
-    	position: absolute;
-    	left: 0;
-    	top: 0;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        left: 0;
+        top: 0;
     }    
     .slide .commentpane .commentpane p, .slide .commentpane h2 {
         -moz-user-select: text;
@@ -1301,87 +1313,87 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         user-select: text;
     }
     .slide .commentpane textarea {
-    	width: 414px;
-    	height: 120px;
-    	padding: 15px;
-    	border: 0;
-    	background: #fff;
-    	resize: none;
-    	margin: 20px 0 15px;
+        width: 414px;
+        height: 120px;
+        padding: 15px;
+        border: 0;
+        background: #fff;
+        resize: none;
+        margin: 20px 0 15px;
     }
     .slide .commentpane .cpsorter {
-    	margin:  0 0 15px;
+        margin:  0 0 15px;
     }
     .slide .commentpane .cpsorter span {
-    	color: #a2a2a2;
-	    font-size: 1.2em;
-	    text-transform: uppercase;
-	    display: inline-block;
+        color: #a2a2a2;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        display: inline-block;
     }
     .slide .commentpane .cpsorter span.selected {
-    	color: #777;
+        color: #777;
     }
     .slide .commentpane .cpsorter span.cpdivider {
-    	border-right: 1px solid #777;
-    	height: 16px;
-	    margin: 0 10px;
-	    position: relative;
-	    top: 2px;
+        border-right: 1px solid #777;
+        height: 16px;
+        margin: 0 10px;
+        position: relative;
+        top: 2px;
     }
     .postit {
-    	color: #4d5057;
-	    font-size: 1.2em;
-	    text-transform: uppercase;
-	    text-align: right;
-	    font-style: italic;
-	    cursor: pointer;
+        color: #4d5057;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-align: right;
+        font-style: italic;
+        cursor: pointer;
     }
     .slide .commentpane .commentarea .showcomment {
         color: #182e45;
-	    padding-left: 80px;
-	    position: relative;
-	    margin-top: 40px;
-	    width: 414px;
+        padding-left: 80px;
+        position: relative;
+        margin-top: 40px;
+        width: 414px;
     }
     .slide .commentpane .commentarea .cpavatar {
-    	height: 50px;
-    	width: 50px;
-    	position: absolute;
-    	left: 0;
-    	top: 0;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
     }    
     .slide .commentpane .commentarea h4 {
-    	font-weight: bold;
-    	font-size: 1.4;
-    	padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 1.4;
+        padding-bottom: 5px;
     }
     .slide .commentpane .commentarea h4 span {
-    	color: #dbdbdb;
-    	font-size: .85em;
-    	float: right;
-    	font-weight: normal;
+        color: #dbdbdb;
+        font-size: .85em;
+        float: right;
+        font-weight: normal;
     }
     .slide .commentpane .commentarea .minutia {
-    	color: #2e2e2e;
-    	font-size: .75em;
-    	font-weight: bold;
+        color: #2e2e2e;
+        font-size: .75em;
+        font-weight: bold;
     }
     .slide .commentpane .commentarea p {
-    	margin-bottom: 1em;
+        margin-bottom: 1em;
     }
     .slide .commentpane .commentarea .minutia a,
     .slide .commentpane .commentarea .minutia span {
-    	color: #2e2e2e;
-    	display: inline-block;
-    	padding-right: 10px;
+        color: #2e2e2e;
+        display: inline-block;
+        padding-right: 10px;
     }
     .slide .commentpane .commentarea .minutia span {
-    	font-weight: normal;
-    	font-size: 1.25em;
+        font-weight: normal;
+        font-size: 1.25em;
     }
     .slide .commentpane .commentarea .minutia .miniavatar {
-    	height: 10px;
-    	width: 10px;
+        height: 10px;
+        width: 10px;
     }
         
     
@@ -1404,15 +1416,15 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
 
     .slide .slideinfo h2 {
-	    color: #fff;
-	    font-size: .8em;
-	    font-weight: 200;
-	    letter-spacing: 2px;
-	    line-height: 1.1;
-	    margin: 0 70px 10px 30px;
-	    padding-bottom: 5px;
-	    text-transform: uppercase;
-	    word-spacing: -1px;
+        color: #fff;
+        font-size: .8em;
+        font-weight: 200;
+        letter-spacing: 2px;
+        line-height: 1.1;
+        margin: 0 70px 10px 30px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        word-spacing: -1px;
 }
     
     .slide .slideinfo .infotext {
@@ -1477,36 +1489,36 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     margin-bottom: 0;
 }
 .info-plus {
-	width: 42px;
-	height: 42px;
-	position: absolute;
-	top: 57px;
-	left: -140px;
-	background-image: url(../i/index/2013/icons/plus.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	display: block;
-	overflow: hidden;
-	text-indent: 999999px;
-	-webkit-transition: all 0.3s ease-in-out;
-	   -moz-transition: all 0.3s ease-in-out;
-	     -o-transition: all 0.3s ease-in-out;
-	        transition: all 0.3s ease-in-out;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 57px;
+    left: -140px;
+    background-image: url(../i/index/2013/icons/plus.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    overflow: hidden;
+    text-indent: 999999px;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 }
 .info-plus:hover {
-	cursor: pointer;
-	opacity: .5;
+    cursor: pointer;
+    opacity: .5;
 }
 .info-plus.open {
-	background: url(../i/index/2013/icons/xk.png) no-repeat scroll center center rgb(255, 255, 255) !important;
-	-webkit-transition: all 0.3s ease-in-out;
-	   -moz-transition: all 0.3s ease-in-out;
-	     -o-transition: all 0.3s ease-in-out;
-	        transition: all 0.3s ease-in-out;
+    background: url(../i/index/2013/icons/xk.png) no-repeat scroll center center rgb(255, 255, 255) !important;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 }
 .open-plus.open:hover {
-	cursor: pointer;
-	opacity: .5;
+    cursor: pointer;
+    opacity: .5;
 }
 
 
@@ -1606,22 +1618,22 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav12 .leftarrow,
 #nav12 .slideinfo {
     background-color: rgba(53,103,104, .85);
-}		
-			
-			
-			
-			
-			    
+}       
+            
+            
+            
+            
+                
     .info-summary {
-		color: rgb(255, 255, 255);
-		font-size: 1.2em;
-		line-height: 1.5;
-		font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
-		letter-spacing: .02em;
-		width: 90%;
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
+        letter-spacing: .02em;
+        width: 90%;
     }  
     .info-link {
-    	background: url(../i/nav_buttons_sprite.png) no-repeat 89px -88px;
+        background: url(../i/nav_buttons_sprite.png) no-repeat 89px -88px;
         border: 1px solid rgb(255, 255, 255);
         color: rgb(255, 255, 255) !important;
         display: block;
@@ -1637,12 +1649,12 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         height: 40px;    
     }  
     .info-link:hover {
-    	background-color: rgba(0,0,0,.2);
+        background-color: rgba(0,0,0,.2);
     } 
     .info-credit {
-    	display: block;
-    	font-size: .7em;
-    	opacity: .7;
+        display: block;
+        font-size: .7em;
+        opacity: .7;
         font-family: 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         margin: .75em 0 2em;;
     } 
@@ -2135,26 +2147,26 @@ section#the-cause_ct, section#credits_ct, section#the-project_ct{
 
 
 #overlay {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: #000 /* url(../i/index/2013/x40.png) no-repeat right top */;
-	z-index: 9999;
-	display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000 /* url(../i/index/2013/x40.png) no-repeat right top */;
+    z-index: 9999;
+    display: none;
 }
 #overlay:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 #overlay div, #overlay a, #overlay object {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -150px 0 0 -125px;
-	width: 300px;
-	height: 250px;
-	display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -125px;
+    width: 300px;
+    height: 250px;
+    display: block;
 }
 
 
