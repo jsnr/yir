@@ -1087,7 +1087,10 @@ $("#allcomments").height(commenth);
         
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline").css("left","-30px");
-        }else{$(".info-headline").css("left","-531px");}
+        }else{
+        	$(".info-headline").css("left","-531px");
+        	$(".info-plus").css("left","-545px");
+        }
         
         //slide it 
         $('.slide.current .galleryholder .gi_wrapper').removeClass('current');
