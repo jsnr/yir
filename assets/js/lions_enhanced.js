@@ -249,7 +249,9 @@
               //  $('.playbtn').show();
                 $('.slide.current .playbtn').click();
             }
-            
+            $('.navbtn.leftarrow').show(); // JF zzzzzz
+            $('.navbtn.rightarrow').show(); // JF
+
             if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Index', 'Close']);
             
         });
@@ -2219,7 +2221,10 @@ if($("#overlay").is(":hidden")){
             $(this).addClass('open-index');
             if(!indexFullRes)loadIndexFullRes();
             $('.index_nav').fadeIn(300);
-            
+
+            $('.navbtn.leftarrow').hide(); // JF zzzzzz
+            $('.navbtn.rightarrow').hide(); // JF
+
             if(videoLoading||slideTitleScreen){
                 $('.slide.current h2.title').hide();
                 $('.slide.current .playbtn').hide();
