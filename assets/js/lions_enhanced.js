@@ -124,9 +124,8 @@
 		
 		
 		if(hchanges == 4){
-					
+			$("video").prop('muted', true); // JF	
 			$('#overlay').fadeIn(800, "easeInOutQuad");
-		
 		}
 		
 	})
@@ -141,7 +140,8 @@
     
     $(".navbtn").click(function(){
 	    $("#overlay").fadeOut(800, "easeInOutQuad");
-            $(".gallerylabel").delay(800).fadeOut();
+		$(".gallerylabel").delay(800).fadeOut();
+        $("video").prop('muted', false);  // JF 
     });
     
     	
