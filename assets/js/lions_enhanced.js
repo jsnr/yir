@@ -690,9 +690,17 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
                      $('.info-plus', slide).fadeOut(1).css({left: '-545px'});
                      
-                     $('.info-headline', slide).animate({left: '-531px'}, 500);
+            //         $('.info-headline', slide).animate({left: '-531px'}, 500);
                      
                      $('.info-headline', slide).removeClass("inpanel");
+                     
+			        if($(".curslide").text() == "1111111111111"){
+				        $(".info-headline").css("left","0");
+				        $(".info-plus").css("left","-143px");
+			        }else{
+			        	$(".info-plus").css("left","-545px");
+			        	$(".info-headline").css("left","-531px");
+			        }
 
                  } else {
                  
@@ -718,7 +726,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
                      $('.info-plus', slide).fadeOut(1).css({left: '-46px'});
                      
-                     $('.info-headline', slide).animate({left: '-30px'}, 500);
+                     $('.info-headline', slide).css('left','-30px');
                      
                      $('.info-headline', slide).addClass("inpanel");
                      
@@ -1096,14 +1104,18 @@ $("#allcomments").height(commenth);
         	'<p class="info-headline">'+element.data('info-headline') + '</p>' + 
         	'<p class="info-summary">'+element.data('info-summary') + '</p>'
         )
-        
         if($('.buttons li.infobtn').hasClass("open")){
-	        $(".info-headline").css("left","-30px");
+	        $(".info-headline").animate({left:"-30px"},500);
 	        $(".info-headline").addClass("inpanel");
         }else{
-        	$(".info-headline").css("left","-531px");
 	        $(".info-headline").removeClass("inpanel");
-        	$(".info-plus").css("left","-545px");
+	        if($(".curslide").text() == "1111111111111"){
+		        $(".info-headline").animate({left:"0"},500);
+		        $(".info-plus").animate({left:"-143px"},200);
+	        }else{
+	        	$(".info-plus").animate({left:"-545px"},200);
+	        	$(".info-headline").css("left","-531px");
+	        }
         }
         
         //slide it 
