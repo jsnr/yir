@@ -7,13 +7,13 @@
 
 
 .a {
-  font-family: "Alright Sans LT";
+  font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .ai {
-  font-family: "Alright Sans LT";
+  font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -290,12 +290,12 @@ font-size: 1.5vw;
 
 
 .introtxt h1, .slide h2.title {
-    font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 120px;
+    font-family: "Alright Sans LT", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 6em;
     /*font-size: 8vw;*/
     font-weight: 100;
-    word-spacing: -3px;
-    letter-spacing: 5px;
+    word-spacing: -1px;
+    letter-spacing: 10px;
 /*    -moz-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
     -webkit-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
     text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);*/
@@ -307,11 +307,11 @@ font-size: 1.5vw;
 }
 
 .introtxt .loadtxt {
-    font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 120px;
+    font-family: "Alright Sans LT", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 6em;
     font-weight: 100;
-    word-spacing: -3px;
-    letter-spacing: 5px;
+    word-spacing: -1px;
+    letter-spacing: 10px;
 /*    -moz-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
     -webkit-text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);
     text-shadow: 0 0 8px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.15);*/
@@ -323,7 +323,7 @@ font-size: 1.5vw;
 }
 .innerh1 {
     color: #FFFFFF;
-    font-family: "Alright Sans LT Thin",Helvetica,Arial,sans-serif;
+    font-family: 'Alright Sans LT Thin', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 100;
@@ -378,7 +378,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     cursor: pointer;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
-    font-family: 'Alright Sans LT', Helvetica, Arial, sans-serif;
+    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: rgba(0, 0, 0, 0);
     display: inline-block;
 }
@@ -412,7 +412,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     
     .introtxt .loading_msg {
         color: #FFF;
-        font-family: "minion-pro";
+        font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
         font-style: italic;
         font-size: 1.0em;
         font-weight: bold;
@@ -428,7 +428,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
 
 .introtxt .quoteblock {
-    font-family: "Alright Sans LT",Helvetica,Arial,sans-serif;
+    font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.85em;
     letter-spacing: 10px;
     word-spacing: 0px;
@@ -699,6 +699,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         line-height: 30px;
         background-color: transparent;
         opacity: .85;
+        z-index: 20;
     }
     .navbtn.index.open-index {
     	display: none !important;
@@ -720,7 +721,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         letter-spacing: 1px;
         z-index: 50;
         line-height: 30px;
-        font-family: "Alright Sans LT",Helvetica,Arial,sans-serif;
+        font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     
     .no-touch .navbtn.index:hover, .ie10 .navbtn.index:hover {
@@ -1002,28 +1003,36 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         border: none;
         overflow: hidden;
     }
-    
-    .sharetop {    	
-		font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
-		font-size: 1.43em;
-		text-transform: uppercase;
-		font-style: italic;
-		padding-bottom: 10px;
-		width: 320px;
-		margin: 0px auto 48px;
-		border-bottom: 1px solid rgb(255, 255, 255);
-		letter-spacing: .2em;
-		text-align: center;
+    .sharetop{
+        margin: 0px auto;
     }
+    .sharetop p{    	
+		font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
+        font-size: 1.43em;
+        text-transform: uppercase;
+        font-style: italic;
+        padding-bottom: 10px;
+        margin: 0px auto;
+        letter-spacing: .18em;
+        text-align: center;
+        display: inline-block;
+    }
+        .sharetop-border {
+            width: 296px;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            margin: 0 auto;
+            text-align: center;
+            left: -5px;
+            position: relative;
+        }
     .shareheadline {
-		font-family: "Alright Sans LT",Helvetica,Arial,sans-serif;
+		font-family: 'Alright Sans LT', 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-size: 6em;
 		letter-spacing: 10px;
 		line-height: 1.3;
 		margin-top: 37px;
 		word-spacing: -1px;
 		font-weight: 100;
-		text-indent: 8px;
 		text-transform: uppercase;
     }
     
@@ -1034,9 +1043,10 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         width: 35px;
         height: 35px;
         position: absolute;
-        margin: 0 0 -17px;
+        margin: 0 auto;
         color: #FFF;
-        right: 50%;
+        right: 0;
+        left: 0;
         top: 18%;
         -webkit-transition: all 0.2s ease-in-out;
            -moz-transition: all 0.2s ease-in-out;
@@ -1058,7 +1068,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         position: relative;
     }
     .services .introtxt.active {
-        margin-top: -25px;
+        margin-top: -40px;
     }
     .addthis_toolbox.addthis_default_style {
         margin: 50px auto;
@@ -2092,7 +2102,7 @@ section#the-cause_ct, section#credits_ct, section#the-project_ct{
 }
 #phoneContent h2 {
     font-size: 1.1em;
-    font-family: "Minion Pro", "minion-pro", Times, 'Times New Roman', serif;
+    font-family: 'Minion W08', 'Minion Pro', Minion, Times, 'Times New Roman', serif;
     font-weight: normal;
     word-spacing: -1px;
     line-height: 1.1;
