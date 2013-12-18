@@ -98,8 +98,8 @@
 	    bodyid();
 		showCommentStream(window.location.hash);
     });
-	
-	$(".info-headline").append( "<span class='info-plus'></span>" );
+    
+    $(".caption").before( "<div class='info-plus'></div>" );
 
     
     
@@ -668,49 +668,51 @@
             
             // set up the infobox to close on click
             $('.buttons li.infobtn, .info-plus', slide).click(function(){
-                var galwrap = $(".galleryholder").css("top");
-                if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
-                   
-                    $('.buttons li.infobtn').text('Details');
-                   
-                    $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
-                   
-                    var newPos = -$('.slideinfo', slide).width();
-                   
-                    $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); });                   
-			    	
-			    	$(".infobtn").fadeIn(500);
-                    
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
-	                
-	                $('.info-headline', slide).animate({left: '-531px'}, 500);
-                    
-                } else {
-                    $('.buttons li.infobtn, .info-plus', slide).addClass('open');
-                   
-                    $('.buttons li.infobtn').text('Close');                    
-                   
-                    $('.buttons li.comments', slide).removeClass('open');                    
-                   
-                    $('.buttons li.comments', slide).removeClass('cpx');                    
-                   
-                    $('.commentpane', slide).animate({'right': '-501px'}, 500, function(){ $('.commentpane', slide).hide(); });
-                   
-                    $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
-                   
-                    $('.slideinfo', slide).show();
-                   
-                    $('.slideinfo', slide).animate({'right': '0'}, 500);                   
-                   
-                    $(".infobtn").fadeIn(500);
-                   
-                    $('.buttons li.infobtn, .info-plus', slide).addClass('open');
-                   
-                    $('.info-headline', slide).animate({left: '-30px'}, 500);
-                   
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
-                }
-            });
+                console.log('handleDetails - click info');
+                 var galwrap = $(".galleryholder").css("top");
+                 if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
+                     console.log('if');
+                     $('.buttons li.infobtn').text('Details');
+
+                     $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
+
+                     var newPos = -$('.slideinfo', slide).width();
+
+                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); $('.info-plus').fadeIn(200); });                   
+
+        		    	$(".infobtn").fadeIn(500);
+
+                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
+                     $('.info-plus', slide).fadeOut(1).css({left: '-547px'});
+                     $('.info-headline', slide).animate({left: '-531px'}, 500);
+
+                 } else {
+                     console.log('else');
+                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+
+                     $('.buttons li.infobtn').text('Close');                    
+
+                     $('.buttons li.comments', slide).removeClass('open');                    
+
+                     $('.buttons li.comments', slide).removeClass('cpx');                    
+
+                     $('.commentpane', slide).animate({'right': '-501px'}, 500, function(){ $('.commentpane', slide).hide(); });
+
+                     $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
+
+                     $('.slideinfo', slide).show();
+
+                     $('.slideinfo', slide).animate({'right': '0'}, 500, function(){ $('.info-plus').fadeIn(200); });                   
+
+                     $(".infobtn").fadeIn(500);
+
+                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+                     $('.info-plus').fadeOut(1).css({left: '-46px'});
+                     $('.info-headline', slide).animate({left: '-30px'}, 500);
+                     
+                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
+                 }
+                });
 
 // ////////////////////  END DETAIL PANE  //////////////////// //              
             
@@ -771,7 +773,9 @@ $("#allcomments").height(commenth);
         
         
         
-        
+     handleDetails = function(e){
+         
+     }   
   
         
         
@@ -2128,7 +2132,6 @@ if($("#overlay").is(":hidden")){
         $(window).mouseGesture();
         
         $(document).on('wheelUp', function(e){
-            console.log('wheelUp');
             var cType = $('.slide.current').attr('type');
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
