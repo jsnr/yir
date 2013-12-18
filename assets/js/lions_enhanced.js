@@ -1099,8 +1099,10 @@ $("#allcomments").height(commenth);
         
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline").css("left","-30px");
+	        $(".info-headline").addClass("inpanel");
         }else{
         	$(".info-headline").css("left","-531px");
+	        $(".info-headline").removeClass("inpanel");
         	$(".info-plus").css("left","-545px");
         }
         
