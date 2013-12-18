@@ -1809,8 +1809,8 @@ if ($(".gallerylabel").length) {
             $('#audioplayer').append('<source src="./assets/YIR.ogg" type="audio/ogg" /><source src="./assets/YIR.mp3" type="audio/mpeg" />');
             audioplayer = new MediaElementPlayer('#audioplayer', {});
         });
-        $(".quoteblock").delay(1300).fadeIn("slow");
-        $(".explorebtn").delay(2400).fadeIn("slow");
+        // $(".quoteblock").delay(1300).fadeIn("slow");
+        $(".explorebtn").delay(2000).fadeIn("slow");
         
         if(isDeepLink){
             $('.explorebtn').click();

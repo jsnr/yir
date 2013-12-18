@@ -1496,8 +1496,8 @@
         $('.preloader').hide();
         
         $("#entry .bottomNavBar").delay(3200).animate({ bottom:'+=35px' },"slow");
-        $(".quoteblock").delay(1300).fadeIn("slow");
-        $(".explorebtn").delay(2400).fadeIn("slow");
+        // $(".quoteblock").delay(1300).fadeIn("slow");
+        $(".explorebtn").delay(2000).fadeIn("slow");
         
         if(isDeepLink){
             $('.explorebtn').click();
