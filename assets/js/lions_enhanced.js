@@ -1022,7 +1022,7 @@ $("#allcomments").height(commenth);
     // Change the gallery slide up or down
     galleryChange = function(dir){
     
-   // 	$('.infobtn').fadeIn(500);
+    	$('.bottomNavBar li.comments').fadeIn(500);
         
         if($('.navbtn.about').hasClass('open'))return; // JF fix
 
