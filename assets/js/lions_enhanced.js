@@ -100,6 +100,7 @@
     });
 	
 	$(".info-headline").append( "<span class='info-plus'></span>" );
+
     
     
     
@@ -1084,10 +1085,15 @@ $("#allcomments").height(commenth);
             
         $('.slide.current').data('cCurrent',cCurrent);
         $('.slide.current .paginate .curslide').text(cCurrent);
+
         $('.slide.current .caption').html(
         	'<p class="info-headline">'+element.data('info-headline') + '</p>' + 
         	'<p class="info-summary">'+element.data('info-summary') + '</p>'
         )
+        
+        if($('.buttons li.infobtn').hasClass("open")){
+	        $(".info-headline").css("left","-30px");
+        }else{$(".info-headline").css("right","-531px");}
         
         //slide it 
         $('.slide.current .galleryholder .gi_wrapper').removeClass('current');
