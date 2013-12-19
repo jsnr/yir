@@ -1060,6 +1060,7 @@ $("#allcomments").height(commenth);
         var cCurrent = $('.slide.current').data('cCurrent');
         
         //$('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
+		 $('.slide.current h2.title').removeClass('active');
         
         var cType = $('.slide.current').attr('type');
         if(cType != "gallery"&&cType != "combo")return;
@@ -1511,6 +1512,7 @@ if ($(".gallerylabel").length) {
         
         if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
             //$('.slide.current .gallerylabel').css('bottom', '-75px');
+		
         }
         // TITLE FADE AND TRANSITION
         
