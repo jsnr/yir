@@ -1883,7 +1883,11 @@ if ($(".gallerylabel").length) {
             $('.siteLoader').delay(1000).fadeOut(350);
         }else {
             //$('#entry bgvideo')[0].play();
-           	$('#introvid')[0].play(); // JF fix
+            
+        	try{ 
+           	$('#introvid')[0].play(); // JF fix 
+        	} catch (err) {}; // CC try-catch for IE9
+        	
             $('.siteLoader').fadeOut(350);
         }
     });
