@@ -1062,6 +1062,8 @@ $("#allcomments").height(commenth);
     
     // Change the gallery slide up or down
     galleryChange = function(dir){
+				
+        $('.index_nav .close_btn').click();
     
     	$('.bottomNavBar li.comments').fadeIn(500);
         
@@ -1332,6 +1334,8 @@ if ($(".gallerylabel").length) {
     
 		$(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
+				
+        $('.index_nav .close_btn').click();
     
     	$(".infobtn").hide();
         
@@ -1391,6 +1395,9 @@ if ($(".gallerylabel").length) {
     changeRight = function(){
 		$(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
+		
+		
+        $('.index_nav .close_btn').click();
 		
     	$(".infobtn").hide();
     
