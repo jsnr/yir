@@ -106,6 +106,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
     });
     
     $(".caption").before( "<div class='info-plus'></div>" );
+    $(".caption").before( "<span class='headover'></span>" );
 
     
     
@@ -680,7 +681,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             $('.slideinfo .infotext', slide).css('height', Math.round($('.slideinfo', slide).height() - 300)+'px');
             
             // set up the infobox to close on click
-            $('.buttons li.infobtn, .info-plus', slide).click(function(){
+            $('.headover, .info-plus', slide).click(function(){
             
                  var galwrap = $(".galleryholder").css("top");
                  
@@ -705,11 +706,11 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      $('.info-headline', slide).removeClass("inpanel");
                      
 			        if($(".curslide").text() == "1111111111111"){
-				        $(".info-headline").css("left","0");
+				        $(".info-headline, .headover").css("left","0");
 				        $(".info-plus").css("left","-93px");
 			        }else{
 			        	$(".info-plus").css("left","-545px");
-			        	$(".info-headline").css("left","-531px");
+			        	$(".info-headline, .headover").css("left","-531px");
 			        }
 
                  } else {
@@ -736,7 +737,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
                      $('.info-plus', slide).fadeOut(1).css({left: '-46px'});
                      
-                     $('.info-headline', slide).css('left','-30px');
+                     $('.info-headline, .headover', slide).css('left','-30px');
                      
                      $('.info-headline', slide).addClass("inpanel");
                      
@@ -744,7 +745,9 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                  }
                 });
 
-// ////////////////////  END DETAIL PANE  //////////////////// //              
+// ////////////////////  END DETAIL PANE  //////////////////// //   
+
+             
             
 // ////////////////////  COMMENT PANE  //////////////////// //
 
@@ -1120,19 +1123,27 @@ $("#allcomments").height(commenth);
 
         	//'<p class="info-summary">'+element.data('info-summary') + '</p>' // GOOD
         )
+        
+        
+        // FLOATING HEADLINE BEHAVIOR
+        
         if($('.buttons li.infobtn').hasClass("open")){
-	        $(".info-headline").animate({left:"-30px"},500);
+	        $(".info-headline, .headover").animate({left:"-30px"},500);
 	        $(".info-headline").addClass("inpanel");
         }else{
-	        $(".info-headline").removeClass("inpanel");
+	        $(".info-headline, .headover").removeClass("inpanel");
 	        if($(".curslide").text() == "1111111111111"){
-		        $(".info-headline").animate({left:"0"},500);
+		        $(".info-headline, .headover").animate({left:"0"},500);
 		        $(".info-plus").animate({left:"-143px"},200);
 	        }else{
 	        	$(".info-plus").animate({left:"-545px"},200);
-	        	$(".info-headline").css("left","-531px");
+	        	$(".info-headline, .headover").css("left","-531px");
 	        }
         }
+        
+
+
+
         
         //slide it 
         $('.slide.current .galleryholder .gi_wrapper').removeClass('current');
