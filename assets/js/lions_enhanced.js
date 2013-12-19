@@ -702,11 +702,16 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             //         $('.info-headline', slide).animate({left: '-531px'}, 500);
                      
                      
-					 $(".info-headline, .headover").animate({right:"-501px"},500);
-                     
-                     $('.info-plus', slide).animate({right: '500px'},200);
 					
 					 $(".info-headline").removeClass("inpanel");
+					 
+					 if($(".curslide").text() == "1111111111111"){
+							 $(".info-headline, .headover").animate({right:"-501px"},500);                     
+		                     $('.info-plus', slide).animate({right: '530px'},500);
+				        }else{
+	        	$(".info-plus").animate({right:"953px"},500);
+	        	$(".info-headline, .headover").animate({right:"530px"},500);
+				        }
 
         
 
@@ -738,10 +743,10 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
 				        if($(".curslide").text() == "1111111111111"){
 					        $(".info-headline, .headover").animate({right:"0"},500);
-					        $(".info-plus").animate({right:"454px"},200);
+					        $(".info-plus").animate({right:"454px"},500);
 				        }else{
-				        	$(".info-plus").animate({right:"454px"},200);
-				        	$(".info-headline, .headover").css("right","30px");
+				        	$(".info-plus").animate({right:"454px"},500);
+				        	$(".info-headline, .headover").animate({right:"30px"},500);
 				        }
                      
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
@@ -1140,8 +1145,8 @@ $("#allcomments").height(commenth);
 		        $(".info-headline, .headover").animate({right:"0"},500);
 		        $(".info-plus").animate({right:"500px"},200);
 	        }else{
-	        	$(".info-plus").animate({right:"500px"},200);
-	        	$(".info-headline, .headover").css("right","-501px");
+	        	$(".info-plus").animate({right:"953px"},200);
+	        	$(".info-headline, .headover").css("right","530px");
 	        }
         }
         
@@ -1324,6 +1329,10 @@ if ($(".gallerylabel").length) {
 	
     // Go to the bucket on the left
     changeLeft = function(){
+    
+		$(".info-headline, .headover").animate({right:"0"},500);
+		$(".info-plus").animate({right:"500px"},200);
+    
     	$(".infobtn").hide();
         
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
@@ -1380,6 +1389,9 @@ if ($(".gallerylabel").length) {
     
     // Go to the bucket on the right
     changeRight = function(){
+		$(".info-headline, .headover").animate({right:"0"},500);
+		$(".info-plus").animate({right:"500px"},200);
+		
     	$(".infobtn").hide();
     
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
