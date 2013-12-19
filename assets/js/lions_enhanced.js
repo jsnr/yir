@@ -702,7 +702,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             //         $('.info-headline', slide).animate({left: '-531px'}, 500);
                      
                      
-					 $(".info-headline, .headover").animate({right:"-501"},500);
+					 $(".info-headline, .headover").animate({right:"-501px"},500);
                      
                      $('.info-plus', slide).animate({right: '500px'},200);
 					
@@ -740,8 +740,8 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 					        $(".info-headline, .headover").animate({right:"0"},500);
 					        $(".info-plus").animate({right:"454px"},200);
 				        }else{
-				        	$(".info-plus").animate({right:"923px"},200);
-				        	$(".info-headline, .headover").css("right","500px");
+				        	$(".info-plus").animate({right:"454px"},200);
+				        	$(".info-headline, .headover").css("right","30px");
 				        }
                      
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
@@ -1131,16 +1131,17 @@ $("#allcomments").height(commenth);
         // FLOATING HEADLINE BEHAVIOR
         
         if($('.buttons li.infobtn').hasClass("open")){
-	        $(".info-headline, .headover").animate({right:"0"},500);
+	        $(".info-headline, .headover").css("right","30px");
+	        $('.info-plus').animate({right: '454px'},200);
 	        $(".info-headline").addClass("inpanel");
         }else{
 	        $(".info-headline, .headover").removeClass("inpanel");
 	        if($(".curslide").text() == "1111111111111"){
-		        $(".info-headline, .headover").animate({right:"500px"},500);
-		        $(".info-plus").animate({right:"44px"},200);
+		        $(".info-headline, .headover").animate({right:"0"},500);
+		        $(".info-plus").animate({right:"500px"},200);
 	        }else{
-	        	$(".info-plus").animate({right:"923px"},200);
-	        	$(".info-headline, .headover").css("right","500px");
+	        	$(".info-plus").animate({right:"500px"},200);
+	        	$(".info-headline, .headover").css("right","-501px");
 	        }
         }
         
