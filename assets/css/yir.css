@@ -277,12 +277,15 @@ font-size: 1.5vw;
 .introtxt { 
     bottom: 0;
     height: 100%;
-    top: 0;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: #FFF;
     z-index: 50;
     position: relative;
+}
+.services .introtxt { 
+    top: 0;
 }
 .introtxt h1 {
     font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
