@@ -9,7 +9,7 @@
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
 
 $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-review-2013");
-$(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'}); // JF
+
            	
 	function showCommentStream(hash) {
         // Remove '#/' or '#.' from the URL hash
@@ -672,8 +672,11 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
             
             // set up the infobox to close on click
             $('.buttons li.infobtn, .info-plus', slide).click(function(){
+            
                  var galwrap = $(".galleryholder").css("top");
+                 
                  if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
+                 
                      $('.buttons li.infobtn').text('Details');
 
                      $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
@@ -685,10 +688,23 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
         		    	$(".infobtn").fadeIn(500);
 
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
+                     
                      $('.info-plus', slide).fadeOut(1).css({left: '-545px'});
-                     $('.info-headline', slide).animate({left: '-531px'}, 500);
+                     
+            //         $('.info-headline', slide).animate({left: '-531px'}, 500);
+                     
+                     $('.info-headline', slide).removeClass("inpanel");
+                     
+			        if($(".curslide").text() == "1111111111111"){
+				        $(".info-headline").css("left","0");
+				        $(".info-plus").css("left","-143px");
+			        }else{
+			        	$(".info-plus").css("left","-545px");
+			        	$(".info-headline").css("left","-531px");
+			        }
 
                  } else {
+                 
                      $('.buttons li.infobtn, .info-plus', slide).addClass('open');
 
                      $('.buttons li.infobtn').text('Close');                    
@@ -708,8 +724,12 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
                      $(".infobtn").fadeIn(500);
 
                      $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+                     
                      $('.info-plus', slide).fadeOut(1).css({left: '-46px'});
-                     $('.info-headline', slide).animate({left: '-30px'}, 500);
+                     
+                     $('.info-headline', slide).css('left','-30px');
+                     
+                     $('.info-headline', slide).addClass("inpanel");
                      
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                  }
@@ -1085,12 +1105,18 @@ $("#allcomments").height(commenth);
         	'<p class="info-headline">'+element.data('info-headline') + '</p>' + 
         	'<p class="info-summary">'+element.data('info-summary') + '</p>'
         )
-        
         if($('.buttons li.infobtn').hasClass("open")){
-	        $(".info-headline").css("left","-30px");
+	        $(".info-headline").animate({left:"-30px"},500);
+	        $(".info-headline").addClass("inpanel");
         }else{
-        	$(".info-headline").css("left","-531px");
-        	$(".info-plus").css("left","-545px");
+	        $(".info-headline").removeClass("inpanel");
+	        if($(".curslide").text() == "1111111111111"){
+		        $(".info-headline").animate({left:"0"},500);
+		        $(".info-plus").animate({left:"-143px"},200);
+	        }else{
+	        	$(".info-plus").animate({left:"-545px"},200);
+	        	$(".info-headline").css("left","-531px");
+	        }
         }
         
         //slide it 
@@ -1174,7 +1200,7 @@ $("#allcomments").height(commenth);
     }
 
 
-        var desiredColor="rgb (0,0,0 )";
+        var desiredColor="";
 
    changenav = function(){            
         // instead of changing ID, let's just use jquery animate on the background-color.
@@ -1245,9 +1271,9 @@ $(".bottomNavBar").css({opacity: 1});
  $(".bottomNavBar .slide.previous, .bottomNavBar .slide.next").css({backgroundColor: desiredColor});
  $(".bottomNavBar").stop().animate({backgroundColor: desiredColor},1000);
  
-$(".rightarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
+//$(".rightarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
  
-$(".leftarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
+//$(".leftarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
  
 if ($(".slideinfo").length) {
 $(".slideinfo").stop().animate({backgroundColor: desiredColor},1000);
@@ -1796,8 +1822,8 @@ if ($(".gallerylabel").length) {
             $('#audioplayer').append('<source src="./assets/YIR.ogg" type="audio/ogg" /><source src="./assets/YIR.mp3" type="audio/mpeg" />');
             audioplayer = new MediaElementPlayer('#audioplayer', {});
         });
-        $(".quoteblock").delay(1300).fadeIn("slow");
-        $(".explorebtn").delay(2400).fadeIn("slow");
+        // $(".quoteblock").delay(1300).fadeIn("slow");
+        $(".explorebtn").delay(2000).fadeIn("slow");
         
         if(isDeepLink){
             $('.explorebtn').click();
@@ -1947,13 +1973,13 @@ if ($(".gallerylabel").length) {
         });
         
         // set the infobox
-        $('.slideinfo', slide).css('height',$(window).height() - $('.global-header').height());
+        $('.slideinfo', slide).css('height',$(window).height() - $('.global-header').height() - 40);
         $('.slideinfo .infotext', slide).css('height', Math.round($(this).parent().height() - 300)+'px');
         $('#about-text').height($('#dragarea').height()-73);
         
         
         // set the comment pane
-        $('.commentpane', slide).css('height',$(window).height() - $('.global-header').height());
+        $('.commentpane', slide).css('height',$(window).height() - $('.global-header').height() - 40);
         $('.commentpane .commentarea', slide).css('height', Math.round($(this).parent().height() - 110)+'px');
         
     }
@@ -2307,4 +2333,3 @@ if($("#overlay").is(":hidden")){
     
     
 }).call(this);
-
