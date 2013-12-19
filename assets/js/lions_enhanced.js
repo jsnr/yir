@@ -147,7 +147,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
     
     $(".navbtn").click(function(){
 	    $("#overlay").fadeOut(800, "easeInOutQuad");
-		$(".gallerylabel").delay(800).fadeOut();
+		//$(".gallerylabel").delay(800).fadeOut();
         $("video").prop('muted', false);  // JF 
     });
     
@@ -161,7 +161,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 		$(document).keyup(function(e) {
 			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
 				$("#overlay").fadeOut(800, "easeInOutQuad");
-	            $(".gallerylabel").delay(800).fadeOut();
+	            //$(".gallerylabel").delay(800).fadeOut();
 			}   
 		});
 		 
@@ -1059,7 +1059,7 @@ $("#allcomments").height(commenth);
         var isUp = (dir == "up");
         var cCurrent = $('.slide.current').data('cCurrent');
         
-        $('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
+        //$('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
         
         var cType = $('.slide.current').attr('type');
         if(cType != "gallery"&&cType != "combo")return;
@@ -1294,7 +1294,7 @@ $(".slideinfo").stop().animate({backgroundColor: desiredColor},1000);
 }
 
 if ($(".gallerylabel").length) {
-	$(".gallerylabel").stop().animate({backgroundColor: desiredColor},1000);
+	$(".gallerylabel").stop().css({backgroundColor: desiredColor},1000);
 }
 
 
@@ -1510,7 +1510,7 @@ if ($(".gallerylabel").length) {
         $('.slide.current .bottomNavBar').css('bottom','0');
         
         if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-            $('.slide.current .gallerylabel').css('bottom', '-75px');
+            //$('.slide.current .gallerylabel').css('bottom', '-75px');
         }
         // TITLE FADE AND TRANSITION
         
@@ -1801,7 +1801,7 @@ if ($(".gallerylabel").length) {
         $('.slide.current .bottomNavBar').delay(500).animate({ bottom: 0 },"slow", function(){ 
             $('.navbtn.about').fadeIn(200);
             if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-                $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
+                //$('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
             }
         });
         
@@ -1813,7 +1813,7 @@ if ($(".gallerylabel").length) {
             $('.navbtn.about').fadeIn(200);
             $('.slide.current .commentary').click()
             if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-                $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
+               // $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
             }
         });
     }
