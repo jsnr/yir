@@ -275,6 +275,7 @@ font-size: 1.5vw;
     }
 
 .introtxt { 
+<<<<<<< HEAD
     position: relative;
     top: 40%;
     width: 100%;
@@ -283,6 +284,14 @@ font-size: 1.5vw;
     z-index: 50;
     bottom: 0;
     height: 100%;
+=======
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      color: #FFF;
+      z-index: 50;
+>>>>>>> 56a25230de2061b6f0e44a4337f07873acc5385e
 }
 .introtxt h1 {
     font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -676,11 +685,12 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         right: 0;
         bottom: 0px;
         text-align: center;
-        background-color: rgba(0,0,0, .85);
+        /*background-color: rgba(0,0,0, .85);*/
         color: rgba(255, 255, 255, .6);
         font-size: .80em;
         height: 27px;
         padding: 2px 0 5px 0;
+		margin-left:25px;
     }
     
     .touch .gallerylabel {
@@ -1241,6 +1251,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     background: #F8F8F8;
     overflow: hidden;
     z-index: 20;
+	height:60%;
 } 
 #allcomments .collection {
     display: none;
@@ -1566,6 +1577,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav1 .info-headline,
 #nav1 .info-plus,
 #nav1 .bottomNavBar,
+#nav1 .gallerylabel,
 #nav1 .slideinfo {
     background-color: rgba(17,33,58, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1576,6 +1588,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav2 .info-headline,
 #nav2 .info-plus,
 #nav2 .bottomNavBar,
+#nav2 .gallerylabel,
 #nav2 .slideinfo {
     background-color: rgba(45,52,98, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1586,6 +1599,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav3 .info-headline,
 #nav3 .info-plus,
 #nav3 .bottomNavBar,
+#nav3 .gallerylabel,
 #nav3 .slideinfo {
     background-color: rgba(72,55,89, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1596,6 +1610,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav4 .info-headline,
 #nav4 .info-plus,
 #nav4 .bottomNavBar,
+#nav4 .gallerylabel,
 #nav4 .slideinfo {
     background-color: rgba(67,49,91, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1606,6 +1621,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav5 .info-headline,
 #nav5 .info-plus,
 #nav5 .bottomNavBar,
+#nav5 .gallerylabel,
 #nav5 .slideinfo {
     background-color: rgba(89,47,87, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1615,6 +1631,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
 #nav6 .info-headline,
 #nav6 .info-plus,
+#nav6 .gallerylabel,
 #nav6 .bottomNavBar,
 #nav6 .slideinfo {
     background-color: rgba(169,69,54, .85);
@@ -1626,6 +1643,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav7 .info-headline,
 #nav7 .info-plus,
 #nav7 .bottomNavBar,
+#nav7 .gallerylabel,
 #nav7 .slideinfo {
     background-color: rgba(176,92,45, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1636,6 +1654,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav8 .info-headline,
 #nav8 .info-plus,
 #nav8 .bottomNavBar,
+#nav8 .gallerylabel,
 #nav8 .slideinfo {
     background-color: rgba(181,107,32, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1646,6 +1665,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav9 .info-headline,
 #nav9 .info-plus,
 #nav9 .bottomNavBar,
+#nav9 .gallerylabel,
 #nav9 .slideinfo {
     background-color: rgba(195,149,12, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1656,6 +1676,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav10 .info-headline,
 #nav10 .info-plus,
 #nav10 .bottomNavBar,
+#nav10 .gallerylabel,
 #nav10 .slideinfo {
     background-color: rgba(150,133,43, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1666,6 +1687,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav11 .info-headline,
 #nav11 .info-plus,
 #nav11 .bottomNavBar,
+#nav11 .gallerylabel,
 #nav11 .slideinfo {
     background-color: rgba(92,112,85, .85);
     -webkit-transition: background-color .3s ease-in-out;
@@ -1676,6 +1698,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 #nav12 .info-headline,
 #nav12 .info-plus,
 #nav12 .bottomNavBar,
+#nav12 .gallerylabel,
 #nav12 .slideinfo {
     background-color: rgba(53,103,104, .85);
     -webkit-transition: background-color .3s ease-in-out;

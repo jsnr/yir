@@ -9,7 +9,10 @@
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
 
 $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-review-2013");
-$(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'}); // JF
+//$(".caption").css({'overflow-y':'auto', 'overflow-x':'visible', 'height': '90%'}); // JF
+//$(".info-summary").css({'overflow-y':'auto', 'height': '25%'}); // JF
+//$(".caption").css({'height': '85%'}); // JF
+
 
            	
 	function showCommentStream(hash) {
@@ -144,7 +147,7 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
     
     $(".navbtn").click(function(){
 	    $("#overlay").fadeOut(800, "easeInOutQuad");
-		$(".gallerylabel").delay(800).fadeOut();
+		//$(".gallerylabel").delay(800).fadeOut();
         $("video").prop('muted', false);  // JF 
     });
     
@@ -158,7 +161,7 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
 		$(document).keyup(function(e) {
 			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
 				$("#overlay").fadeOut(800, "easeInOutQuad");
-	            $(".gallerylabel").delay(800).fadeOut();
+	            //$(".gallerylabel").delay(800).fadeOut();
 			}   
 		});
 		 
@@ -622,7 +625,12 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
                     if(indx == 0){
                         $('.caption',txtContent).append(
                         	'<p class="info-headline">'+ giWrap.data('info-headline') + '</p>' + 
-                        	'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' 
+
+                        	//$(".caption").css({'overflow-y':'auto', 'overflow-x':'visible', 'height': '90%'}); // JF
+
+        					'<div style="overflow:auto; height:35em">' + // JF zzz
+                        		'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' +
+                        	'</div>'
                         )
                     }
                     
@@ -1051,7 +1059,8 @@ $("#allcomments").height(commenth);
         var isUp = (dir == "up");
         var cCurrent = $('.slide.current').data('cCurrent');
         
-        $('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
+        //$('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
+		 $('.slide.current h2.title').removeClass('active');
         
         var cType = $('.slide.current').attr('type');
         if(cType != "gallery"&&cType != "combo")return;
@@ -1104,7 +1113,12 @@ $("#allcomments").height(commenth);
 
         $('.slide.current .caption').html(
         	'<p class="info-headline">'+element.data('info-headline') + '</p>' + 
-        	'<p class="info-summary">'+element.data('info-summary') + '</p>'
+
+        	'<div style="overflow:auto; height:35em">' + // JF zzz
+        		'<p class="info-summary">'+element.data('info-summary') + '</p>' + 
+        	'</div>'
+
+        	//'<p class="info-summary">'+element.data('info-summary') + '</p>' // GOOD
         )
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline").animate({left:"-30px"},500);
@@ -1281,7 +1295,7 @@ $(".slideinfo").stop().animate({backgroundColor: desiredColor},1000);
 }
 
 if ($(".gallerylabel").length) {
-	$(".gallerylabel").stop().animate({backgroundColor: desiredColor},1000);
+	$(".gallerylabel").stop().css({backgroundColor: desiredColor},1000);
 }
 
 
@@ -1497,7 +1511,8 @@ if ($(".gallerylabel").length) {
         $('.slide.current .bottomNavBar').css('bottom','0');
         
         if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-            $('.slide.current .gallerylabel').css('bottom', '-75px');
+            //$('.slide.current .gallerylabel').css('bottom', '-75px');
+		
         }
         // TITLE FADE AND TRANSITION
         
@@ -1788,7 +1803,7 @@ if ($(".gallerylabel").length) {
         $('.slide.current .bottomNavBar').delay(500).animate({ bottom: 0 },"slow", function(){ 
             $('.navbtn.about').fadeIn(200);
             if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-                $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
+                //$('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
             }
         });
         
@@ -1800,7 +1815,7 @@ if ($(".gallerylabel").length) {
             $('.navbtn.about').fadeIn(200);
             $('.slide.current .commentary').click()
             if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-                $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
+               // $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
             }
         });
     }
