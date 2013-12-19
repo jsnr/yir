@@ -1520,7 +1520,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     line-height: 1.1;
     position: relative;
   /*  left: -29px;*/
-    left: 0;
+    right: 0;
     padding: 10px 50px 10px 30px;
     width: 450px;
     margin-bottom: 0;
@@ -1530,7 +1530,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 	height: 80px;
 	width: 100%;
 	top: 30px;
-	left: 0;
+	right: 0;
     cursor: pointer;
     display: block;
     z-index: 9999;
@@ -1540,7 +1540,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     height: 42px;
     position: absolute;
     top: 57px;
-    left: -93px;
+	/*    left: -93px;*/
+	right: 500px;
     background-image: url(../i/index/2013/icons/plus.png);
     background-repeat: no-repeat;
     background-position: center center;

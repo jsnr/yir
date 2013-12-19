@@ -693,25 +693,24 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 
                      var newPos = -$('.slideinfo', slide).width();
 
-                     $('.slideinfo', slide).animate({'right': '-501px'}, 500, function(){ $('.slideinfo', slide).hide(); $('.info-plus').fadeIn(200); });                   
+                     $('.slideinfo', slide).animate({'right': '-501px'}, 500);                   
 
-        		    	$(".infobtn").fadeIn(500);
+        		     $(".infobtn").fadeIn(500);
 
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
                      
-                     $('.info-plus', slide).fadeOut(1).css({left: '-545px'});
-                     
             //         $('.info-headline', slide).animate({left: '-531px'}, 500);
                      
-                     $('.info-headline', slide).removeClass("inpanel");
                      
-			        if($(".curslide").text() == "1111111111111"){
-				        $(".info-headline, .headover").css("left","0");
-				        $(".info-plus").css("left","-93px");
-			        }else{
-			        	$(".info-plus").css("left","-545px");
-			        	$(".info-headline, .headover").css("left","-531px");
-			        }
+					 $(".info-headline, .headover").animate({right:"-501"},500);
+                     
+                     $('.info-plus', slide).animate({right: '500px'},200);
+					
+					 $(".info-headline").removeClass("inpanel");
+
+        
+
+        
 
                  } else {
                  
@@ -729,17 +728,21 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 
                      $('.slideinfo', slide).show();
 
-                     $('.slideinfo', slide).animate({'right': '0'}, 500, function(){ $('.info-plus').fadeIn(200); });                   
+                     $('.slideinfo', slide).animate({'right': '0'}, 500);                   
 
                      $(".infobtn").fadeIn(500);
 
                      $('.buttons li.infobtn, .info-plus', slide).addClass('open');
                      
-                     $('.info-plus', slide).fadeOut(1).css({left: '-46px'});
-                     
-                     $('.info-headline, .headover', slide).css('left','-30px');
-                     
                      $('.info-headline', slide).addClass("inpanel");
+                     
+				        if($(".curslide").text() == "1111111111111"){
+					        $(".info-headline, .headover").animate({right:"0"},500);
+					        $(".info-plus").animate({right:"454px"},200);
+				        }else{
+				        	$(".info-plus").animate({right:"923px"},200);
+				        	$(".info-headline, .headover").css("right","500px");
+				        }
                      
                      if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
                  }
@@ -1128,16 +1131,16 @@ $("#allcomments").height(commenth);
         // FLOATING HEADLINE BEHAVIOR
         
         if($('.buttons li.infobtn').hasClass("open")){
-	        $(".info-headline, .headover").animate({left:"-30px"},500);
+	        $(".info-headline, .headover").animate({right:"0"},500);
 	        $(".info-headline").addClass("inpanel");
         }else{
 	        $(".info-headline, .headover").removeClass("inpanel");
 	        if($(".curslide").text() == "1111111111111"){
-		        $(".info-headline, .headover").animate({left:"0"},500);
-		        $(".info-plus").animate({left:"-143px"},200);
+		        $(".info-headline, .headover").animate({right:"500px"},500);
+		        $(".info-plus").animate({right:"44px"},200);
 	        }else{
-	        	$(".info-plus").animate({left:"-545px"},200);
-	        	$(".info-headline, .headover").css("left","-531px");
+	        	$(".info-plus").animate({right:"923px"},200);
+	        	$(".info-headline, .headover").css("right","500px");
 	        }
         }
         
