@@ -275,23 +275,14 @@ font-size: 1.5vw;
     }
 
 .introtxt { 
-<<<<<<< HEAD
-    position: relative;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    z-index: 50;
     bottom: 0;
     height: 100%;
-=======
-      position: absolute;
-      top: 40%;
-      width: 100%;
-      text-align: center;
-      color: #FFF;
-      z-index: 50;
->>>>>>> 56a25230de2061b6f0e44a4337f07873acc5385e
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    z-index: 50;
+    position: relative;
 }
 .introtxt h1 {
     font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1082,7 +1073,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         font-size: 6em;
         letter-spacing: 10px;
         line-height: .25;
-        margin-top: -25px;
+        margin-top: -24px;
         word-spacing: -1px;
         font-weight: 100;
         text-transform: uppercase;
