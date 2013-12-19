@@ -9,7 +9,10 @@
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
 
 $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-review-2013");
-$(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'}); // JF
+//$(".caption").css({'overflow-y':'auto', 'overflow-x':'visible', 'height': '90%'}); // JF
+//$(".info-summary").css({'overflow-y':'auto', 'height': '25%'}); // JF
+//$(".caption").css({'height': '85%'}); // JF
+
 
            	
 	function showCommentStream(hash) {
@@ -622,7 +625,12 @@ $(".caption").css({'overflow-y':'auto', 'overflow-x':'hidden', 'height': '85%'})
                     if(indx == 0){
                         $('.caption',txtContent).append(
                         	'<p class="info-headline">'+ giWrap.data('info-headline') + '</p>' + 
-                        	'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' 
+
+                        	//$(".caption").css({'overflow-y':'auto', 'overflow-x':'visible', 'height': '90%'}); // JF
+
+        					'<div style="overflow:auto; height:35em">' + // JF zzz
+                        		'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' +
+                        	'</div>'
                         )
                     }
                     
@@ -1104,7 +1112,12 @@ $("#allcomments").height(commenth);
 
         $('.slide.current .caption').html(
         	'<p class="info-headline">'+element.data('info-headline') + '</p>' + 
-        	'<p class="info-summary">'+element.data('info-summary') + '</p>'
+
+        	'<div style="overflow:auto; height:35em">' + // JF zzz
+        		'<p class="info-summary">'+element.data('info-summary') + '</p>' + 
+        	'</div>'
+
+        	//'<p class="info-summary">'+element.data('info-summary') + '</p>' // GOOD
         )
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline").animate({left:"-30px"},500);
