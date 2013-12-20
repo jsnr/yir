@@ -163,12 +163,14 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 		$(document).keyup(function(e) {
 			if (e.keyCode == 27) { // esc
 				$("#overlay").fadeOut(800, "easeInOutQuad");
+				 $("video").prop('muted', false); 
 			}   
 		});
 			
 		$(document).keyup(function(e) {
 			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
 				$("#overlay").fadeOut(800, "easeInOutQuad");
+				$("video").prop('muted', false); 
 	            //$(".gallerylabel").delay(800).fadeOut();
 			}   
 		});
