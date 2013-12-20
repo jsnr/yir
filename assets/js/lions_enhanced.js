@@ -874,6 +874,27 @@ $("#allcomments").height(commenth);
         $('.slide h2.title').fadeIn(300);
         $('.bottomNavBar').css('z-index', 1050).fadeIn(300);
     }
+	
+	function updateAddThisUrl()
+   {
+       //slide_no is the variable I am adding as a URL parameter
+       var location = window.location;
+       var theUrl = location.protocol + '//' + location.host + location.pathname + "?image=" + slide_no;
+
+       addthis_share = {url : theUrl};
+      // only have to change the window.location.href bit
+	   addthis.update('share', 'url', location.href); 
+       addthis.ready(); // This will re-render the box.
+       addthis.url = theUrl; 
+       addthis.ready();         
+   }
+
+   function eventHandler(evt) 
+   { 
+       updateAddThisUrl();
+   }
+
+   addthis.addEventListener('addthis.menu.share', eventHandler);
     
     // Set the information for each service based on the deep link (hashtag)
     setShareButtons = function(){
