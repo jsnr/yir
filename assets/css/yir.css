@@ -2313,7 +2313,8 @@ section#the-cause_ct, section#credits_ct, section#the-project_ct{
     color: rgb(255,255,255);
     text-align: center;
     font-size: 1.3em;
-    background: url("../i/mobile-poster.jpg") no-repeat #0C182B 70% center;
+ /*   background: url("../i/mobile-poster.jpg") no-repeat #0C182B 70% center; */
+ 
     background-size: cover;
     left: 0;
     right: 0;
