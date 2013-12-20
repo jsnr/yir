@@ -14,6 +14,13 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 //$(".caption").css({'height': '85%'}); // JF
 
 
+  
+
+
+
+  
+
+  
            	
 	function showCommentStream(hash) {
         // Remove '#/' or '#.' from the URL hash
@@ -670,6 +677,8 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                 
                     if($(e.target).hasClass('slideinfo') || $(e.target).parents('.slideinfo').length > 0)return;
                     if($(e.target).hasClass('buttons') || $(e.target).parents('.buttons').length > 0)return;
+                    
+
                 
             
                     $('.slide.current .infobtn').click();
@@ -743,7 +752,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
 				        if($(".curslide").text() == "1111111111111"){
 					        $(".info-headline, .headover").animate({right:"0"},500);
-					        $(".info-plus").animate({right:"500px"},500);
+					        $(".info-plus").animate({right:"454px"},500);
 				        }else{
 				        	$(".info-plus").animate({right:"454px"},500);
 				        	$(".info-headline, .headover").animate({right:"30px"},500);
@@ -1134,12 +1143,13 @@ $("#allcomments").height(commenth);
         	//'<p class="info-summary">'+element.data('info-summary') + '</p>' // GOOD
         )
         
+
         
         // FLOATING HEADLINE BEHAVIOR
         
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline, .headover").css("right","30px");
-	        $('.info-plus').animate({right: '500px'},200);
+	        $('.info-plus').animate({right: '454px'},200);
 	        $(".info-headline").addClass("inpanel");
         }else{
 	        $(".info-headline, .headover").removeClass("inpanel");
