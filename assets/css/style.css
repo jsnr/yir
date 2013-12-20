@@ -1,12 +1,10 @@
 @charset "UTF-8";
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000033}}
 .site-main:before, .library-issue:before, .grid .library-issue--preview:before, .site-main:after, .library-issue:after, .grid .library-issue--preview:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000038}}
 .site-main:after, .library-issue:after, .grid .library-issue--preview:after {
   clear: both;
 }
@@ -24,7 +22,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000318}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,60 +44,50 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000328}}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000331}}
 body {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000334}}
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000337}}
 blockquote, q {
   quotes: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000341}}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000345}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_reset\.scss}line{font-family:\0000351}}
 picture,
 video {
   vertical-align: top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\0000320}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\0000330}}
 html {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\0000337}}
 body {
   background-color: #f5f6f6;
   color: #282e5c;
@@ -109,12 +96,10 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\0000345}}
 main {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003101}}
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -127,23 +112,19 @@ h5 a:hover {
 /* Sets the color of a small span element in any of our paragraph tags.  Current example of such style can be see on
    publication dates on most content objects.  */
 /* Sets the link color and behavior */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003117}}
 a:link, a:link p, a:hover, a:hover p, a:visited, a:visited p {
   color: #044e8e;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003125}}
 a:hover, a:hover p {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003130}}
 p {
   margin-bottom: 1.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003140}}
 sub,
 sup {
   font-size: .75em;
@@ -152,18 +133,15 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003147}}
 sup {
   top: -.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003151}}
 sub {
   bottom: -.25em;
 }
 
 /* Sets the highlight colors */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003157}}
 ::selection,
 ::-moz-selection {
   background: #FFD800;
@@ -174,7 +152,6 @@ sub {
 /* Sets the default font sizes and line heights as its presented as the body of our content types.  The rule of thumb
    is that any block level element should have the same bottom margin as you scan down the page.
    A quick browser relation to these calculations are 14px font, 20px lineheight, with 20px bottom margin */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003173}}
 article p,
 article blockquote,
 article form,
@@ -184,7 +161,6 @@ article ul,
 article dl {
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003187}}
 article ul:last-child,
 article ol:last-child,
 article dl:last-child,
@@ -201,24 +177,20 @@ article dl > dt li {
 
 /* Since we globally set all block levels to operate as blocks and killed these stylings, 
    we now need to reset them as its presented as the body of content types.  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003204}}
 strong {
   font-weight: 600;
 }
 
 /* End Default Fonts ------------------------------------------------------- */
 /* ------------------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003211}}
 button {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003217}}
 ::-webkit-input-placeholder {
   color: #141414;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_base\.scss}line{font-family:\00003221}}
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
@@ -255,7 +227,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000335}}
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -276,7 +247,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* more sprites.less reset */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000366}}
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 .nav-pills > .active > a > [class*=" icon-"],
@@ -293,7 +263,6 @@ input[type="search"]::-webkit-search-cancel-button {
   background-image: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000370}}
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   text-decoration: inherit;
@@ -302,20 +271,17 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* makes sure icons active on rollover in links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000377}}
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
 }
 
 /* makes the font 33% larger relative to the icon container */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000381}}
 .icon-large:before {
   vertical-align: -10%;
   font-size: 1.3333333333333333em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000388}}
 .btn [class^="icon-"],
 .nav [class^="icon-"],
 .btn [class*=" icon-"],
@@ -324,7 +290,6 @@ a [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\0000396}}
 .btn [class^="icon-"].icon-large,
 .nav [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large,
@@ -332,7 +297,6 @@ a [class*=" icon-"] {
   line-height: .9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003102}}
 .btn [class^="icon-"].icon-spin,
 .nav [class^="icon-"].icon-spin,
 .btn [class*=" icon-"].icon-spin,
@@ -340,7 +304,6 @@ a [class*=" icon-"] {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003108}}
 .nav-tabs [class^="icon-"],
 .nav-pills [class^="icon-"],
 .nav-tabs [class*=" icon-"],
@@ -348,7 +311,6 @@ a [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003119}}
 .nav-tabs [class^="icon-"],
 .nav-pills [class^="icon-"],
 .nav-tabs [class*=" icon-"],
@@ -360,7 +322,6 @@ a [class*=" icon-"] {
   line-height: .9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003125}}
 li [class^="icon-"],
 .nav li [class^="icon-"],
 li [class*=" icon-"],
@@ -370,7 +331,6 @@ li [class*=" icon-"],
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003133}}
 li [class^="icon-"].icon-large,
 .nav li [class^="icon-"].icon-large,
 li [class*=" icon-"].icon-large,
@@ -379,24 +339,20 @@ li [class*=" icon-"].icon-large,
   width: 1.5625em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003138}}
 ul.icons {
   list-style-type: none;
   text-indent: -0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003143}}
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
   width: .75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003146}}
 .icon-muted {
   color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003149}}
 .icon-border {
   border: solid 1px #eeeeee;
   padding: .2em .25em .15em;
@@ -405,12 +361,10 @@ ul.icons li [class*=" icon-"] {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003156}}
 .icon-2x {
   font-size: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003159}}
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
@@ -418,12 +372,10 @@ ul.icons li [class*=" icon-"] {
   border-radius: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003165}}
 .icon-3x {
   font-size: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003168}}
 .icon-3x.icon-border {
   border-width: 3px;
   -webkit-border-radius: 5px;
@@ -431,12 +383,10 @@ ul.icons li [class*=" icon-"] {
   border-radius: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003174}}
 .icon-4x {
   font-size: 4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003177}}
 .icon-4x.icon-border {
   border-width: 4px;
   -webkit-border-radius: 6px;
@@ -444,29 +394,24 @@ ul.icons li [class*=" icon-"] {
   border-radius: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003183}}
 .pull-right {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003186}}
 .pull-left {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003190}}
 [class^="icon-"].pull-left,
 [class*=" icon-"].pull-left {
   margin-right: .3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003194}}
 [class^="icon-"].pull-right,
 [class*=" icon-"].pull-right {
   margin-left: .3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003200}}
 .btn [class^="icon-"].pull-left.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn [class^="icon-"].pull-right.icon-2x,
@@ -474,13 +419,11 @@ ul.icons li [class*=" icon-"] {
   margin-top: .18em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003204}}
 .btn [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003210}}
 .btn.btn-small [class^="icon-"].pull-left.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small [class^="icon-"].pull-right.icon-2x,
@@ -488,13 +431,11 @@ ul.icons li [class*=" icon-"] {
   margin-top: .25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003214}}
 .btn.btn-large [class^="icon-"],
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003220}}
 .btn.btn-large [class^="icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
@@ -502,19 +443,16 @@ ul.icons li [class*=" icon-"] {
   margin-top: .05em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003224}}
 .btn.btn-large [class^="icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
   margin-right: .2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003228}}
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: .2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003231}}
 .icon-spin {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
@@ -607,1253 +545,1003 @@ ul.icons li [class*=" icon-"] {
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003274}}
 .icon-glass:before {
   content: "\f000";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003275}}
 .icon-music:before {
   content: "\f001";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003276}}
 .icon-search:before {
   content: "\f002";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003277}}
 .icon-envelope:before {
   content: "\f003";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003278}}
 .icon-heart:before {
   content: "\f004";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003279}}
 .icon-star:before {
   content: "\f005";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003280}}
 .icon-star-empty:before {
   content: "\f006";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003281}}
 .icon-user:before {
   content: "\f007";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003282}}
 .icon-film:before {
   content: "\f008";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003283}}
 .icon-th-large:before {
   content: "\f009";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003284}}
 .icon-th:before {
   content: "\f00a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003285}}
 .icon-th-list:before {
   content: "\f00b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003286}}
 .icon-ok:before {
   content: "\f00c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003287}}
 .icon-remove:before {
   content: "\f00d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003288}}
 .icon-zoom-in:before {
   content: "\f00e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003290}}
 .icon-zoom-out:before {
   content: "\f010";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003291}}
 .icon-off:before {
   content: "\f011";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003292}}
 .icon-signal:before {
   content: "\f012";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003293}}
 .icon-cog:before {
   content: "\f013";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003294}}
 .icon-trash:before {
   content: "\f014";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003295}}
 .icon-home:before {
   content: "\f015";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003296}}
 .icon-file:before {
   content: "\f016";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003297}}
 .icon-time:before {
   content: "\f017";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003298}}
 .icon-road:before {
   content: "\f018";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003299}}
 .icon-download-alt:before {
   content: "\f019";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003300}}
 .icon-download:before {
   content: "\f01a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003301}}
 .icon-upload:before {
   content: "\f01b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003302}}
 .icon-inbox:before {
   content: "\f01c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003303}}
 .icon-play-circle:before {
   content: "\f01d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003304}}
 .icon-repeat:before {
   content: "\f01e";
 }
 
 /* \f020 doesn't work in Safari. all shifted one down */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003307}}
 .icon-refresh:before {
   content: "\f021";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003308}}
 .icon-list-alt:before {
   content: "\f022";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003309}}
 .icon-lock:before {
   content: "\f023";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003310}}
 .icon-flag:before {
   content: "\f024";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003311}}
 .icon-headphones:before {
   content: "\f025";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003312}}
 .icon-volume-off:before {
   content: "\f026";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003313}}
 .icon-volume-down:before {
   content: "\f027";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003314}}
 .icon-volume-up:before {
   content: "\f028";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003315}}
 .icon-qrcode:before {
   content: "\f029";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003316}}
 .icon-barcode:before {
   content: "\f02a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003317}}
 .icon-tag:before {
   content: "\f02b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003318}}
 .icon-tags:before {
   content: "\f02c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003319}}
 .icon-book:before {
   content: "\f02d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003320}}
 .icon-bookmark:before {
   content: "\f02e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003321}}
 .icon-print:before {
   content: "\f02f";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003323}}
 .icon-camera:before {
   content: "\f030";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003324}}
 .icon-font:before {
   content: "\f031";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003325}}
 .icon-bold:before {
   content: "\f032";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003326}}
 .icon-italic:before {
   content: "\f033";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003327}}
 .icon-text-height:before {
   content: "\f034";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003328}}
 .icon-text-width:before {
   content: "\f035";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003329}}
 .icon-align-left:before {
   content: "\f036";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003330}}
 .icon-align-center:before {
   content: "\f037";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003331}}
 .icon-align-right:before {
   content: "\f038";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003332}}
 .icon-align-justify:before {
   content: "\f039";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003333}}
 .icon-list:before {
   content: "\f03a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003334}}
 .icon-indent-left:before {
   content: "\f03b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003335}}
 .icon-indent-right:before {
   content: "\f03c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003336}}
 .icon-facetime-video:before {
   content: "\f03d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003337}}
 .icon-picture:before {
   content: "\f03e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003339}}
 .icon-pencil:before {
   content: "\f040";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003340}}
 .icon-map-marker:before {
   content: "\f041";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003341}}
 .icon-adjust:before {
   content: "\f042";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003342}}
 .icon-tint:before {
   content: "\f043";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003343}}
 .icon-edit:before {
   content: "\f044";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003344}}
 .icon-share:before {
   content: "\f045";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003345}}
 .icon-check:before {
   content: "\f046";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003346}}
 .icon-move:before {
   content: "\f047";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003347}}
 .icon-step-backward:before {
   content: "\f048";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003348}}
 .icon-fast-backward:before {
   content: "\f049";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003349}}
 .icon-backward:before {
   content: "\f04a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003350}}
 .icon-play:before {
   content: "\f04b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003351}}
 .icon-pause:before {
   content: "\f04c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003352}}
 .icon-stop:before {
   content: "\f04d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003353}}
 .icon-forward:before {
   content: "\f04e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003355}}
 .icon-fast-forward:before {
   content: "\f050";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003356}}
 .icon-step-forward:before {
   content: "\f051";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003357}}
 .icon-eject:before {
   content: "\f052";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003358}}
 .icon-chevron-left:before {
   content: "\f053";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003359}}
 .icon-chevron-right:before {
   content: "\f054";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003360}}
 .icon-plus-sign:before {
   content: "\f055";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003361}}
 .icon-minus-sign:before {
   content: "\f056";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003362}}
 .icon-remove-sign:before {
   content: "\f057";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003363}}
 .icon-ok-sign:before {
   content: "\f058";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003364}}
 .icon-question-sign:before {
   content: "\f059";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003365}}
 .icon-info-sign:before {
   content: "\f05a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003366}}
 .icon-screenshot:before {
   content: "\f05b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003367}}
 .icon-remove-circle:before {
   content: "\f05c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003368}}
 .icon-ok-circle:before {
   content: "\f05d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003369}}
 .icon-ban-circle:before {
   content: "\f05e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003371}}
 .icon-arrow-left:before {
   content: "\f060";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003372}}
 .icon-arrow-right:before {
   content: "\f061";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003373}}
 .icon-arrow-up:before {
   content: "\f062";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003374}}
 .icon-arrow-down:before {
   content: "\f063";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003375}}
 .icon-share-alt:before {
   content: "\f064";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003376}}
 .icon-resize-full:before {
   content: "\f065";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003377}}
 .icon-resize-small:before {
   content: "\f066";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003378}}
 .icon-plus:before {
   content: "\f067";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003379}}
 .icon-minus:before {
   content: "\f068";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003380}}
 .icon-asterisk:before {
   content: "\f069";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003381}}
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003382}}
 .icon-gift:before {
   content: "\f06b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003383}}
 .icon-leaf:before {
   content: "\f06c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003384}}
 .icon-fire:before {
   content: "\f06d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003385}}
 .icon-eye-open:before {
   content: "\f06e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003387}}
 .icon-eye-close:before {
   content: "\f070";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003388}}
 .icon-warning-sign:before {
   content: "\f071";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003389}}
 .icon-plane:before {
   content: "\f072";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003390}}
 .icon-calendar:before {
   content: "\f073";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003391}}
 .icon-random:before {
   content: "\f074";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003392}}
 .icon-comment:before {
   content: "\f075";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003393}}
 .icon-magnet:before {
   content: "\f076";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003394}}
 .icon-chevron-up:before {
   content: "\f077";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003395}}
 .icon-chevron-down:before {
   content: "\f078";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003396}}
 .icon-retweet:before {
   content: "\f079";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003397}}
 .icon-shopping-cart:before {
   content: "\f07a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003398}}
 .icon-folder-close:before {
   content: "\f07b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003399}}
 .icon-folder-open:before {
   content: "\f07c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003400}}
 .icon-resize-vertical:before {
   content: "\f07d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003401}}
 .icon-resize-horizontal:before {
   content: "\f07e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003403}}
 .icon-bar-chart:before {
   content: "\f080";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003404}}
 .icon-twitter-sign:before {
   content: "\f081";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003405}}
 .icon-facebook-sign:before {
   content: "\f082";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003406}}
 .icon-camera-retro:before {
   content: "\f083";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003407}}
 .icon-key:before {
   content: "\f084";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003408}}
 .icon-cogs:before {
   content: "\f085";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003409}}
 .icon-comments:before {
   content: "\f086";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003410}}
 .icon-thumbs-up:before {
   content: "\f087";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003411}}
 .icon-thumbs-down:before {
   content: "\f088";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003412}}
 .icon-star-half:before {
   content: "\f089";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003413}}
 .icon-heart-empty:before {
   content: "\f08a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003414}}
 .icon-signout:before {
   content: "\f08b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003415}}
 .icon-linkedin-sign:before {
   content: "\f08c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003416}}
 .icon-pushpin:before {
   content: "\f08d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003417}}
 .icon-external-link:before {
   content: "\f08e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003419}}
 .icon-signin:before {
   content: "\f090";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003420}}
 .icon-trophy:before {
   content: "\f091";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003421}}
 .icon-github-sign:before {
   content: "\f092";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003422}}
 .icon-upload-alt:before {
   content: "\f093";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003423}}
 .icon-lemon:before {
   content: "\f094";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003424}}
 .icon-phone:before {
   content: "\f095";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003425}}
 .icon-check-empty:before {
   content: "\f096";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003426}}
 .icon-bookmark-empty:before {
   content: "\f097";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003427}}
 .icon-phone-sign:before {
   content: "\f098";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003428}}
 .icon-twitter:before {
   content: "\f099";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003429}}
 .icon-facebook:before {
   content: "\f09a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003430}}
 .icon-github:before {
   content: "\f09b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003431}}
 .icon-unlock:before {
   content: "\f09c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003432}}
 .icon-credit-card:before {
   content: "\f09d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003433}}
 .icon-rss:before {
   content: "\f09e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003435}}
 .icon-hdd:before {
   content: "\f0a0";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003436}}
 .icon-bullhorn:before {
   content: "\f0a1";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003437}}
 .icon-bell:before {
   content: "\f0a2";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003438}}
 .icon-certificate:before {
   content: "\f0a3";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003439}}
 .icon-hand-right:before {
   content: "\f0a4";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003440}}
 .icon-hand-left:before {
   content: "\f0a5";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003441}}
 .icon-hand-up:before {
   content: "\f0a6";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003442}}
 .icon-hand-down:before {
   content: "\f0a7";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003443}}
 .icon-circle-arrow-left:before {
   content: "\f0a8";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003444}}
 .icon-circle-arrow-right:before {
   content: "\f0a9";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003445}}
 .icon-circle-arrow-up:before {
   content: "\f0aa";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003446}}
 .icon-circle-arrow-down:before {
   content: "\f0ab";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003447}}
 .icon-globe:before {
   content: "\f0ac";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003448}}
 .icon-wrench:before {
   content: "\f0ad";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003449}}
 .icon-tasks:before {
   content: "\f0ae";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003451}}
 .icon-filter:before {
   content: "\f0b0";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003452}}
 .icon-briefcase:before {
   content: "\f0b1";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003453}}
 .icon-fullscreen:before {
   content: "\f0b2";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003455}}
 .icon-group:before {
   content: "\f0c0";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003456}}
 .icon-link:before {
   content: "\f0c1";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003457}}
 .icon-cloud:before {
   content: "\f0c2";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003458}}
 .icon-beaker:before {
   content: "\f0c3";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003459}}
 .icon-cut:before {
   content: "\f0c4";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003460}}
 .icon-copy:before {
   content: "\f0c5";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003461}}
 .icon-paper-clip:before {
   content: "\f0c6";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003462}}
 .icon-save:before {
   content: "\f0c7";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003463}}
 .icon-sign-blank:before {
   content: "\f0c8";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003464}}
 .icon-reorder:before {
   content: "\f0c9";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003465}}
 .icon-list-ul:before {
   content: "\f0ca";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003466}}
 .icon-list-ol:before {
   content: "\f0cb";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003467}}
 .icon-strikethrough:before {
   content: "\f0cc";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003468}}
 .icon-underline:before {
   content: "\f0cd";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003469}}
 .icon-table:before {
   content: "\f0ce";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003471}}
 .icon-magic:before {
   content: "\f0d0";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003472}}
 .icon-truck:before {
   content: "\f0d1";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003473}}
 .icon-pinterest:before {
   content: "\f0d2";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003474}}
 .icon-pinterest-sign:before {
   content: "\f0d3";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003475}}
 .icon-google-plus-sign:before {
   content: "\f0d4";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003476}}
 .icon-google-plus:before {
   content: "\f0d5";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003477}}
 .icon-money:before {
   content: "\f0d6";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003478}}
 .icon-caret-down:before {
   content: "\f0d7";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003479}}
 .icon-caret-up:before {
   content: "\f0d8";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003480}}
 .icon-caret-left:before {
   content: "\f0d9";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003481}}
 .icon-caret-right:before {
   content: "\f0da";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003482}}
 .icon-columns:before {
   content: "\f0db";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003483}}
 .icon-sort:before {
   content: "\f0dc";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003484}}
 .icon-sort-down:before {
   content: "\f0dd";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003485}}
 .icon-sort-up:before {
   content: "\f0de";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003487}}
 .icon-envelope-alt:before {
   content: "\f0e0";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003488}}
 .icon-linkedin:before {
   content: "\f0e1";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003489}}
 .icon-undo:before {
   content: "\f0e2";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003490}}
 .icon-legal:before {
   content: "\f0e3";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003491}}
 .icon-dashboard:before {
   content: "\f0e4";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003492}}
 .icon-comment-alt:before {
   content: "\f0e5";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003493}}
 .icon-comments-alt:before {
   content: "\f0e6";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003494}}
 .icon-bolt:before {
   content: "\f0e7";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003495}}
 .icon-sitemap:before {
   content: "\f0e8";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003496}}
 .icon-umbrella:before {
   content: "\f0e9";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003497}}
 .icon-paste:before {
   content: "\f0ea";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003498}}
 .icon-lightbulb:before {
   content: "\f0eb";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003499}}
 .icon-exchange:before {
   content: "\f0ec";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003500}}
 .icon-cloud-download:before {
   content: "\f0ed";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003501}}
 .icon-cloud-upload:before {
   content: "\f0ee";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003503}}
 .icon-user-md:before {
   content: "\f0f0";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003504}}
 .icon-stethoscope:before {
   content: "\f0f1";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003505}}
 .icon-suitcase:before {
   content: "\f0f2";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003506}}
 .icon-bell-alt:before {
   content: "\f0f3";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003507}}
 .icon-coffee:before {
   content: "\f0f4";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003508}}
 .icon-food:before {
   content: "\f0f5";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003509}}
 .icon-file-alt:before {
   content: "\f0f6";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003510}}
 .icon-building:before {
   content: "\f0f7";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003511}}
 .icon-hospital:before {
   content: "\f0f8";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003512}}
 .icon-ambulance:before {
   content: "\f0f9";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003513}}
 .icon-medkit:before {
   content: "\f0fa";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003514}}
 .icon-fighter-jet:before {
   content: "\f0fb";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003515}}
 .icon-beer:before {
   content: "\f0fc";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003516}}
 .icon-h-sign:before {
   content: "\f0fd";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003517}}
 .icon-plus-sign-alt:before {
   content: "\f0fe";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003519}}
 .icon-double-angle-left:before {
   content: "\f100";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003520}}
 .icon-double-angle-right:before {
   content: "\f101";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003521}}
 .icon-double-angle-up:before {
   content: "\f102";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003522}}
 .icon-double-angle-down:before {
   content: "\f103";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003523}}
 .icon-angle-left:before {
   content: "\f104";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003524}}
 .icon-angle-right:before {
   content: "\f105";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003525}}
 .icon-angle-up:before {
   content: "\f106";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003526}}
 .icon-angle-down:before {
   content: "\f107";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003527}}
 .icon-desktop:before {
   content: "\f108";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003528}}
 .icon-laptop:before {
   content: "\f109";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003529}}
 .icon-tablet:before {
   content: "\f10a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003530}}
 .icon-mobile-phone:before {
   content: "\f10b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003531}}
 .icon-circle-blank:before {
   content: "\f10c";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003532}}
 .icon-quote-left:before {
   content: "\f10d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003533}}
 .icon-quote-right:before {
   content: "\f10e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003535}}
 .icon-spinner:before {
   content: "\f110";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003536}}
 .icon-circle:before {
   content: "\f111";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003537}}
 .icon-reply:before {
   content: "\f112";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003538}}
 .icon-github-alt:before {
   content: "\f113";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003539}}
 .icon-folder-close-alt:before {
   content: "\f114";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_fonts\.scss}line{font-family:\00003540}}
 .icon-folder-open-alt:before {
   content: "\f115";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/states\/_visually-hidden\.scss}line{font-family:\000031}}
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1865,7 +1553,6 @@ ul.icons li [class*=" icon-"] {
   width: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\000033}}
 .global-footer {
   display: none;
   position: relative;
@@ -1875,20 +1562,16 @@ ul.icons li [class*=" icon-"] {
   width: 100%;
   background: #f5f6f6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000312}}
 .global-footer .connect {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000315}}
 .global-footer .connect i {
   font-size: 1rem;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\000033}}
   .global-footer {
     padding: 0 10rem 0.6875rem 0.6875rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000323}}
   .global-footer .connect {
     position: absolute;
     top: 0;
@@ -1897,7 +1580,6 @@ ul.icons li [class*=" icon-"] {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000332}}
 .btn-footer {
   width: 100%;
   height: 2rem;
@@ -1905,7 +1587,6 @@ ul.icons li [class*=" icon-"] {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000339}}
 .main-footer-category {
   text-transform: uppercase;
   display: inline-block;
@@ -1913,23 +1594,19 @@ ul.icons li [class*=" icon-"] {
   padding: 0 2rem 2rem 0;
   width: 48%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000346}}
 .main-footer-category h4 {
   font-weight: 700;
   margin-bottom: 0.6875rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000351}}
 .main-footer-category > ul > li {
   font-weight: 300;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-footer\.scss}line{font-family:\0000339}}
   .main-footer-category {
     width: auto;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\000033}}
 .global-header-social {
   position: fixed;
   top: -3.4375rem;
@@ -1944,13 +1621,11 @@ ul.icons li [class*=" icon-"] {
   transition: all 1s;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000314}}
 .global-header-social.active {
   z-index: 21;
   top: 0;
   overflow: visible;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000320}}
 .global-header-social .story-title {
   padding-left: 1.5rem;
   padding-top: 0.85938rem;
@@ -1961,37 +1636,30 @@ ul.icons li [class*=" icon-"] {
   top: 0;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000331}}
 .global-header-social .buttons {
   position: absolute;
   left: 50%;
   top: 0;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000338}}
 .global-header-social .social-buttons {
   padding: 0.85938rem 0 0 0.75rem;
   font-size: .75rem;
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000343}}
 .global-header-social .social-buttons .icon {
   margin-right: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000346}}
 .global-header-social .social-buttons .icon:last-of-type {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000351}}
 .global-header-social .social-buttons .social-links {
   margin-left: 4.5rem;
   font-weight: 600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000358}}
 .global-header-social .jump-to.active .jump-to-button {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000363}}
 .global-header-social .jump-to-button {
   background: none;
   border: none;
@@ -2002,7 +1670,6 @@ ul.icons li [class*=" icon-"] {
   width: 100%;
   height: 3.4375rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000374}}
 .global-header-social .jump-to-links {
   position: absolute;
   top: 3.4375rem;
@@ -2010,39 +1677,32 @@ ul.icons li [class*=" icon-"] {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000382}}
 .global-header-social .jump-to-item {
   margin: 0 0 3.4375rem;
   font-size: .75rem;
   line-height: 1.125rem;
   color: #898a8d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000388}}
 .global-header-social .jump-to-item:last-child {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\0000393}}
 .global-header-social .jump-to-link {
   color: #000012;
   font-weight: 600;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/Cellar\/ruby\/2\.0\.0-p0\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
 .global-header-social .jump-to-link:hover {
   color: #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003100}}
 .global-header-social .jump-to,
 .global-header-social .jump-to-links {
   width: 77.77778%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003105}}
 .global-header-social .jump-to-button,
 .global-header-social .jump-to-links {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003110}}
 .global-header-social .hide-social {
   background: #ffd21f;
   border: none;
@@ -2052,28 +1712,24 @@ ul.icons li [class*=" icon-"] {
   width: 22.22222%;
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003120}}
   .global-header-social .story-title {
     position: absolute;
     left: 0;
     top: 0;
     width: 25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003127}}
   .global-header-social .buttons {
     position: absolute;
     left: 75%;
     top: 0;
     width: 25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003135}}
   .global-header-social .jump-to,
   .global-header-social .jump-to-links {
     width: 77.77778%;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header-social\.scss}line{font-family:\00003141}}
   .global-header-social .social-buttons {
     display: inline;
     position: absolute;
@@ -2083,7 +1739,6 @@ ul.icons li [class*=" icon-"] {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\000033}}
 .global-header {
   height: 3.4375rem;
   margin: 0;
@@ -2096,11 +1751,9 @@ ul.icons li [class*=" icon-"] {
   font-size: 0.6875rem;
   transition: all 0.2s ease-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000315}}
 .global-header .branding {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000319}}
 .global-header .global-title {
   line-height: 1;
   font-size: 1rem;
@@ -2112,23 +1765,19 @@ ul.icons li [class*=" icon-"] {
   height: 3.4375rem;
   border-left: 1px solid #f5f6f6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000331}}
 .global-header .story-title {
   float: left;
   padding: 1.375rem 1.375rem 0;
   text-transform: uppercase;
 }
 @media screen and (max-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000331}}
   .global-header .story-title {
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000341}}
 .global-header .head-links {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000346}}
 .global-header #toggle-issue-view,
 .global-header .btn-toc {
   height: 3.4375rem;
@@ -2142,66 +1791,54 @@ ul.icons li [class*=" icon-"] {
   border-left: 1px solid #f5f6f6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000359}}
 .main-nav {
   width: 16rem;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000364}}
 .main-nav button,
 .main-nav > ul > li {
   width: 100%;
   height: 3.4375rem;
   font-weight: 400;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000370}}
 .main-nav button {
   text-align: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.6875rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000376}}
 .main-nav > ul > li {
   background: #282e5c;
   text-transform: uppercase;
   padding: 1.375rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000382}}
 .main-nav a {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000386}}
 .main-nav .btn-open-login {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000390}}
 .main-nav .btn-search {
   background: #000012;
   color: white;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000359}}
   .main-nav {
     float: right;
     position: relative;
     left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\00003100}}
   .main-nav .flyout-menu {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\00003104}}
   .main-nav button {
     float: right;
     width: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\00003109}}
   .main-nav .btn-search {
     background: none;
   }
 }
 @media screen and (max-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\0000359}}
   .main-nav {
     height: 100%;
     overflow: scroll;
@@ -2215,16 +1852,13 @@ ul.icons li [class*=" icon-"] {
 }
 
 @media screen and (max-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\00003128}}
   .nav-showing .main-nav {
     left: 0;
     background: #282e5c;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\00003132}}
   .nav-showing .global-header {
     left: 16rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_global-header\.scss}line{font-family:\00003136}}
   .nav-showing main {
     -webkit-transform: translate(70%, 0);
     -moz-transform: translate(70%, 0);
@@ -2233,14 +1867,12 @@ ul.icons li [class*=" icon-"] {
     transform: translate(70%, 0);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/site-blocks\/_main\.scss}line{font-family:\000033}}
 .site-main {
   margin-top: 3.4375rem;
   transition: all 0.2s ease-out;
 }
 
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_article_detail\.scss}line{font-family:\000033}}
   .article-labels,
   .article-body {
     width: 75%;
@@ -2248,7 +1880,6 @@ ul.icons li [class*=" icon-"] {
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_article_detail\.scss}line{font-family:\0000310}}
   .article-labels,
   .article-body {
     width: 50%;
@@ -2256,26 +1887,22 @@ ul.icons li [class*=" icon-"] {
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_article_detail\.scss}line{font-family:\0000317}}
   .article-labels {
     width: 13.88889%;
     margin: 0 5.55556%;
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_article_detail\.scss}line{font-family:\0000322}}
   .article-body {
     margin-left: 0;
     float: left;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\000033}}
 .library-issue {
   width: 100%;
 }
 
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000310}}
   .library-issue--cover,
   .library-issue--info {
     width: 50%;
@@ -2283,196 +1910,162 @@ ul.icons li [class*=" icon-"] {
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000317}}
   .library-issue--cover {
     width: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000321}}
   .library-issue--info {
     width: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000326}}
   .library-issue--info-header,
   .library-issue--info-article-list,
   .library-issue--info-footer {
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000330}}
   .library-issue--info-footer {
     margin-left: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000335}}
   .library-issue--info-header,
   .library-issue--info-article-list {
     float: left;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000341}}
   .library-issue--cover {
     width: 20%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000345}}
   .library-issue--info {
     width: 80%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000350}}
   .library-issue--info-header,
   .library-issue--info-footer {
     width: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000354}}
   .library-issue--info-article-list {
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000358}}
   .library-issue--info-footer {
     margin: 0;
     float: left;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000369}}
 .grid .library-spine-outside {
   display: inline;
   width: 100%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000375}}
 .grid .library-issue {
   width: 50%;
   float: left;
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000375}}
   .grid .library-issue {
     width: 33.33333%;
     float: left;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000375}}
   .grid .library-issue {
     width: 25%;
     float: left;
   }
 }
 @media screen and (min-width: 93.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000375}}
   .grid .library-issue {
     width: 20%;
     float: left;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000387}}
 .grid .library-issue--preview {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000392}}
 .grid .library-issue--preview-title {
   position: absolute;
   top: 45%;
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\0000399}}
   .grid .library-spine-inside {
     position: absolute;
     top: 0;
     bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003105}}
   .grid .library-issue:first-child {
     width: 100%;
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003112}}
   .grid .library-issue--info-header,
   .grid .library-issue--info-article-list,
   .grid .library-issue--info-footer {
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003116}}
   .grid .library-issue--info-footer {
     margin-left: 0;
   }
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003124}}
   .grid .library-issue:first-child .library-issue--info {
     width: 33.33333%;
     float: right;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003124}}
   .grid .library-issue:first-child .library-issue--info {
     width: 25%;
     float: right;
   }
 }
 @media screen and (min-width: 93.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003124}}
   .grid .library-issue:first-child .library-issue--info {
     width: 20%;
     float: right;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003133}}
 .grid .library-issue:first-child .library-issue--lead {
   float: left;
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003133}}
   .grid .library-issue:first-child .library-issue--lead {
     width: 66.66667%;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003133}}
   .grid .library-issue:first-child .library-issue--lead {
     width: 75%;
   }
 }
 @media screen and (min-width: 93.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/layouts\/_issue-library\.scss}line{font-family:\00003133}}
   .grid .library-issue:first-child .library-issue--lead {
     width: 80%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\000031}}
 .article-deck-attr {
   padding: 1.5rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\000034}}
 .article-deck-attr .deck {
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
   letter-spacing: .05rem;
   line-height: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\000038}}
 .article-deck-attr .content-type {
   color: #898a8d;
   letter-spacing: .1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\0000312}}
 .article-deck-attr .attribution {
   font-size: .75rem;
   line-height: 1.125rem;
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\000031}}
   .article-deck-attr {
     padding: 4.5rem 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\0000319}}
   .article-deck-attr .deck {
     font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
     letter-spacing: .05rem;
@@ -2481,11 +2074,9 @@ ul.icons li [class*=" icon-"] {
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\000031}}
   .article-deck-attr {
     padding: 6rem 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-deck-attr\.scss}line{font-family:\0000327}}
   .article-deck-attr .deck {
     font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
     letter-spacing: .05rem;
@@ -2494,12 +2085,10 @@ ul.icons li [class*=" icon-"] {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\000033}}
 .article-footer {
   text-align: center;
   border-top: 0.125rem solid #282e5c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\000038}}
 .article-footer .article-footer-header {
   margin: 3rem 0 1.5rem;
   font-weight: 600;
@@ -2507,16 +2096,13 @@ ul.icons li [class*=" icon-"] {
   line-height: 2rem;
   letter-spacing: -.05rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .article-footer .article-footer-header a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000313}}
 .article-footer .related-category {
   padding: 1.5rem;
   border-bottom: 0.125rem solid #282e5c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000318}}
 .article-footer .related-category-header {
   font-size: 1rem;
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
@@ -2527,34 +2113,27 @@ ul.icons li [class*=" icon-"] {
   color: #282e5c;
   margin-bottom: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\00003143}}
 .article-footer .related-category-header:hover {
   color: #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000323}}
 .article-footer .related-item-title {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000328}}
 .article-footer .related-item-blurb {
   margin-bottom: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000333}}
 .article-footer .related-issue,
 .article-footer .related-social {
   color: #898a8d;
   margin: 0 .5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000338}}
 .article-footer .related-issue {
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000342}}
 .article-footer .related-social {
   font-weight: 200;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000346}}
 .article-footer .related-category-more {
   display: block;
   background: none;
@@ -2563,23 +2142,19 @@ ul.icons li [class*=" icon-"] {
   font-size: 2rem;
   color: #898a8d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000355}}
 .article-footer .footnotes {
   counter-reset: li;
   font-size: .875rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000360}}
 .article-footer .footnote {
   margin-top: 1.5rem;
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000364}}
 .article-footer .footnote .source {
   font-weight: 200;
   font-size: .75rem;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000370}}
 .article-footer .footnote:before {
   content: counter(li);
   counter-increment: li;
@@ -2587,73 +2162,59 @@ ul.icons li [class*=" icon-"] {
   font-weight: 700;
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000379}}
   .article-footer .related-category {
     padding: 1.5rem 16.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-footer\.scss}line{font-family:\0000383}}
   .article-footer .footnote {
     padding: 0 8.33333%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\000031}}
 .article-labels {
   padding: 1.5rem 0.75rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\000034}}
 .article-labels .article-label {
   margin-bottom: 1.5rem;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\000038}}
 .article-labels .article-label:after {
   content: ', ';
   font-size: .625rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\0000313}}
 .article-labels .article-label:last-child:after {
   content: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\0000318}}
 .article-labels .article-label-link {
   font-size: .625rem;
   text-transform: uppercase;
   color: #898a8d;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\00003106}}
 .article-labels .article-label-link:hover {
   color: #4d58eb;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\000031}}
   .article-labels {
     padding-top: 3rem;
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\000031}}
   .article-labels {
     padding-top: 4.5rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\0000329}}
   .article-labels .article-label {
     display: block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\0000332}}
   .article-labels .article-label:after {
     content: none;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-label\.scss}line{font-family:\000031}}
   .article-labels {
     padding-top: 6rem;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\000032}}
 .sidebar .toggle {
   width: 100%;
   font-size: 1rem;
@@ -2668,38 +2229,31 @@ ul.icons li [class*=" icon-"] {
   margin: 0 0 1.5rem 0;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\00003143}}
 .sidebar .toggle:hover {
   color: #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000311}}
 .sidebar .toggle-text {
   background: #f5f6f6;
   padding-left: 1.5rem;
   float: right;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000316}}
 .sidebar .toggle-text:before {
   content: "Read More";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000320}}
 .sidebar .toggle-text:after {
   content: " +";
   font-style: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000327}}
 .sidebar > article > hgroup > h1 {
   font-weight: 600;
   font-size: 3.125rem;
   line-height: 2.9375rem;
   letter-spacing: -.05rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .sidebar > article > hgroup > h1 a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000331}}
 .sidebar > article > hgroup > h2 {
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
   letter-spacing: .05rem;
@@ -2707,7 +2261,6 @@ ul.icons li [class*=" icon-"] {
   line-height: 1.875rem;
   margin: 1.5rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000337}}
 .sidebar.active {
   position: fixed;
   top: 3.4375rem;
@@ -2719,52 +2272,43 @@ ul.icons li [class*=" icon-"] {
   padding: 0.75rem;
   overflow: scroll;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000348}}
 .sidebar.active .toggle-text {
   background: white;
   content: 'Close';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000352}}
 .sidebar.active .toggle-text:before {
   content: 'Close';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000356}}
 .sidebar.active .toggle-text:after {
   content: ' ✕';
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\000031}}
   .sidebar {
     position: relative;
     left: 16.66667%;
     margin: 6rem 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article-sidebar\.scss}line{font-family:\0000367}}
   .sidebar.active {
     left: 33.33333%;
     padding: 25% 14.28571% 20% 3rem;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article\.scss}line{font-family:\000031}}
 .article-wrapper {
   position: relative;
   top: 0;
   background: #f5f6f6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000033}}
 .article-wrapper:before, .article-wrapper:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000038}}
 .article-wrapper:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article\.scss}line{font-family:\0000312}}
 .article-body > p:first-of-type:first-letter {
   float: left;
   font-size: 3.1rem;
@@ -2773,18 +2317,15 @@ ul.icons li [class*=" icon-"] {
 }
 
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article\.scss}line{font-family:\0000322}}
   .article-body {
     padding-bottom: 4.5rem;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_article\.scss}line{font-family:\0000329}}
   .article-body {
     padding-bottom: 6rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\000033}}
 .audio_module {
   display: block;
   background: transparent;
@@ -2793,13 +2334,11 @@ ul.icons li [class*=" icon-"] {
   -webkit-user-drag: none;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000311}}
 .audio_module * {
   user-drag: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000317}}
 .audio_module .audio_player_ui {
   cursor: pointer;
   width: 50%;
@@ -2807,32 +2346,26 @@ ul.icons li [class*=" icon-"] {
   margin: 0 auto;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000325}}
 .audio_module .play_toggle {
   stroke-width: 0;
   fill: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000330}}
 .audio_module .indicator {
   stroke-width: 1.5em;
   fill: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000335}}
 .audio_module .progress {
   stroke: #fd0;
   pointer-events: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000340}}
 .audio_module .scrubber {
   stroke: rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000345}}
 .audio_module .track {
   stroke: rgba(0, 0, 0, 0.04);
   pointer-events: stroke;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000350}}
 .audio_module .feedback {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -2842,32 +2375,25 @@ ul.icons li [class*=" icon-"] {
   opacity: 1;
   pointer-events: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000360}}
 .audio_module .timer {
   transition: all .25s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000365}}
 .audio_module .play_toggle:hover ~ .feedback .timer {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000368}}
 .audio_module .play_toggle:hover ~ .feedback .action {
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000373}}
 .audio_module .action {
   opacity: 0;
   transition: all .5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000378}}
 .article-body .audio_module {
   margin: 4.5rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000381}}
 .article-body .audio_module .audio-caption {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000385}}
 .article-body .audio_module .audio-title {
   font-weight: 600;
   font-size: 1.125rem;
@@ -2876,53 +2402,44 @@ ul.icons li [class*=" icon-"] {
   margin-right: .5rem;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .article-body .audio_module .audio-title a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000391}}
 .article-body .audio_module .audio-description {
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
   letter-spacing: .1rem;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000396}}
 .article-body .audio_module .audio-attribution {
   font-size: 0.625rem;
   line-height: 1.125rem;
   letter-spacing: .2rem;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\00003102}}
   .article-body .audio_module .audio_player_ui {
     width: 75%;
     height: 75%;
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\0000378}}
   .article-body .audio_module {
     text-align: left;
     margin: 9rem 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000033}}
   .article-body .audio_module:before, .article-body .audio_module:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000038}}
   .article-body .audio_module:after {
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\00003113}}
   .article-body .audio_module .audio_player_ui {
     float: left;
     width: 33.33333%;
     height: 33.33333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_audio\.scss}line{font-family:\00003119}}
   .article-body .audio_module .audio-caption {
     width: 66.66667%;
     float: right;
@@ -2930,32 +2447,27 @@ ul.icons li [class*=" icon-"] {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_block_quote\.scss}line{font-family:\000031}}
 .ngm-blockquote {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.025rem;
   letter-spacing: -.05rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .ngm-blockquote a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_block_quote\.scss}line{font-family:\000031}}
   .ngm-blockquote {
     font-weight: 600;
     font-size: 2.125rem;
     line-height: 2rem;
     letter-spacing: -.05rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
   .ngm-blockquote a:hover {
     border-bottom: 0.125rem solid #4d58eb;
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_block_quote\.scss}line{font-family:\000031}}
   .ngm-blockquote {
     position: relative;
     left: 33.33%;
@@ -2963,13 +2475,11 @@ ul.icons li [class*=" icon-"] {
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_block_quote\.scss}line{font-family:\000031}}
   .ngm-blockquote {
     margin: 6rem 0;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_btn\.scss}line{font-family:\000031}}
 .btn {
   background: #f3f4f4;
   border-width: 0;
@@ -2983,16 +2493,13 @@ ul.icons li [class*=" icon-"] {
   text-transform: uppercase;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_btn\.scss}line{font-family:\0000314}}
 .btn [class^="icon-"] {
   margin: 0 1rem 0 -0.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_btn\.scss}line{font-family:\0000318}}
 .btn:hover {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_footer-button\.scss}line{font-family:\000031}}
 .footer-button {
   z-index: 20;
   position: fixed;
@@ -3003,7 +2510,6 @@ ul.icons li [class*=" icon-"] {
   height: 3rem;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_footer-button\.scss}line{font-family:\0000311}}
 .footer-button .footer-button-icon {
   display: block;
   -webkit-transition: all 0.5s;
@@ -3013,7 +2519,6 @@ ul.icons li [class*=" icon-"] {
   position: relative;
   top: -.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_footer-button\.scss}line{font-family:\0000319}}
 .footer-button.active .footer-button-icon {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -3022,70 +2527,56 @@ ul.icons li [class*=" icon-"] {
   transform: rotate(180deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_gallery\.scss}line{font-family:\000032}}
 .gallery li {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-gallery\.scss}line{font-family:\000031}}
 .inline-gallery {
   margin: 4.5rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-gallery\.scss}line{font-family:\000034}}
 .inline-gallery .gallery-image {
   width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-gallery\.scss}line{font-family:\0000311}}
 .inline-gallery .gallery-slide {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-gallery\.scss}line{font-family:\0000314}}
 .inline-gallery .gallery-slide:first-of-type {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-gallery\.scss}line{font-family:\0000319}}
 .inline-gallery .gallery-caption {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-image\.scss}line{font-family:\000031}}
 .inline-image {
   margin: 4.5rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-image\.scss}line{font-family:\000035}}
 .inline-image img,
 .inline-image picture {
   width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-image\.scss}line{font-family:\0000310}}
 .inline-image > figcaption {
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
   letter-spacing: .1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-interactive\.scss}line{font-family:\000031}}
 .inline-interactive {
   margin: 6rem 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\000031}}
 .inline-tease {
   margin: 6rem 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000033}}
 .inline-tease:before, .inline-tease:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_oo-layout\.scss}line{font-family:\000038}}
 .inline-tease:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\000037}}
 .inline-tease > a > img,
 .inline-tease > img,
 .inline-tease .tease-image {
@@ -3094,144 +2585,118 @@ ul.icons li [class*=" icon-"] {
   left: -0.75rem;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000314}}
 .inline-tease .tease-body {
   width: 66.66667%;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000319}}
 .inline-tease .tease-header {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.025rem;
   letter-spacing: -.05rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .inline-tease .tease-header a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000323}}
 .inline-tease .tease-copy {
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000328}}
 .inline-tease .read-more {
   text-transform: uppercase;
   color: #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000333}}
 .inline-tease .tease-attribution {
   font-size: .875rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000336}}
 .inline-tease .tease-attribution .content-type {
   text-transform: capitalize;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000340}}
 .inline-tease .tease-attribution a {
   text-transform: uppercase;
   color: #4d58eb;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000347}}
   .inline-tease .tease-image {
     left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000351}}
   .inline-tease .tease-body {
     padding-left: 0.75rem;
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\000031}}
   .inline-tease {
     width: 150%;
     position: relative;
     left: -25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000361}}
   .inline-tease .tease-body {
     padding-left: 1.5rem;
     margin-top: 5%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_inline-tease\.scss}line{font-family:\0000366}}
   .inline-tease .tease-header {
     font-weight: 600;
     font-size: 2.125rem;
     line-height: 2rem;
     letter-spacing: -.05rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
   .inline-tease .tease-header a:hover {
     border-bottom: 0.125rem solid #4d58eb;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\000035}}
 .library-issue--lead,
 .library-issue--preview,
 .library-issue--preview-image-bonus {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\000039}}
 .library-issue {
   padding: 1rem;
   overflow: hidden;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000315}}
 .library-issue--cover-image {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000321}}
 .library-issue--info {
   padding: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000326}}
 .library-issue--info-header,
 .library-issue--info-article-list {
   margin-bottom: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000330}}
 .library-issue--title {
   font-weight: 600;
   font-size: 2.125rem;
   line-height: 2rem;
   letter-spacing: -.05rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .library-issue--title a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000333}}
 .library-issue--title > span {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000338}}
 .library-issue--info-article-list {
   font-size: .8125rem;
   line-height: 1.25rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000340}}
 .library-issue--info-article-list > p {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000345}}
 .library-issue--footer-social {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000349}}
 .library-issue--read-more {
   font-size: 1rem;
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
@@ -3241,62 +2706,51 @@ ul.icons li [class*=" icon-"] {
   border: none;
   color: #282e5c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\00003143}}
 .library-issue--read-more:hover {
   color: #4d58eb;
 }
 
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000354}}
   .library {
     padding: 2rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000360}}
   .library-issue--info-header,
   .library-issue--info-article-list,
   .library-issue--info-footer {
     padding: 1rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000364}}
   .library-issue {
     margin-bottom: 5rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000373}}
 .grid.library {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000379}}
 .grid .library-spine-inside,
 .grid .ng-spine,
 .grid .library-issue--cover {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000384}}
 .grid .library-issue {
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000389}}
 .grid .library-issue--preview {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\0000394}}
 .grid .library-issue--preview-image {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003100}}
 .grid .library-spine-outside {
   background: #ffd21f;
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
   text-transform: uppercase;
   padding: 0 .5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003108}}
 .grid .library-issue--preview-title {
   font-weight: 600;
   font-size: 2.125rem;
@@ -3306,15 +2760,12 @@ ul.icons li [class*=" icon-"] {
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   padding: 0 1.5rem 0 2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .grid .library-issue--preview-title a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003113}}
 .grid .library-issue--preview-title > span {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003118}}
 .grid .library-issue--info {
   position: absolute;
   bottom: -100%;
@@ -3324,11 +2775,9 @@ ul.icons li [class*=" icon-"] {
   background: #f5f6f6;
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003128}}
   .grid .library-spine-outside {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003132}}
   .grid .library-spine-inside {
     display: inline;
     font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
@@ -3336,7 +2785,6 @@ ul.icons li [class*=" icon-"] {
     background: #ffd21f;
     width: 1.3rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003140}}
   .grid .issue-spine-text {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -3347,19 +2795,15 @@ ul.icons li [class*=" icon-"] {
     white-space: nowrap;
     padding-left: .5rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003147}}
   .grid .library-issue--header-social {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003151}}
   .grid .library-issue--footer-social {
     display: block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003155}}
   .grid .library-issue--info-header {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003159}}
   .grid .library-issue--preview-image-bonus {
     display: inline;
     width: 100%;
@@ -3367,7 +2811,6 @@ ul.icons li [class*=" icon-"] {
     position: absolute;
     top: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003172}}
   .grid .library-spine-inside,
   .grid .library-issue--preview-title,
   .grid .library-issue--preview-image,
@@ -3377,69 +2820,56 @@ ul.icons li [class*=" icon-"] {
     -o-transition: 0.5s;
     transition: 0.5s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003176}}
   .grid .library-issue--preview-image-bonus {
     -webkit-transition: 0.75s;
     -moz-transition: 0.75s;
     -o-transition: 0.75s;
     transition: 0.75s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003182}}
   .grid .library-issue:hover .library-spine-inside,
   .grid .library-issue:hover .library-issue--preview-title {
     color: transparent;
     background: transparent;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003187}}
   .grid .library-issue:hover .library-issue--preview .library-issue--preview-image {
     position: relative;
     top: -200px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003192}}
   .grid .library-issue:hover .library-issue--info {
     bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003196}}
   .grid .library-issue:hover .library-issue--preview-image-bonus {
     top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003207}}
   .grid .library-issue:first-child .library-issue--info {
     -webkit-transition: 0s;
     -moz-transition: 0s;
     -o-transition: 0s;
     transition: 0s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003210}}
   .grid .library-issue:first-child .library-issue--preview {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003214}}
   .grid .library-issue:first-child .library-issue--lead {
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003218}}
   .grid .library-issue:first-child .library-issue--info {
     position: static;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-library\.scss}line{font-family:\00003222}}
   .grid .library-issue:first-child .library-issue--info-header {
     display: block;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_issue-spine--without\.scss}line{font-family:\000031}}
 .library-spine-outside {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_lead-media\.scss}line{font-family:\000031}}
 .lead-media {
   position: fixed;
   top: 3.4375rem;
   z-index: -1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_lead-media\.scss}line{font-family:\000036}}
 .lead-media > h1 {
   position: absolute;
   font-weight: 600;
@@ -3451,12 +2881,10 @@ ul.icons li [class*=" icon-"] {
   padding: 0 0.75rem;
   bottom: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .lead-media > h1 a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_lead-media\.scss}line{font-family:\000036}}
   .lead-media > h1 {
     width: 75%;
     left: 12.5%;
@@ -3465,46 +2893,39 @@ ul.icons li [class*=" icon-"] {
     line-height: 2.9375rem;
     letter-spacing: -.05rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
   .lead-media > h1 a:hover {
     border-bottom: 0.125rem solid #4d58eb;
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_lead-media\.scss}line{font-family:\000036}}
   .lead-media > h1 {
     width: 50%;
     left: 25%;
   }
 }
 @media screen and (min-width: 75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_lead-media\.scss}line{font-family:\000036}}
   .lead-media > h1 {
     font-weight: 600;
     font-size: 4.0625rem;
     line-height: 3.8125rem;
     letter-spacing: -.1rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
   .lead-media > h1 a:hover {
     border-bottom: 0.125rem solid #4d58eb;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_lead-media\.scss}line{font-family:\0000335}}
 .lead-media img,
 .lead-media photo,
 .lead-media video {
   z-index: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_login\.scss}line{font-family:\000033}}
 .user-login {
   background-color: base_button;
   display: none;
   height: 100%;
   padding: 1rem 1rem 2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_login\.scss}line{font-family:\000039}}
 .user-login input {
   background-color: #a6a6a6;
   border-width: 0;
@@ -3514,14 +2935,12 @@ ul.icons li [class*=" icon-"] {
   text-transform: uppercase;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_login\.scss}line{font-family:\0000319}}
 .user-login .btn-usr-login {
   background: transparent;
   border-width: 0;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_login\.scss}line{font-family:\0000326}}
 .btn-create-acct {
   background-color: base_header_bar;
   clear: both;
@@ -3533,7 +2952,6 @@ ul.icons li [class*=" icon-"] {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_logo\.scss}line{font-family:\000031}}
 .logo {
   background-color: transparent;
   border: 0.3125em solid #ffd21f;
@@ -3545,45 +2963,37 @@ ul.icons li [class*=" icon-"] {
   text-indent: -999em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\000034}}
 .media-full-width img,
 .media-full-width picture,
 .media-full-width video {
   width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\000039}}
 .media-full-width figcaption > p {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\0000317}}
 .gallery li {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\0000321}}
 .gallery figure img {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\0000324}}
 .gallery figure figcaption {
   background: none;
   text-align: left;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\0000333}}
 .photo_item img {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_media-full-width\.scss}line{font-family:\0000336}}
 .photo_item figcaption {
   background: none;
   text-align: left;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_search-form\.scss}line{font-family:\000032}}
 .search-main {
   background-color: #ffd41f;
   display: none;
@@ -3595,7 +3005,6 @@ ul.icons li [class*=" icon-"] {
   top: 0;
   z-index: 1000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_search-form\.scss}line{font-family:\0000313}}
 .search-main input {
   background-color: transparent;
   font-size: 2.5rem;
@@ -3603,7 +3012,6 @@ ul.icons li [class*=" icon-"] {
   outline: 0;
   width: 20rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_search-form\.scss}line{font-family:\0000321}}
 .search-main button {
   background-color: transparent;
   color: #f1f1f1;
@@ -3615,25 +3023,20 @@ ul.icons li [class*=" icon-"] {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_social-icons\.scss}line{font-family:\000031}}
 .social-icons {
   color: #898a8d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_social-icons\.scss}line{font-family:\000034}}
 .social-icons .social-icon {
   margin-right: 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_social-icons\.scss}line{font-family:\000038}}
 .social-icons i {
   margin-right: .5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_text-entry\.scss}line{font-family:\000033}}
 .text_entry > .pull_quote {
   padding-left: 4rem;
   padding-right: 4rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_text-entry\.scss}line{font-family:\000037}}
 .text_entry > .pull_quote > span {
   color: #999999;
   float: left;
@@ -3644,13 +3047,11 @@ ul.icons li [class*=" icon-"] {
   margin-left: -4.5rem;
   width: -margin-left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_text-entry\.scss}line{font-family:\0000317}}
 .text_entry > .pull_quote > span:last-of-type {
   float: right;
   margin: -0.4em -4.5rem 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\000031}}
 .toc {
   background: #898a8d;
   position: fixed;
@@ -3665,11 +3066,9 @@ ul.icons li [class*=" icon-"] {
   -o-transition: all 1s;
   transition: all 1s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000312}}
 .toc.active {
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000316}}
 .toc .issue-title {
   background: #ffd21f;
   font-family: "minion-pro-display", "Georgia", "Times New Roman", "Times", serif;
@@ -3678,21 +3077,18 @@ ul.icons li [class*=" icon-"] {
   text-align: right;
   font-size: .875rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000325}}
 .toc .article {
   width: 100%;
   position: relative;
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000332}}
 .toc .article-title-wrapper {
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 48%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000339}}
 .toc .article-title {
   font-weight: 600;
   font-size: 1.125rem;
@@ -3701,35 +3097,29 @@ ul.icons li [class*=" icon-"] {
   color: #f5f6f6;
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/_typography\.scss}line{font-family:\0000310}}
 .toc .article-title a:hover {
   border-bottom: 0.125rem solid #4d58eb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000344}}
 .toc .article-image {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 @media screen and (min-width: 31.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\000031}}
   .toc {
     width: 50%;
     left: -50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\0000354}}
   .toc.active {
     left: 0;
   }
 }
 @media screen and (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_toc\.scss}line{font-family:\000031}}
   .toc {
     width: 19.44444%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_tooltip\.scss}line{font-family:\000033}}
 .tooltip {
   background: #fcefb0;
   border-radius: 0.4em;
@@ -3743,7 +3133,6 @@ ul.icons li [class*=" icon-"] {
   position: absolute;
   z-index: 100;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_tooltip\.scss}line{font-family:\0000317}}
 .tooltip:after, .tooltip:before {
   border-color: #fcefb0 transparent transparent;
   margin-top: 0;
@@ -3755,7 +3144,6 @@ ul.icons li [class*=" icon-"] {
   position: absolute;
   top: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wcanavan\/code\/ngm\/ngm\/static\/src\/sass\/blocks\/_tooltip\.scss}line{font-family:\0000329}}
 .tooltip:after {
   margin-top: 1px;
 }
