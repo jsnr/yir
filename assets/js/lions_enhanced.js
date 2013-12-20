@@ -229,7 +229,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                 
                 var imgTag = $('#'+$(item).attr('id') + '_idx_img img');
                 LoadDetails.setImageToLoad(imgTag.attr('src'));
-;                imgTag.load(function(){
+	             imgTag.load(function(){
                    loaderProgress($(this).attr('src')); 
                 });
             }
