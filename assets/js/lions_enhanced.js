@@ -665,11 +665,11 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             // Size and position the info box from the right side.
             $('.slideinfo', slide).css({'right':'-501px', 'height': $(window).height() - $('.global-header').height() });
             $(slide).click(function(e){
-                if(e.originalEvent != undefined && !$(e.originalEvent.target).hasClass('share') && $('.slide.current .share').hasClass('open'))hideShareButtons();
+                if(e.originalEvent != undefined && !$(e.target).hasClass('share') && $('.slide.current .share').hasClass('open'))hideShareButtons();
                 if($('.slide.current .infobtn').hasClass('open') ){
                 
-                    if($(e.originalEvent.target).hasClass('slideinfo') || $(e.originalEvent.target).parents('.slideinfo').length > 0)return;
-                    if($(e.originalEvent.target).hasClass('buttons') || $(e.originalEvent.target).parents('.buttons').length > 0)return;
+                    if($(e.target).hasClass('slideinfo') || $(e.target).parents('.slideinfo').length > 0)return;
+                    if($(e.target).hasClass('buttons') || $(e.target).parents('.buttons').length > 0)return;
                 
             
                     $('.slide.current .infobtn').click();
