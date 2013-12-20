@@ -37,62 +37,62 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             
 	        if(window.location.href.indexOf("adventure") > -1) {
 		       $("body").attr("id","nav1"); 
-		       $(".shareheadline").text("adventure");
+		       // $(".shareheadline").text("adventure");
 		    }
 		    
 			else if(window.location.href.indexOf("ancient-world") > -1) {
 		       $("body").attr("id","nav2");
-		       $(".shareheadline").text("Ancient World");
+		       // $(".shareheadline").text("Ancient World");
 		    }
 		    
 			else if(window.location.href.indexOf("animals") > -1) {
 		       $("body").attr("id","nav3");
-		       $(".shareheadline").text("Animals"); 
+		       // $(".shareheadline").text("Animals"); 
 		    }
 		    
 			else if(window.location.href.indexOf("cultures") > -1) {
 		       $("body").attr("id","nav4");
-		       $(".shareheadline").text("Cultures"); 
+		       // $(".shareheadline").text("Cultures"); 
 		    }
 		    
 			else if(window.location.href.indexOf("environment") > -1) {
 		       $("body").attr("id","nav5");
-		       $(".shareheadline").text("environment"); 
+		       // $(".shareheadline").text("environment"); 
 		    }
 		    
 			else if(window.location.href.indexOf("geopolitics") > -1) {
 		       $("body").attr("id","nav6");
-		       $(".shareheadline").text("geopolitics"); 
+		       // $(".shareheadline").text("geopolitics"); 
 		    }
 		    
 			else if(window.location.href.indexOf("science") > -1) {
 		       $("body").attr("id","nav7");
-		       $(".shareheadline").text("science"); 
+		       // $(".shareheadline").text("science"); 
 		    }
 		    
 			else if(window.location.href.indexOf("space") > -1) {
 		       $("body").attr("id","nav8");
-		       $(".shareheadline").text("space"); 
+		       // $(".shareheadline").text("space"); 
 		    }
 		    
 			else if(window.location.href.indexOf("photography") > -1) {
 		       $("body").attr("id","nav9");
-		       $(".shareheadline").text("photography"); 
+		       // $(".shareheadline").text("photography"); 
 		    }
 		    
 			else if(window.location.href.indexOf("technology") > -1) {
 		       $("body").attr("id","nav10");
-		       $(".shareheadline").text("technology"); 
+		       // $(".shareheadline").text("technology"); 
 		    }
 		    
 			else if(window.location.href.indexOf("travel") > -1) {
 		       $("body").attr("id","nav11");
-		       $(".shareheadline").text("travel"); 
+		       // $(".shareheadline").text("travel"); 
 		    }
 		    
 			else if(window.location.href.indexOf("your-favorites") > -1) {
 		       $("body").attr("id","nav12");
-		       $(".shareheadline").text("Your Favorites"); 
+		       // $(".shareheadline").text("Your Favorites"); 
 		    }
 		       
 				    		

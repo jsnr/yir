@@ -284,9 +284,7 @@ font-size: 1.5vw;
     z-index: 50;
     position: relative;
 }
-.services .introtxt { 
-    top: 0;
-}
+
 .introtxt h1 {
     font-family: "Alright Sans LT Thin", 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 120px;
@@ -684,7 +682,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         font-size: .80em;
         height: 27px;
         padding: 2px 0 5px 0;
-		margin-left:25px;
+        width: 150px;
     }
     
     .touch .gallerylabel {
@@ -1042,7 +1040,6 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         background-color: rgba(0,0,0, .45);
         z-index: 2099;
         position: absolute;
-        top: 0;
         right: 0;
         opacity: 1;
         border: none;
@@ -1118,16 +1115,15 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         position: relative;
     }
     .services .introtxt.active {
-        margin-top: 55px;
+        margin-top: -22px;
     }
     .addthis_toolbox.addthis_default_style {
-        margin: 50px auto;
+        margin: 80px auto;
         text-align: center;
         left: 0;
         right: 0;
         position: absolute;
         width: auto;
-        top: 50%;
     }
     .addthis_default_style .addthis_separator, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m, .addthis_default_style .at300bs {
         float: none;
@@ -1518,15 +1514,14 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 .info-headline {
     color: #fff;
     font-weight: 200;
-    font-size: 1.9em;
-    letter-spacing: 1px;
+    font-size: 1.75em;
     line-height: 1.1;
     position: relative;
   /*  left: -29px;*/
     right: 0;
-    padding: 10px 50px 10px 30px;
+    padding: 7px 50px 8px 30px;
     width: 450px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 .headover {
 	position: absolute;
@@ -1835,6 +1830,16 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         width: 90%;
         margin-top: .3em;
     }  
+        .info-intro {
+            /*font-family: 'Neue Helvetica W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+            font-size: 1.3em;
+            font-weight: 200;
+            line-height: 1.2;
+            margin-top: -1.48em;
+            display: block;
+            position: absolute;
+            letter-spacing: -.02em;
+            }
         .info-summary-p {
             display: block;
             margin-bottom: 0.8em;
