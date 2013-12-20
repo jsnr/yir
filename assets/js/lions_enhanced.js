@@ -743,7 +743,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
 				        if($(".curslide").text() == "1111111111111"){
 					        $(".info-headline, .headover").animate({right:"0"},500);
-					        $(".info-plus").animate({right:"454px"},500);
+					        $(".info-plus").animate({right:"500px"},500);
 				        }else{
 				        	$(".info-plus").animate({right:"454px"},500);
 				        	$(".info-headline, .headover").animate({right:"30px"},500);
@@ -1139,7 +1139,7 @@ $("#allcomments").height(commenth);
         
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline, .headover").css("right","30px");
-	        $('.info-plus').animate({right: '454px'},200);
+	        $('.info-plus').animate({right: '500px'},200);
 	        $(".info-headline").addClass("inpanel");
         }else{
 	        $(".info-headline, .headover").removeClass("inpanel");
