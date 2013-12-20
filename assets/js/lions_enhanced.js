@@ -743,7 +743,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
 				        if($(".curslide").text() == "1111111111111"){
 					        $(".info-headline, .headover").animate({right:"0"},500);
-					        $(".info-plus").animate({right:"500px"},500);
+					        $(".info-plus").animate({right:"454px"},500);
 				        }else{
 				        	$(".info-plus").animate({right:"454px"},500);
 				        	$(".info-headline, .headover").animate({right:"30px"},500);
