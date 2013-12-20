@@ -163,12 +163,14 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 		$(document).keyup(function(e) {
 			if (e.keyCode == 27) { // esc
 				$("#overlay").fadeOut(800, "easeInOutQuad");
+				 $("video").prop('muted', false); 
 			}   
 		});
 			
 		$(document).keyup(function(e) {
 			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
 				$("#overlay").fadeOut(800, "easeInOutQuad");
+				$("video").prop('muted', false); 
 	            //$(".gallerylabel").delay(800).fadeOut();
 			}   
 		});
@@ -874,6 +876,27 @@ $("#allcomments").height(commenth);
         $('.slide h2.title').fadeIn(300);
         $('.bottomNavBar').css('z-index', 1050).fadeIn(300);
     }
+	
+	function updateAddThisUrl()
+   {
+       //slide_no is the variable I am adding as a URL parameter
+       var location = window.location;
+       var theUrl = location.protocol + '//' + location.host + location.pathname + "?image=" + slide_no;
+
+       addthis_share = {url : theUrl};
+      // only have to change the window.location.href bit
+	   addthis.update('share', 'url', location.href); 
+       addthis.ready(); // This will re-render the box.
+       addthis.url = theUrl; 
+       addthis.ready();         
+   }
+
+   function eventHandler(evt) 
+   { 
+       updateAddThisUrl();
+   }
+
+   addthis.addEventListener('addthis.menu.share', eventHandler);
     
     // Set the information for each service based on the deep link (hashtag)
     setShareButtons = function(){
@@ -1106,6 +1129,8 @@ $("#allcomments").height(commenth);
             nextSlideNum =  (cCurrent == $('.slide.current').data('cLength')) ? 0 : cCurrent;
         }
         
+        checkFadeAudio(isUp, cCurrent); // JF
+
         $('.preloader').fadeOut(200);
         
         if(slideTitleScreen && nextSlideNum != 1){
@@ -1184,6 +1209,29 @@ $("#allcomments").height(commenth);
           }  
     }
     
+    ///// start audio fade - JF
+    // index 1 is the sizzle video
+    checkFadeAudio = function(goingUp, indx){
+        if(goingUp && indx == 2){ 
+       		playVideoThenFadeInAudio();
+        }
+        else
+       	if(!goingUp && indx == 1){
+			fadeOutAudioThenPauseVideo();
+        }
+    }
+    fadeOutAudioThenPauseVideo = function(){
+		//$("video").prop('muted', false); 
+		$('.slide.current .bgvideo')[0].pause(); 
+
+    }
+	playVideoThenFadeInAudio = function(){
+		//$("video").prop('muted', true); 
+		$('.slide.current .bgvideo')[0].play(); 
+	}
+	////////// - end audio fade - JF
+
+
     checkPreloaderStatus = function(){
         if($('.slide.current video').length == 0 || $('.slide.current video').attr('src') == undefined)return;
         if($('.slide.current video')[0].networkState == 2 && $('.slide.current').data('cCurrent') == 1){ 
