@@ -1129,7 +1129,7 @@ $("#allcomments").height(commenth);
             nextSlideNum =  (cCurrent == $('.slide.current').data('cLength')) ? 0 : cCurrent;
         }
         
-        checkFadeAudio(isUp, cCurrent); // JF
+        checkFadeAudio(isUp, cCurrent, nextSlideNum); // JF
 
         $('.preloader').fadeOut(200);
         
@@ -1211,12 +1211,15 @@ $("#allcomments").height(commenth);
     
     ///// start audio fade - JF
     // index 1 is the sizzle video
-    checkFadeAudio = function(goingUp, indx){
-        if(goingUp && indx == 2){ 
+    checkFadeAudio = function(goingUp, indx, nextSlideNum){
+        console.log(nextSlideNum);
+        //if(goingUp && indx == 2){ 
+        if(nextSlideNum == 0){
        		playVideoThenFadeInAudio();
         }
         else
-       	if(!goingUp && indx == 1){
+       	//if((!goingUp && indx == 1) || (goingUp && indx == 1)){
+       	if(indx == 1){
 			fadeOutAudioThenPauseVideo();
         }
     }
