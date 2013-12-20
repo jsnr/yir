@@ -14,6 +14,13 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 //$(".caption").css({'height': '85%'}); // JF
 
 
+  
+
+
+
+  
+
+  
            	
 	function showCommentStream(hash) {
         // Remove '#/' or '#.' from the URL hash
@@ -156,12 +163,14 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 		$(document).keyup(function(e) {
 			if (e.keyCode == 27) { // esc
 				$("#overlay").fadeOut(800, "easeInOutQuad");
+				 $("video").prop('muted', false); 
 			}   
 		});
 			
 		$(document).keyup(function(e) {
 			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
 				$("#overlay").fadeOut(800, "easeInOutQuad");
+				$("video").prop('muted', false); 
 	            //$(".gallerylabel").delay(800).fadeOut();
 			}   
 		});
@@ -220,7 +229,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                 
                 var imgTag = $('#'+$(item).attr('id') + '_idx_img img');
                 LoadDetails.setImageToLoad(imgTag.attr('src'));
-;                imgTag.load(function(){
+	             imgTag.load(function(){
                    loaderProgress($(this).attr('src')); 
                 });
             }
@@ -670,6 +679,8 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                 
                     if($(e.target).hasClass('slideinfo') || $(e.target).parents('.slideinfo').length > 0)return;
                     if($(e.target).hasClass('buttons') || $(e.target).parents('.buttons').length > 0)return;
+                    
+
                 
             
                     $('.slide.current .infobtn').click();
@@ -743,7 +754,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
                      
 				        if($(".curslide").text() == "1111111111111"){
 					        $(".info-headline, .headover").animate({right:"0"},500);
-					        $(".info-plus").animate({right:"500px"},500);
+					        $(".info-plus").animate({right:"454px"},500);
 				        }else{
 				        	$(".info-plus").animate({right:"454px"},500);
 				        	$(".info-headline, .headover").animate({right:"30px"},500);
@@ -865,6 +876,27 @@ $("#allcomments").height(commenth);
         $('.slide h2.title').fadeIn(300);
         $('.bottomNavBar').css('z-index', 1050).fadeIn(300);
     }
+	
+	function updateAddThisUrl()
+   {
+       //slide_no is the variable I am adding as a URL parameter
+       var location = window.location;
+       var theUrl = location.protocol + '//' + location.host + location.pathname + "?image=" + slide_no;
+
+       addthis_share = {url : theUrl};
+      // only have to change the window.location.href bit
+	   addthis.update('share', 'url', location.href); 
+       addthis.ready(); // This will re-render the box.
+       addthis.url = theUrl; 
+       addthis.ready();         
+   }
+
+   function eventHandler(evt) 
+   { 
+       updateAddThisUrl();
+   }
+
+   addthis.addEventListener('addthis.menu.share', eventHandler);
     
     // Set the information for each service based on the deep link (hashtag)
     setShareButtons = function(){
@@ -1097,6 +1129,8 @@ $("#allcomments").height(commenth);
             nextSlideNum =  (cCurrent == $('.slide.current').data('cLength')) ? 0 : cCurrent;
         }
         
+        checkFadeAudio(isUp, cCurrent, nextSlideNum); // JF
+
         $('.preloader').fadeOut(200);
         
         if(slideTitleScreen && nextSlideNum != 1){
@@ -1134,12 +1168,13 @@ $("#allcomments").height(commenth);
         	//'<p class="info-summary">'+element.data('info-summary') + '</p>' // GOOD
         )
         
+
         
         // FLOATING HEADLINE BEHAVIOR
         
         if($('.buttons li.infobtn').hasClass("open")){
 	        $(".info-headline, .headover").css("right","30px");
-	        $('.info-plus').animate({right: '500px'},200);
+	        $('.info-plus').animate({right: '454px'},200);
 	        $(".info-headline").addClass("inpanel");
         }else{
 	        $(".info-headline, .headover").removeClass("inpanel");
@@ -1174,6 +1209,32 @@ $("#allcomments").height(commenth);
           }  
     }
     
+    ///// start audio fade - JF
+    // index 1 is the sizzle video
+    checkFadeAudio = function(goingUp, indx, nextSlideNum){
+        console.log(nextSlideNum);
+        //if(goingUp && indx == 2){ 
+        if(nextSlideNum == 0){
+       		playVideoThenFadeInAudio();
+        }
+        else
+       	//if((!goingUp && indx == 1) || (goingUp && indx == 1)){
+       	if(indx == 1){
+			fadeOutAudioThenPauseVideo();
+        }
+    }
+    fadeOutAudioThenPauseVideo = function(){
+		//$("video").prop('muted', false); 
+		$('.slide.current .bgvideo')[0].pause(); 
+
+    }
+	playVideoThenFadeInAudio = function(){
+		//$("video").prop('muted', true); 
+		$('.slide.current .bgvideo')[0].play(); 
+	}
+	////////// - end audio fade - JF
+
+
     checkPreloaderStatus = function(){
         if($('.slide.current video').length == 0 || $('.slide.current video').attr('src') == undefined)return;
         if($('.slide.current video')[0].networkState == 2 && $('.slide.current').data('cCurrent') == 1){ 
@@ -2206,22 +2267,39 @@ if($("#overlay").is(":hidden")){
         $(window).mouseGesture();
         
         $(document).on('wheelUp', function(e){
+        
+
+        
             var cType = $('.slide.current').attr('type');
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
-                if($(".commentpane").is(":hidden")){
-	                galleryChange('down');
+                
+                if($(".caption:hover").length == 0){
+                
+	                if($(".commentpane").is(":hidden")){
+		                galleryChange('down');
+		            }
+	            
 	            }
+	            
             }
+            
+
+            
         });
         
         $(document).on('wheelDown', function(e){
             var cType = $('.slide.current').attr('type');
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
-                if($(".commentpane").is(":hidden")){
-	                galleryChange('up');
-                }
+                
+                if($(".caption:hover").length == 0){
+                
+	                if($(".commentpane").is(":hidden")){
+		                galleryChange('up');
+	                }
+	            
+	            }
             }
         });
         
