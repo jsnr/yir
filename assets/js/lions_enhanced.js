@@ -130,50 +130,50 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 
 	// INTERSTITIAL ADS	    
     
-	var hchanges = 0;
-		
-	$(window).hashchange( function(){
-		
-        if (hchanges < 4) {hchanges = hchanges + 1;}
-        else if (hchanges >= 4) {hchanges = 0;}
-		
-		
-		if(hchanges == 4){
-			$("video").prop('muted', true); // JF	
-			$('#overlay').fadeIn(800, "easeInOutQuad");
-		}
-		
-	})
-	$(window).hashchange(function(){
-	    $("h2.title").delay(5000).fadeOut(1200);
-    });
-
-	
-    $("#overlay").click(function(){
-	    $(this).fadeOut(800, "easeInOutQuad");
-    });
-    
-    $(".navbtn").click(function(){
-	    $("#overlay").fadeOut(800, "easeInOutQuad");
-		//$(".gallerylabel").delay(800).fadeOut();
-        $("video").prop('muted', false);  // JF 
-    });
-    
-    	
-		$(document).keyup(function(e) {
-			if (e.keyCode == 27) { // esc
-				$("#overlay").fadeOut(800, "easeInOutQuad");
-				 $("video").prop('muted', false); 
-			}   
-		});
-			
-		$(document).keyup(function(e) {
-			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
-				$("#overlay").fadeOut(800, "easeInOutQuad");
-				$("video").prop('muted', false); 
-	            //$(".gallerylabel").delay(800).fadeOut();
-			}   
-		});
+	//var hchanges = 0;
+//		
+//	$(window).hashchange( function(){
+//		
+//        if (hchanges < 4) {hchanges = hchanges + 1;}
+//        else if (hchanges >= 4) {hchanges = 0;}
+//		
+//		
+//		if(hchanges == 4){
+//			$("video").prop('muted', true); // JF	
+//			$('#overlay').fadeIn(800, "easeInOutQuad");
+//		}
+//		
+//	})
+//	$(window).hashchange(function(){
+//	    $("h2.title").delay(5000).fadeOut(1200);
+//    });
+//
+//	
+//    $("#overlay").click(function(){
+//	    $(this).fadeOut(800, "easeInOutQuad");
+//    });
+//    
+//    $(".navbtn").click(function(){
+//	    $("#overlay").fadeOut(800, "easeInOutQuad");
+//		//$(".gallerylabel").delay(800).fadeOut();
+//        $("video").prop('muted', false);  // JF 
+//    });
+//    
+//    	
+//		$(document).keyup(function(e) {
+//			if (e.keyCode == 27) { // esc
+//				$("#overlay").fadeOut(800, "easeInOutQuad");
+//				 $("video").prop('muted', false); 
+//			}   
+//		});
+//			
+//		$(document).keyup(function(e) {
+//			if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
+//				$("#overlay").fadeOut(800, "easeInOutQuad");
+//				$("video").prop('muted', false); 
+//	            //$(".gallerylabel").delay(800).fadeOut();
+//			}   
+//		});
 		 
 	// END INTERSTITIAL ADS
 
