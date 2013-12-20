@@ -1129,6 +1129,8 @@ $("#allcomments").height(commenth);
             nextSlideNum =  (cCurrent == $('.slide.current').data('cLength')) ? 0 : cCurrent;
         }
         
+        checkFadeAudio(isUp, cCurrent); // JF
+
         $('.preloader').fadeOut(200);
         
         if(slideTitleScreen && nextSlideNum != 1){
@@ -1207,6 +1209,29 @@ $("#allcomments").height(commenth);
           }  
     }
     
+    ///// start audio fade - JF
+    // index 1 is the sizzle video
+    checkFadeAudio = function(goingUp, indx){
+        if(goingUp && indx == 2){ 
+       		playVideoThenFadeInAudio();
+        }
+        else
+       	if(!goingUp && indx == 1){
+			fadeOutAudioThenPauseVideo();
+        }
+    }
+    fadeOutAudioThenPauseVideo = function(){
+		//$("video").prop('muted', false); 
+		$('.slide.current .bgvideo')[0].pause(); 
+
+    }
+	playVideoThenFadeInAudio = function(){
+		//$("video").prop('muted', true); 
+		$('.slide.current .bgvideo')[0].play(); 
+	}
+	////////// - end audio fade - JF
+
+
     checkPreloaderStatus = function(){
         if($('.slide.current video').length == 0 || $('.slide.current video').attr('src') == undefined)return;
         if($('.slide.current video')[0].networkState == 2 && $('.slide.current').data('cCurrent') == 1){ 
