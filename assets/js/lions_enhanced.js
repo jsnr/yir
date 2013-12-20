@@ -2216,22 +2216,39 @@ if($("#overlay").is(":hidden")){
         $(window).mouseGesture();
         
         $(document).on('wheelUp', function(e){
+        
+
+        
             var cType = $('.slide.current').attr('type');
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
-                if($(".commentpane").is(":hidden")){
-	                galleryChange('down');
+                
+                if($(".caption:hover").length == 0){
+                
+	                if($(".commentpane").is(":hidden")){
+		                galleryChange('down');
+		            }
+	            
 	            }
+	            
             }
+            
+
+            
         });
         
         $(document).on('wheelDown', function(e){
             var cType = $('.slide.current').attr('type');
             if(cType == "gallery"||cType == "combo"){
                 isScrolling = true;
-                if($(".commentpane").is(":hidden")){
-	                galleryChange('up');
-                }
+                
+                if($(".caption:hover").length == 0){
+                
+	                if($(".commentpane").is(":hidden")){
+		                galleryChange('up');
+	                }
+	            
+	            }
             }
         });
         
