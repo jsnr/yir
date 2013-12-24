@@ -19,22 +19,30 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 
 
   
-
+    // LOADERBAR PROGRESS
+    var loadtxtw = $('.siteLoader .head_text').width();
+    var spacetoctr = ($(window).innerWidth() - loadtxtw) / 2;
+    $('.siteLoader .head_text').css('left',spacetoctr);
+    $('.siteLoader .head_text').delay(500).animate({opacity:1},500);
+    loaderProgress = function(itemURL){
+		var loadPercent = LoadDetails.setAsLoaded(itemURL);
+		$('.siteLoader .head_text.light .txt_holder').width(loadPercent+'%');
+    }
   
            	
 	function showCommentStream(hash) {
         // Remove '#/' or '#.' from the URL hash
         var loc = hash.slice(2);
-        console.log('hash location: ', loc);
+        //console.log('hash location: ', loc);
         // Hide the active comment stream
         $('#allcomments').find('div.active').removeClass('active');
 
         // If the current hash equates to a comment stream, make it active
         if ($('#allcomments div.' + loc + '-comments').length > 0) {
-            console.log('making convo active - ' + loc);
+            //console.log('making convo active - ' + loc);
             $('#allcomments div.' + loc + '-comments').addClass('active');
         } else {
-            console.log(loc + ' comment stream does not exist');
+            //console.log(loc + ' comment stream does not exist');
         }
     }
 
@@ -483,7 +491,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             $(slide).append(txtContent).append(btnContent);
             $(slide).append(cpContent).append(btnContent);            
             $(slide).prepend('<h2 class="title">' + $('h2', txtContent).text() + '</h2>');
-            $('h2.title',slide).after('<div class="playbtn_container"><div class="playbtn">Look</div></div>');
+            //$('h2.title',slide).after('<div class="playbtn_container"><div class="playbtn">Look</div></div>');
             
             
             if(contentType == 'gallery'){
@@ -896,7 +904,9 @@ $("#allcomments").height(commenth);
        updateAddThisUrl();
    }
 
-   addthis.addEventListener('addthis.menu.share', eventHandler);
+   try { addthis.addEventListener('addthis.menu.share', eventHandler); } catch(err){
+       //console.log("no add this")
+   }
     
     // Set the information for each service based on the deep link (hashtag)
     setShareButtons = function(){
@@ -1105,7 +1115,7 @@ $("#allcomments").height(commenth);
         var cCurrent = $('.slide.current').data('cCurrent');
         
         //$('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
-		 $('.slide.current h2.title').removeClass('active');
+		$('.slide.current h2.title').removeClass('active');
         
         var cType = $('.slide.current').attr('type');
         if(cType != "gallery"&&cType != "combo")return;
@@ -1212,7 +1222,7 @@ $("#allcomments").height(commenth);
     ///// start audio fade - JF
     // index 1 is the sizzle video
     checkFadeAudio = function(goingUp, indx, nextSlideNum){
-        console.log(nextSlideNum);
+        //console.log(nextSlideNum);
         //if(goingUp && indx == 2){ 
         if(nextSlideNum == 0){
        		playVideoThenFadeInAudio();
@@ -1915,15 +1925,7 @@ if ($(".gallerylabel").length) {
         });
     }
     
-    // LOADERBAR PROGRESS
-    var loadtxtw = $('.siteLoader .head_text').width();
-    var spacetoctr = ($(window).innerWidth() - loadtxtw) / 2;
-    $('.siteLoader .head_text').css('left',spacetoctr);
-    $('.siteLoader .head_text').delay(500).animate({opacity:1},500);
-    loaderProgress = function(itemURL){
-		var loadPercent = LoadDetails.setAsLoaded(itemURL);
-		$('.siteLoader .head_text.light .txt_holder').width(loadPercent+'%');
-    }
+    
         
     // PRELOAD IMAGES
     $(window).load(function(){
@@ -2427,7 +2429,7 @@ if($("#overlay").is(":hidden")){
             
             if(slideTitleScreen){
                 $('.slide.current h2.title').show();
-                $('.playbtn').show();
+                //$('.playbtn').show();
             }
             
             if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'About', 'Close']);
@@ -2436,26 +2438,6 @@ if($("#overlay").is(":hidden")){
 
         
          createSlides();
-
-                // var lf_animals = '<script src="http://zor.fyre.co/wjs/v3.0/javascripts/livefyre.js" type="text/javascript"></script>';
-  // lf_animals += '<script  type="text/javascript">';
-  //       lf_animals += 'var loadFyre = function() {';
-  //       lf_animals += '    fyre.conv.load({';
-  //       lf_animals += "        network: 'livefyre.com'";
-  //       lf_animals += "    }, [{";
-  //       lf_animals += "        app: 'main',";
-  //       lf_animals +=   "      siteId: '349436',";
-  //       lf_animals +=   "      articleId: 'animals',";
-  //       lf_animals +=   "      el: 'livefyre-app-animals',";
-  //       lf_animals +=   "      checksum: '3d21166bb46dd3921b0130e22f7a4abc',";
-  //       lf_animals +=   "      collectionMeta: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL2phby5jby9uZ3MveWlyIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJhbmltYWxzIiwgInRpdGxlIjogIkFuaW1hbHMifQ.S0fj_H2SBklJv67w1EGMSkTwsqv2_POeIQYubziz2CM'";
-  //       lf_animals +=   '  }], function (widget) {';
-  //       lf_animals += '     });';
-  //       lf_animals += '};';
-  //       lf_animals += 'setTimeout(loadFyre, 1000);';
-  //       lf_animals += '</script>';
-        
-  //       $('#allcomments').append(lf_animals);
         
     });
     

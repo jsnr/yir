@@ -2,6 +2,7 @@
 <!--[if lte IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]--><!--[if gt IE 8]><!-->
 <html lang="en" xml:lang="en" class="no-js"><!--<![endif]--><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta charset="utf-8">
     <title>2013: Year In Review | National Geographic</title>
     <!-- (c) Copyright by National Geographic All Rights Reserved. -->
@@ -1572,12 +1573,15 @@ See More
 <script src="./assets/js/hashchange.js" type="text/javascript"></script>
 <script type="text/javascript">
 // using jQuery
-$('audio').mediaelementplayer();
+//$('audio').mediaelementplayer();
 </script>
 <script type="text/javascript">
 	// keep this from breaking
 	if(Modernizr.touch || $('html').hasClass('ie'))$('.fullscreen').remove();
 	$('#dragarea_container').height( $(window).height() - $('.global-header').height() ).width($(window).width()+2);
+	if(Modernizr.touch && !$('html').hasClass('ie10')){
+		$('#dragarea_container').height( $('#dragarea_container').height() - 20);
+	}
 	$('.preloader').css('top', Math.round($('#dragarea').height()/2 + 110));
 	
 	function setEntry(){
@@ -1607,15 +1611,15 @@ $('audio').mediaelementplayer();
 <div id="allcomments">
 	<div class="collection animals-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9hbmltYWxzIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOmFuaW1hbHM6MjAxMyIsICJ0aXRsZSI6ICJBbmltYWxzIFlJUiAyMDEzIn0.xqzfFb13NvNlpnCf9GH2uFgHUqYalsXxQDYmAQ3ZPOU",
-                "siteId": 318027,
-                "articleId":"wpf:yir:animals:2013",
-                "el":"livefyre-app-animals",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9hbmltYWxzIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOmFuaW1hbHM6MjAxMyIsICJ0aXRsZSI6ICJBbmltYWxzIFlJUiAyMDEzIn0.xqzfFb13NvNlpnCf9GH2uFgHUqYalsXxQDYmAQ3ZPOU",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:animals:2013",
+        //        "el":"livefyre-app-animals",
+        //        "signed": true
+        //    });
+        //}
         </script>
 
 	   <div id="livefyre-app-animals"></div>
@@ -1623,15 +1627,15 @@ $('audio').mediaelementplayer();
 
     <div class="collection adventure-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9hZHZlbnR1cmUiLCAidGFncyI6IFtdLCAiYXJ0aWNsZUlkIjogIndwZjp5aXI6YWR2ZW50dXJlOjIwMTMiLCAidGl0bGUiOiAiQWR2ZW50dXJlIFlJUiAyMDEzIn0.uN77xvxnHxCy7cucpuFOfMKvaKF-j3fQmre50aYeekQ",
-                "siteId": 318027,
-                "articleId":"wpf:yir:adventure:2013",
-                "el":"livefyre-app-adventure",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9hZHZlbnR1cmUiLCAidGFncyI6IFtdLCAiYXJ0aWNsZUlkIjogIndwZjp5aXI6YWR2ZW50dXJlOjIwMTMiLCAidGl0bGUiOiAiQWR2ZW50dXJlIFlJUiAyMDEzIn0.uN77xvxnHxCy7cucpuFOfMKvaKF-j3fQmre50aYeekQ",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:adventure:2013",
+        //        "el":"livefyre-app-adventure",
+        //        "signed": true
+        //    });
+        //}
         </script>
 
        <div id="livefyre-app-adventure"></div>
@@ -1639,158 +1643,158 @@ $('audio').mediaelementplayer();
     
         <div class="collection ancient-world-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9hbmNpZW50LXdvcmxkIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOmFuY2llbnR3b3JsZDoyMDEzIiwgInRpdGxlIjogIkFuY2llbnQgV29ybGQgWUlSIDIwMTMifQ.WM0QRGKf5NTI1FiThw3jQCrJ5b8u00ADnAIt9cwa8wM",
-                "checksum": "069dbf17bf19824393f0faa2b800d093",
-                "siteId": 318027,
-                "articleId":"wpf:yir:ancientworld:2013",
-                "el":"livefyre-app-ancientworld",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9hbmNpZW50LXdvcmxkIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOmFuY2llbnR3b3JsZDoyMDEzIiwgInRpdGxlIjogIkFuY2llbnQgV29ybGQgWUlSIDIwMTMifQ.WM0QRGKf5NTI1FiThw3jQCrJ5b8u00ADnAIt9cwa8wM",
+        //        "checksum": "069dbf17bf19824393f0faa2b800d093",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:ancientworld:2013",
+        //        "el":"livefyre-app-ancientworld",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-ancientworld"></div>
     </div><!-- /.ancientworld-comments -->
     
       <div class="collection cultures-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9jdWx0dXJlcyIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjpjdWx0dXJlczoyMDEzIiwgInRpdGxlIjogIkN1bHR1cmVzIFlJUiAyMDEzIn0.MrGi90nu4LeSAX8cCa32y-H3Qplv3kW9lkbqWMgkzlo",
-                "siteId": 318027,
-                "articleId":"wpf:yir:cultures:2013",
-                "el":"livefyre-app-cultures",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9jdWx0dXJlcyIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjpjdWx0dXJlczoyMDEzIiwgInRpdGxlIjogIkN1bHR1cmVzIFlJUiAyMDEzIn0.MrGi90nu4LeSAX8cCa32y-H3Qplv3kW9lkbqWMgkzlo",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:cultures:2013",
+        //        "el":"livefyre-app-cultures",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-cultures"></div>
     </div><!-- /.cultures-comments -->
     
       <div class="collection environment-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9lbnZpcm9ubWVudCIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjplbnZpcm9ubWVudDoyMDEzIiwgInRpdGxlIjogIkVudmlyb25tZW50IFlJUiAyMDEzIn0.0-B2UUyAKoIv0z7P1jHewpY42JkLGgMJAYl3va54I7o",
-                "siteId": 318027,
-                "articleId":"wpf:yir:environment:2013",
-                "el":"livefyre-app-environment",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9lbnZpcm9ubWVudCIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjplbnZpcm9ubWVudDoyMDEzIiwgInRpdGxlIjogIkVudmlyb25tZW50IFlJUiAyMDEzIn0.0-B2UUyAKoIv0z7P1jHewpY42JkLGgMJAYl3va54I7o",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:environment:2013",
+        //        "el":"livefyre-app-environment",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-environment"></div>
     </div><!-- /.environment-comments -->
     
       <div class="collection geopolitics-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9nZW9wb2xpdGljcyIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjoyMDEzOmdlb3BvbGl0aWNzIiwgInRpdGxlIjogIkdlb3BvbGl0aWNzIFlJUiAyMDEzIn0.4pDqVCEF-X7YnDaM6LNet1XSJ35WvwkWe4kvpbAlF5U",
-                "checksum": "d8bdedb4a08647c0d123f84f2fba8d05",
-                "siteId": 318027,
-                "articleId":"wpf:yir:2013:geopolitics",
-                "el":"livefyre-app-geopolitics",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9nZW9wb2xpdGljcyIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjoyMDEzOmdlb3BvbGl0aWNzIiwgInRpdGxlIjogIkdlb3BvbGl0aWNzIFlJUiAyMDEzIn0.4pDqVCEF-X7YnDaM6LNet1XSJ35WvwkWe4kvpbAlF5U",
+        //        "checksum": "d8bdedb4a08647c0d123f84f2fba8d05",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:2013:geopolitics",
+        //        "el":"livefyre-app-geopolitics",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-geopolitics"></div>
     </div><!-- /.geopolitics-comments -->
     
     <div class="collection photography-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9waG90b2dyYXBoeSIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjpwaG90b2dyYXBoeToyMDEzIiwgInRpdGxlIjogIlBob3RvZ3JhcGh5IFlJUiAyMDEzIn0.u80ITkVyUlbQ6tfzFJRbezproW34fCv3dx-KaHuq84U",
-                "checksum": "6583929362ce02c00191464f5dcf5f1b",
-                "siteId": 318027,
-                "articleId":"wpf:yir:photography:2013",
-                "el":"livefyre-app-photography",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9waG90b2dyYXBoeSIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjpwaG90b2dyYXBoeToyMDEzIiwgInRpdGxlIjogIlBob3RvZ3JhcGh5IFlJUiAyMDEzIn0.u80ITkVyUlbQ6tfzFJRbezproW34fCv3dx-KaHuq84U",
+        //        "checksum": "6583929362ce02c00191464f5dcf5f1b",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:photography:2013",
+        //        "el":"livefyre-app-photography",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-photography"></div>
     </div><!-- /.photography-comments -->
     
       <div class="collection science-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9zY2llbmNlIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOnNjaWVuY2U6MjAxMyIsICJ0aXRsZSI6ICJTY2llbmNlIFlJUiAyMDEzIn0.Wv9-T3cflJb1Z-uJqcK_EBEO_QxZ6o9y9IPDUB2_hvM",
-                "checksum": "1b1c39e73b2fb80f34945ba00140a11d",
-                "siteId": 318027,
-                "articleId":"wpf:yir:science:2013",
-                "el":"livefyre-app-science",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9zY2llbmNlIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOnNjaWVuY2U6MjAxMyIsICJ0aXRsZSI6ICJTY2llbmNlIFlJUiAyMDEzIn0.Wv9-T3cflJb1Z-uJqcK_EBEO_QxZ6o9y9IPDUB2_hvM",
+        //        "checksum": "1b1c39e73b2fb80f34945ba00140a11d",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:science:2013",
+        //        "el":"livefyre-app-science",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-science"></div>
     </div><!-- /.science-comments -->
     
      <div class="collection space-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9zcGFjZSIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjpzcGFjZToyMDEzIiwgInRpdGxlIjogIlNwYWNlIFlJUiAyMDEzIn0.ue90NuuJHX2ZfjGPnAxq2JLH7nF7N3Y3wqGkgFpUUEM",
-                "checksum": "bab25b86a825fef41ae52a5f47acac03",
-                "siteId": 318027,
-                "articleId":"wpf:yir:space:2013",
-                "el":"livefyre-app-space",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy9zcGFjZSIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjpzcGFjZToyMDEzIiwgInRpdGxlIjogIlNwYWNlIFlJUiAyMDEzIn0.ue90NuuJHX2ZfjGPnAxq2JLH7nF7N3Y3wqGkgFpUUEM",
+        //        "checksum": "bab25b86a825fef41ae52a5f47acac03",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:space:2013",
+        //        "el":"livefyre-app-space",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-space"></div>
     </div><!-- /.space-comments -->
     
     <div class="collection technology-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy90ZWNobm9sb2d5IiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOnRlY2hub2xvZ3k6MjAxMyIsICJ0aXRsZSI6ICJUZWNobm9sb2d5IFlJUiAyMDEzIn0.fveysT-2F2-t9ji3o09SeLpzjG9MJyft9h0-y463XEs",
-                "checksum": "badffc0fe43df37f70c7ab1a6779766f",
-                "siteId": 318027,
-                "articleId":"wpf:yir:technology:2013",
-                "el":"livefyre-app-technology",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy90ZWNobm9sb2d5IiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJ3cGY6eWlyOnRlY2hub2xvZ3k6MjAxMyIsICJ0aXRsZSI6ICJUZWNobm9sb2d5IFlJUiAyMDEzIn0.fveysT-2F2-t9ji3o09SeLpzjG9MJyft9h0-y463XEs",
+        //        "checksum": "badffc0fe43df37f70c7ab1a6779766f",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:technology:2013",
+        //        "el":"livefyre-app-technology",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-technology"></div>
     </div><!-- /.technology-comments -->
     
      <div class="collection travel-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy90cmF2ZWwiLCAidGFncyI6IFtdLCAiYXJ0aWNsZUlkIjogIndwZjp5aXI6dHJhdmVsOjIwMTMiLCAidGl0bGUiOiAiVHJhdmVsIFlJUiAyMDEzIn0.vfna_WCKV_doQCIKiTGDIvQn6SunIPow9MfmLrg1WVQ",
-                "checksum": "99d9168bf02be1f33a7043cb59fd990c",
-                "siteId": 318027,
-                "articleId":"wpf:yir:travel:2013",
-                "el":"livefyre-app-travel",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy90cmF2ZWwiLCAidGFncyI6IFtdLCAiYXJ0aWNsZUlkIjogIndwZjp5aXI6dHJhdmVsOjIwMTMiLCAidGl0bGUiOiAiVHJhdmVsIFlJUiAyMDEzIn0.vfna_WCKV_doQCIKiTGDIvQn6SunIPow9MfmLrg1WVQ",
+        //        "checksum": "99d9168bf02be1f33a7043cb59fd990c",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:travel:2013",
+        //        "el":"livefyre-app-travel",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-travel"></div>
     </div><!-- /.travel-comments -->
     
      <div class="collection your-favorites-comments">
         <script type="text/javascript">
-        if('undefined' !== typeof livefyreConfig) {
-            livefyreConfig.streams.push({
-                "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy95b3VyLWZhdm9yaXRlcyIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjp5b3VyLWZhdm9yaXRlczoyMDEzIiwgInRpdGxlIjogIllvdXIgRmF2b3JpdGVzIFlJUiAyMDEzIn0.EP9OmYgG1YbfAMSpr99W78It5pz-hxU1L121LC0r9nU",
-                "checksum": "d55cedef86748d72c59a6fe1104932ba",
-                "siteId": 318027,
-                "articleId":"wpf:yir:your-favorites:2013",
-                "el":"livefyre-app-yourfavorites",
-                "signed": true
-            });
-        }
+        //if('undefined' !== typeof livefyreConfig) {
+        //    livefyreConfig.streams.push({
+        //        "collectionMeta": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL3d3dy5uYXRpb25hbGdlb2dyYXBoaWMuY29tL3llYXItaW4tcmV2aWV3LTIwMTMvIy95b3VyLWZhdm9yaXRlcyIsICJ0YWdzIjogW10sICJhcnRpY2xlSWQiOiAid3BmOnlpcjp5b3VyLWZhdm9yaXRlczoyMDEzIiwgInRpdGxlIjogIllvdXIgRmF2b3JpdGVzIFlJUiAyMDEzIn0.EP9OmYgG1YbfAMSpr99W78It5pz-hxU1L121LC0r9nU",
+        //        "checksum": "d55cedef86748d72c59a6fe1104932ba",
+        //        "siteId": 318027,
+        //        "articleId":"wpf:yir:your-favorites:2013",
+        //        "el":"livefyre-app-yourfavorites",
+        //        "signed": true
+        //    });
+        //}
         </script>
        <div id="livefyre-app-yourfavorites"></div>
     </div><!-- /.yourfavorites-comments -->

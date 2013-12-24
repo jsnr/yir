@@ -4,76 +4,111 @@
     var debug = (window.location.href.substr(0,5) == "file:")
     if(debug)var _gaq = [];
     
-    var dataList, loadedDataList, currentSlide = 0, navActive=false, hasGallery=false, isTweening=false, navtimeout=6, navTimeoutInt, videoLoading=false, isDeepLink=false, isAboutLink=false, titleTimeout, videoLoadTime=0, vidTimer, navHover=false, isMuted=false, isScrolling=false, indexFullRes=false, lastLoadedItem=4, fullResToLoad, fullResLoaded, fullResLoading=false, autoPlayAudio=false, audioCredit=false, lastTouchMoveY=0, lastTouchMoveX=0, lastDirection, allVideosPreloaded=false, slideTitleScreen=false, audioplayer;
+    var dataList, loadedDataList, currentSlide = 0, navActive=false, hasGallery=false, isTweening=false, navtimeout=6, navTimeoutInt, videoLoading=false, isDeepLink=false, isAboutLink=false, titleTimeout, videoLoadTime=0, vidTimer, navHover=false, isMuted=false, isScrolling=false, indexFullRes=false, lastLoadedItem=4, fullResToLoad, fullResLoaded, fullResLoading=false, autoPlayAudio=false, audioCredit=false, lastTouchMoveY=0, lastTouchMoveX=0, lastDirection, allVideosPreloaded=false, slideTitleScreen=false, audioplayer, details=false;
 	
     // functions
     var createIndex, loadIndexFullRes, resizeIndexImages, swapIndexImages, fisherYates, createSlides, loadContent, launchFullscreen, cancelFullscreen, showShareButtons, hideShareButtons, setShareButtons, setGalleryControls, setAudioControls, showAudioCredit, hideAudioCredit, checkMuteAudio, fixGalleries, loadGalleryFullRes, galleryChange, closeOutSlide, changeLeft, changeRight, loadSlide, showSlide,  cleanUp, startContent, checkNavTimeout, killNav, startNav, startVideoLoadTimer, stopVideoLoadTimer, startPreloadAnimation, setiPadPlayBtn, resetiPadBtn, startiPadContent, setHeights, finishLoadProcess, loaderProgress;
     
     
-    
+$("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-review-2013");    
  
     // COMMENT COLLECTION SWITCH
     
- 
- 
-    // BACKGROUND MUSIC
-    $('audio,video').mediaelementplayer({
-        success: function (mediaElement, domObject) { 
-           mediaElement.play();
+    function showCommentStream(hash) {
+        // Remove '#/' or '#.' from the URL hash
+        var loc = hash.slice(2);
+        //console.log('hash location: ', loc);
+        // Hide the active comment stream
+        $('#allcomments').find('div.active').removeClass('active');
+
+        // If the current hash equates to a comment stream, make it active
+        if ($('#allcomments div.' + loc + '-comments').length > 0) {
+            //console.log('making convo active - ' + loc);
+            $('#allcomments div.' + loc + '-comments').addClass('active');
+        } else {
+            //console.log(loc + ' comment stream does not exist');
         }
-    });
- 
- 
-    // INTERSTITIAL ADS     
-    
-    var hchanges = 0;
-        
-    $(window).hashchange( function(){
-        
-        if (hchanges < 4) {hchanges = hchanges + 1;}
-        else if (hchanges >= 4) {hchanges = 0;}
-        
-        
-        if(hchanges == 4){
-    
-            $('#overlay').fadeIn(800, "easeInOutQuad");
-        
-        }
-        
-    })
-    $(window).hashchange(function(){
-        $("h2.title").delay(5000).fadeOut(1200);
-    });
- 
-    
-    $("#overlay").click(function(){
-        $(this).fadeOut(800, "easeInOutQuad");
-    });
-    
-    $(".navbtn").click(function(){
-        $("#overlay").fadeOut(800, "easeInOutQuad");
-            $(".gallerylabel").delay(800).fadeOut();
-    });
-    
-        
-        $(document).keyup(function(e) {
-            if (e.keyCode == 27) { // esc
-                $("#overlay").fadeOut(800, "easeInOutQuad");
-            }   
-        });
+    }
+
+
+	    // This changes the id of the body depending on which section you are on
+    bodyid = function(){    
             
-        $(document).keyup(function(e) {
-            if (e.keyCode == 37 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 38) { // left, right, down, up
-                $("#overlay").fadeOut(800, "easeInOutQuad");
-                $(".gallerylabel").delay(800).fadeOut();
-            }   
-        });
-         
-    // END INTERSTITIAL ADS
+	        if(window.location.href.indexOf("adventure") > -1) {
+		       $("body").attr("id","nav1"); 
+		       // $(".shareheadline").text("adventure");
+		    }
+		    
+			else if(window.location.href.indexOf("ancient-world") > -1) {
+		       $("body").attr("id","nav2");
+		       // $(".shareheadline").text("Ancient World");
+		    }
+		    
+			else if(window.location.href.indexOf("animals") > -1) {
+		       $("body").attr("id","nav3");
+		       // $(".shareheadline").text("Animals"); 
+		    }
+		    
+			else if(window.location.href.indexOf("cultures") > -1) {
+		       $("body").attr("id","nav4");
+		       // $(".shareheadline").text("Cultures"); 
+		    }
+		    
+			else if(window.location.href.indexOf("environment") > -1) {
+		       $("body").attr("id","nav5");
+		       // $(".shareheadline").text("environment"); 
+		    }
+		    
+			else if(window.location.href.indexOf("geopolitics") > -1) {
+		       $("body").attr("id","nav6");
+		       // $(".shareheadline").text("geopolitics"); 
+		    }
+		    
+			else if(window.location.href.indexOf("science") > -1) {
+		       $("body").attr("id","nav7");
+		       // $(".shareheadline").text("science"); 
+		    }
+		    
+			else if(window.location.href.indexOf("space") > -1) {
+		       $("body").attr("id","nav8");
+		       // $(".shareheadline").text("space"); 
+		    }
+		    
+			else if(window.location.href.indexOf("photography") > -1) {
+		       $("body").attr("id","nav9");
+		       // $(".shareheadline").text("photography"); 
+		    }
+		    
+			else if(window.location.href.indexOf("technology") > -1) {
+		       $("body").attr("id","nav10");
+		       // $(".shareheadline").text("technology"); 
+		    }
+		    
+			else if(window.location.href.indexOf("travel") > -1) {
+		       $("body").attr("id","nav11");
+		       // $(".shareheadline").text("travel"); 
+		    }
+		    
+			else if(window.location.href.indexOf("your-favorites") > -1) {
+		       $("body").attr("id","nav12");
+		       // $(".shareheadline").text("Your Favorites"); 
+		    }
+		       
+				    		
+	} 
+	
+	bodyid();
+	showCommentStream(window.location.hash);
+	$(window).hashchange(function(){
+	    bodyid();
+		showCommentStream(window.location.hash);
+    });
+    
+    $(".caption").before( "<div class='info-plus'></div>" );
+    $(".caption").before( "<span class='headover'></span>" );
+
  
- 
- 
-    $('.navbuttons').css('height',$(window).height() - $('.global-header').height());
+    $('.navbuttons').css('height',$(window).innerHeight() - $('.global-header').height() - 18);
     $('main').width($(window).width()).css('overflow','hidden');
     
     dataList = [];
@@ -204,7 +239,7 @@
     // Resize the images when resize event fires off
     resizeIndexImages = function(){
         var ratio = 1100 / 1920;
-        var areaHeight = $(window).height();
+        var areaHeight = $(window).innerHeight() -18;
         var areaWidth = $(window).width();
         var areaRatio = areaHeight / areaWidth;
         $('.index_nav .backgrounds div').width(areaWidth).height(areaHeight);
@@ -331,7 +366,7 @@
          
          
             $(slide).prepend('<h2 class="title">' + $('h2', txtContent).text() + '</h2>');
-            $('h2.title',slide).after('<div class="playbtn_container"><div class="playbtn">Look</div></div>');
+            $('h2.title',slide).after('<div class="playbtn_container"><div class="playbtn">Play</div></div>');
 
             if(contentType == 'gallery'){
                 $('.playbtn',slide).click(function(){
@@ -466,7 +501,7 @@
                     if(indx == 0)giWrap.addClass('current');
                     
                     var capData = $('.captions li', item).eq(indx);
- var capText = $('.info-headline', capData).html() || '';
+                    var capText = $('.info-headline', capData).html() || '';
                     giWrap.data('info-headline',capText).data('info-summary',$('.info-summary',capData).html());
                     
                                         
@@ -477,7 +512,11 @@
                       if(indx == 0){
                         $('.caption',txtContent).append(
                             '<p class="info-headline">'+ giWrap.data('info-headline') + '</p>' + 
-                            '<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' 
+                            //'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' 
+                            
+                            '<div style="overflow:auto; height:35em">' + // JF zzz
+                        		'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' +
+                        	'</div>'
                         )
                     }
                     
@@ -505,8 +544,11 @@
             // Set up audio controls
             if(audiolink)setAudioControls($(slide), audiolink);
             
+// ////////////////////  DETAIL PANE  //////////////////// //  
+
             // Size and position the info box from the right side.
-            $('.slideinfo', slide).css({'right':'-471px', 'height': $(window).height() - $('.global-header').height() });
+            $('.slideinfo', slide).css({'right':'-501px', 'height': $(window).innerHeight() - $('.global-header').height() - 18 });// may need to be adjusted for height
+            
             $(slide).click(function(e){
                 if(e.originalEvent != undefined && !$(e.originalEvent.target).hasClass('share') && $('.slide.current .share').hasClass('open'))hideShareButtons();
                 if($('.slide.current .infobtn').hasClass('open') ){
@@ -523,54 +565,88 @@
             $('.slideinfo .infotext', slide).css('height', Math.round($('.slideinfo', slide).height() - 300)+'px');
             
             // set up the infobox to close on click
-            $('.buttons li.infobtn', slide).click(function(){
-                if($(this).hasClass('open')){
-                    $(this).text('Details');                    $(this).removeClass('open');
-                    var newPos = -$('.slideinfo', slide).width();
-                    $('.slideinfo', slide).animate({'right': '-471px'}, 500, function(){ $('.slideinfo', slide).hide(); });
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
-                   } else {
-                    $(this).addClass('open');
-                    $(this).text('Close');                    
-                    $('.buttons li.comments', slide).removeClass('open');                    
-                    $('.buttons li.comments', slide).removeClass('cpx');                    
-                    $('.commentpane', slide).animate({'right': '-471px'}, 500, function(){ $('.commentpane', slide).hide(); });
-                    $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
-                    $('.slideinfo', slide).show();
-                    $('.slideinfo', slide).animate({'right': '0'}, 500)
-                    //$('.navbtn.index').fadeOut(250);
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
-                }
+            $('.headover, .info-plus', slide).click(function(){
+
+                 var galwrap = $(".galleryholder").css("top");
+
+                 if($('.buttons li.infobtn', slide || '.info-plus', slide).hasClass('open')){
+                     details = false;
+                     $('.buttons li.infobtn').text('Details');
+
+                     $('.buttons li.infobtn, .info-plus', slide).removeClass('open');
+
+                     var newPos = -$('.slideinfo', slide).width();
+
+                     $('.slideinfo', slide).animate({'right': '-501px'}, 500);                   
+
+        		     $(".infobtn").fadeIn(500);
+
+                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
+
+            //         $('.info-headline', slide).animate({left: '-531px'}, 500);
+
+
+
+					 $(".info-headline").removeClass("inpanel");
+
+					 if($(".curslide").text() == "1111111111111"){
+							 $(".info-headline, .headover").animate({right:"-501px"},500);                     
+		                     $('.info-plus', slide).animate({right: '500px'},500);
+				        }else{
+	        	$(".info-plus").animate({right:"953px"},500);
+	        	$(".info-headline, .headover").animate({right:"530px"},500);
+				        }
+
+
+
+
+
+                 } else {
+                     details = true;
+                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+
+                     $('.buttons li.infobtn').text('Close');                    
+
+                     $('.buttons li.comments', slide).removeClass('open');                    
+
+                     $('.buttons li.comments', slide).removeClass('cpx');                    
+
+                     $('.commentpane', slide).animate({'right': '-501px'}, 500, function(){ $('.commentpane', slide).hide(); });
+
+                     $('#allcomments').animate({'right': '-444px'}, 500, function(){ $('.commentpane', slide).hide(); });
+
+                     $('.slideinfo', slide).show();
+
+                     $('.slideinfo', slide).animate({'right': '0'}, 500);                   
+
+                     $(".infobtn").fadeIn(500);
+
+                     $('.buttons li.infobtn, .info-plus', slide).addClass('open');
+
+                     $('.info-headline', slide).addClass("inpanel");
+
+				        if($(".curslide").text() == "1111111111111"){
+					        $(".info-headline, .headover").animate({right:"0"},500);
+					        $(".info-plus").animate({right:"454px"},500);
+				        }else{
+				        	$(".info-plus").animate({right:"454px"},500);
+				        	$(".info-headline, .headover").animate({right:"30px"},500);
+				        }
+
+                     if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
+                 }
             });
-                                    
-            // set up the comments to close on click
-            $('.buttons li.comments', slide).click(function(){
-                if($(this).hasClass('open')){
-                    $(this).text('Caption');
-                    $(this).removeClass('open');
-                    var newPos = -$('.slideinfo', slide).width();
-                    $('.slideinfo', slide).animate({'right': '-471px'}, 500, function(){ $('.slideinfo', slide).hide(); });
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Close']);
-                } else {
-                    $(this).addClass('open');
-                    $(this).text('Close');
-                    $('.slideinfo', slide).show();
-                    $('.slideinfo', slide).animate({'right': '0'}, 500)
-                    if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Caption', 'Open']);
-                }
-            });
-            
             
 // ////////////////////  END DETAIL PANE  //////////////////// //              
             
 // ////////////////////  COMMENT PANE  //////////////////// //
  
-var wh = $(window).height() - $('.global-header').height();
+var wh = $(window).innerHeight() - $('.global-header').height() - 18;
 var commenth = wh - 130;
 $("#allcomments").height(commenth);
             
             // Size and position the comment pane from the right side.
-            $('.commentpane', slide).css({'right':'-471px', 'height': $(window).height() - $('.global-header').height() });
+            $('.commentpane', slide).css({'right':'-471px', 'height': $(window).innerHeight() - $('.global-header').height() - 18 });
             $(slide).click(function(e){
                 if(e.originalEvent != undefined && !$(e.originalEvent.target).hasClass('share') && $('.slide.current .share').hasClass('open'))hideShareButtons();
                 if($('.slide.current .comments').hasClass('open') ){
@@ -650,6 +726,27 @@ $("#allcomments").height(commenth);
         $('.slide.current li.share').removeClass('open');
     }
     
+    function updateAddThisUrl()
+   {
+       //slide_no is the variable I am adding as a URL parameter
+       var location = window.location;
+       var theUrl = location.protocol + '//' + location.host + location.pathname + "?image=" + slide_no;
+
+       addthis_share = {url : theUrl};
+      // only have to change the window.location.href bit
+	   addthis.update('share', 'url', location.href); 
+       addthis.ready(); // This will re-render the box.
+       addthis.url = theUrl; 
+       addthis.ready();         
+   }
+
+   function eventHandler(evt) 
+   { 
+       updateAddThisUrl();
+   }
+
+   addthis.addEventListener('addthis.menu.share', eventHandler);
+   
     // Set the information for each service based on the deep link (hashtag)
     setShareButtons = function(){
         $('.shareclose').on('click', function(){
@@ -745,14 +842,6 @@ $("#allcomments").height(commenth);
                             $('.closebtn',mainDiv).delay(200).click();
                         });
                         
-                        $(mediaElement).on('pause', function(e){
-                           try {  $('.slide.current video')[0].play();  } catch(err) {} 
-                        });
-                        
-                        $(mediaElement).on('play',function(e){
-                            try { $('.slide.current video')[0].play() } catch(err) {}
-                        });
-                        
                         $('.closebtn',mainDiv).click(function(e){
                             mediaElement.pause();
                             hideAudioCredit();
@@ -770,19 +859,18 @@ $("#allcomments").height(commenth);
                         // animate the player into view
                         $(container).animate({'width': '190'}, 300, "easeOutSine");
                         $(mainDiv).animate({'right': 0}, 300, "easeOutSine", function(){ 
-                          mediaElement.play();
+                            mediaElement.play();
                             showAudioCredit();
                             $(container).addClass('open').css('overflow','visible');
-                            checkMuteAudio();
-                            
-                                                    });
+                            checkMuteAudio(); 
+                        });
+                        
                     } 
                 });
                 
             }
         });     
     }
-    
     
     showAudioCredit = function(){
         audioCredit = true;
@@ -860,16 +948,18 @@ $("#allcomments").height(commenth);
     // Change the gallery slide up or down
     galleryChange = function(dir){
         
- 
-        //if($('.navbtn.about').hasClass('open') || slideTitleScreen)return; // <- changed from JF 
+        $('.index_nav .close_btn').click();
+        
+        $('.bottomNavBar li.comments').fadeIn(500);
+        
         if($('.navbtn.about').hasClass('open'))return; // JF fix
  
         var isUp = (dir == "up");
         var cCurrent = $('.slide.current').data('cCurrent');
         
         //$('.slide.current .gallerylabel').hide();
-        $('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
-        
+        //$('.slide.current .gallerylabel').stop(true,true).height(27).animate({'bottom': -75}, 300, "easeOutSine");
+        $('.slide.current h2.title').removeClass('active');
         
         
         var cType = $('.slide.current').attr('type');
@@ -888,7 +978,9 @@ $("#allcomments").height(commenth);
         } else {
             nextSlideNum =  (cCurrent == $('.slide.current').data('cLength')) ? 0 : cCurrent;
         }
-    
+        
+        checkFadeAudio(isUp, cCurrent, nextSlideNum); // JF
+        
         $('.preloader').fadeOut(200);
         
         
@@ -916,10 +1008,36 @@ $("#allcomments").height(commenth);
             
         $('.slide.current').data('cCurrent',cCurrent);
         $('.slide.current .paginate .curslide').text(cCurrent);
-    $('.slide.current .caption').html(
+    
+        $('.slide.current .caption').html(
             '<p class="info-headline">'+element.data('info-headline') + '</p>' + 
-            '<p class="info-summary">'+element.data('info-summary') + '</p>'
+            
+            '<div style="overflow:auto; height:35em">' + // JF zzz
+        		'<p class="info-summary">'+element.data('info-summary') + '</p>' + 
+        	'</div>'
         )
+        
+        
+        
+        // FLOATING HEADLINE BEHAVIOR
+        
+        if($('.buttons li.infobtn').hasClass("open")){
+	        $(".info-headline, .headover").css("right","30px");
+	        $('.info-plus').animate({right: '454px'},200);
+	        $(".info-headline").addClass("inpanel");
+        }else{
+	        $(".info-headline, .headover").removeClass("inpanel");
+	        if($(".curslide").text() == "1111111111111"){
+		        $(".info-headline, .headover").animate({right:"0"},500);
+		        $(".info-plus").animate({right:"500px"},200);
+	        }else{
+	        	$(".info-plus").animate({right:"953px"},200);
+	        	$(".info-headline, .headover").css("right","530px");
+	        }
+        }
+        
+        
+        
         
         
         //slide it 
@@ -940,6 +1058,32 @@ $("#allcomments").height(commenth);
         }
     }
     
+    ///// start audio fade - JF
+    // index 1 is the sizzle video
+    checkFadeAudio = function(goingUp, indx, nextSlideNum){
+        //    (nextSlideNum);
+        //if(goingUp && indx == 2){ 
+        if(nextSlideNum == 0){
+       		playVideoThenFadeInAudio();
+        }
+        else
+       	//if((!goingUp && indx == 1) || (goingUp && indx == 1)){
+       	if(indx == 1){
+			fadeOutAudioThenPauseVideo();
+        }
+    }
+    fadeOutAudioThenPauseVideo = function(){
+		//$("video").prop('muted', false); 
+		$('.slide.current .bgvideo')[0].pause(); 
+
+    }
+	playVideoThenFadeInAudio = function(){
+		//$("video").prop('muted', true); 
+		$('.slide.current .bgvideo')[0].play(); 
+	}
+	////////// - end audio fade - JF
+
+
     checkPreloaderStatus = function(){
         if($('.slide.current video').length == 0 || $('.slide.current video').attr('src') == undefined)return;
         if($('.slide.current video')[0].networkState == 2 && $('.slide.current').data('cCurrent') == 1){ 
@@ -968,7 +1112,6 @@ $("#allcomments").height(commenth);
         // close out buttons and info boxes
         if($('.slide.current .share').hasClass('open'))hideShareButtons(true);
         if($('.slide.current .infobtn').hasClass('open'))$('.slide.current .infobtn').click();
-        if($('.slide.current .comments').hasClass('open'))$('.slide.current .comments').click();
     }
     
  
@@ -977,29 +1120,12 @@ $("#allcomments").height(commenth);
         var cType = slide.attr('type');
  
         // completely remove the entry screen, there's no going back anyway.
- 
- 
- 
- 
         if(slide.attr('id') == 'entry'){
             $('video', slide).remove();
             return;
         }
         
-        if(cType == 'gallery'){startAudioCommentary();} 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-        else {startVideo();}
+        if(cType == 'gallery'){startAudioCommentary();}
         
         if($('audio',slide).length > 0){
             $('audio',slide)[0].pause();
@@ -1021,7 +1147,7 @@ $("#allcomments").height(commenth);
  
  
  
-        var desiredColor="rgb (0,0,0 )";
+        var desiredColor="";
 
    changenav = function(){            
         // instead of changing ID, let's just use jquery animate on the background-color.
@@ -1091,9 +1217,9 @@ $(".bottomNavBar").css({opacity: 1});
  $(".bottomNavBar .slide.previous, .bottomNavBar .slide.next").css({backgroundColor: desiredColor});
  $(".bottomNavBar").stop().animate({backgroundColor: desiredColor},1000);
  
-$(".rightarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
+//$(".rightarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
  
-$(".leftarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
+//$(".leftarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
  
 if ($(".slideinfo").length) {
 $(".slideinfo").stop().animate({backgroundColor: desiredColor},1000);
@@ -1117,6 +1243,13 @@ if ($(".gallerylabel").length) {
     // Go to the bucket on the left
     changeLeft = function(){
         
+        $(".info-headline, .headover").animate({right:"0"},500);
+		$(".info-plus").animate({right:"500px"},200);
+				
+        $('.index_nav .close_btn').click();
+    
+    	$(".infobtn").hide();
+    	
                     $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
         
@@ -1162,7 +1295,14 @@ if ($(".gallerylabel").length) {
     
     // Go to the bucket on the right
     changeRight = function(){
-    	
+    	$(".info-headline, .headover").animate({right:"0"},500);
+		$(".info-plus").animate({right:"500px"},200);
+		
+		
+        $('.index_nav .close_btn').click();
+		
+    	$(".infobtn").hide();
+        
     
                     $('.commentpane').animate({'right': '-471px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
@@ -1196,7 +1336,12 @@ if ($(".gallerylabel").length) {
         
         // Show slide, pass a direction
         showSlide(1);
+        // This changes the color of the nav depending on which section you are on
+  
+	    setTimeout(changenav,100);
     }   
+    
+    
     
     // Load a specific slide, based on id
     loadSlide = function(cID){
@@ -1215,10 +1360,6 @@ if ($(".gallerylabel").length) {
         if($('.slide.current').attr('id') == 'about')addressVal = 'about';
         $.address.value(addressVal); 
         showSlide(1);
-        // This changes the color of the nav depending on which section you are on
-  
-	    setTimeout(changenav,100);
-	
 
     }
     
@@ -1310,7 +1451,7 @@ if ($(".gallerylabel").length) {
         $('.slide.current .bottomNavBar').css('bottom','0');
         
         if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-            $('.slide.current .gallerylabel').css('bottom', '-75px');
+            //$('.slide.current .gallerylabel').css('bottom', '-75px');
         }
  
         // TITLE FADE AND TRANSITION
@@ -1501,7 +1642,13 @@ if ($(".gallerylabel").length) {
                 $('.slide.current video').attr('src', vidSrc);
 
                 $('.slide.current video')[0].play(); // JF fix
-                                $('.slide.current video').on('canplay',function(){ videoLoading = false; });
+                //$('.slide.current video').on('canplay',function(){ videoLoading = false; });
+                $('.slide.current video').on('canplay',    // JF fix
+                						function(){ 
+											videoLoading = false;
+											$('.slide.current video').show(); 
+											$('.slide.current gi_wrapper.current').hide(); 
+                						});
                 // Should be playing
             }
         }
@@ -1510,8 +1657,13 @@ if ($(".gallerylabel").length) {
     
     // COUNTDOWN TIL ARROWS HIDE
     checkNavTimeout = function(){
+        if(debug){
+            clearInterval(navTimeoutInt)
+            return;
+        }
+        
         //if($('.curtitle').hasClass('tweening') || videoLoading || navHover || audioCredit || slideTitleScreen)return;
-        if( videoLoading || navHover || audioCredit || slideTitleScreen)return;
+        if( videoLoading || navHover || audioCredit || slideTitleScreen || details )return;
         navtimeout--;
         if(navtimeout == 0){
             killNav();
@@ -1578,7 +1730,7 @@ if ($(".gallerylabel").length) {
         
             $('.navbtn.about').fadeIn(200);
             if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-                $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
+                //$('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
             }
         });
         
@@ -1590,12 +1742,11 @@ if ($(".gallerylabel").length) {
             $('.navbtn.about').fadeIn(200);
             $('.slide.current .commentary').click()
             if($('.slide.current').attr('type') != 'video' && $('.slide.current').data('cCurrent') == 1){
-                $('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
+                //$('.slide.current .gallerylabel').animate({bottom: 0}, "easeOutSine");
             }
         });
     }
     
-    // LOADERBAR PROGRESS
     // LOADERBAR PROGRESS
     var loadtxtw = $('.siteLoader .head_text').width();
     var spacetoctr = ($(window).innerWidth() - loadtxtw) / 2;
@@ -1614,7 +1765,7 @@ if ($(".gallerylabel").length) {
             $('#audioplayer').append('<source src="./assets/YIR.ogg" type="audio/ogg" /><source src="./assets/YIR.mp3" type="audio/mpeg" />');
             audioplayer = new MediaElementPlayer('#audioplayer', {});
         });
-        $(".quoteblock").delay(1300).fadeIn("slow");
+        //$(".quoteblock").delay(1300).fadeIn("slow");
         $(".explorebtn").delay(2400).fadeIn("slow");
         
         if(isDeepLink){
@@ -1624,27 +1775,15 @@ if ($(".gallerylabel").length) {
             changeLeft();
             $('.siteLoader').delay(1000).fadeOut(350);
         }else {
-            $('#entry video')[0].play()
+            //$('#entry video')[0].play()
+            $('#introvid')[0].play(); // JF fix 
             $('.siteLoader').fadeOut(350);
         }
         
         setSwipes();
     
     });
-    
-    
-    
-    // Show/Hide buttons based on user interaction
-    if(!debug){
-    $(document).hover(function(e){
-        // show buttons 
-        if(!navActive)startNav();
-    },function(e){
-        //hide buttons
-        if(navActive)killNav();
-        hideAudioCredit();
-       });
-}
+
  
     // TRIGGER WHEN VIDEO IS LOADED
     $(document).delegate('video', 'DOMNodeInserted', function () {
@@ -1771,55 +1910,8 @@ if ($(".gallerylabel").length) {
         
         $('.gi_wrapper, .img_wrapper',slide).height( areaHeight ).width( areaWidth );
         
-        // Wrangling fullscreen images and video into full-frame mode
-        if($('html').hasClass('fs-active')){
-            var vH =  Math.round(100*((areaWidth * vid_ratio)/areaHeight));
-            var mPerc = (100 - vH)/2
-            var newW;
-            
-            // Does the video fit in the height at full width? 
-            if((vid_ratio * areaWidth) > areaHeight){
-                // too tall, set to height 100%, with auto
-                $('video',slide).css({'top': 0, 'left': 0}).addClass('tall');
-                newW = Math.abs( (areaWidth-Math.round(areaHeight / vid_ratio) )/2);
-                if(cType == 'video'||cType == 'intro'){
-                    $('video',slide).css('left', newW);
-                    $('img', slide).css({'top': 0, 'left': newW}).addClass('tall');
-                } else {
-                    $('video',slide).css('margin-left', newW);
-                }
-            } else {
-                // fits fine at full-width ( reset in case this is a resize )
-                $('video',slide).css({'top': mPerc+'%', 'left':0 }).removeClass('tall');
-                if(cType == 'video')$('img', slide).css({'top': mPerc+'%', 'left': 0}).removeClass('tall');
-            }
-            
-            // Do the gallery images fit in the height at full-width?
-            $('.galleryimage',slide).each(function(indx, elem){
-                var ratio = (cType == 'combo'&&indx == 0) ? vid_ratio : gallery_ratio;
-                if((ratio * areaWidth) > areaHeight){
-                    // too tall, set to height 100%, with auto
-                    newW = Math.abs( (areaWidth-Math.round(areaHeight / ratio) )/2);
-                    $(this).addClass('tall').css({'top': 0, 'left': newW}); 
-                } else {
-                    // fits fine at full-width ( reset in case this is a resize )
-                    newW = Math.abs( (areaHeight-Math.round(areaWidth * ratio) )/2);
-                    $(this).removeClass('tall').css({'top': newW, 'left': 0});
-                }
-            });
-            
-            $('.slideinfo', slide).css('height',$(window).height() - $('.global-header').height());
-            $('.slideinfo .infotext', slide).css('height', Math.round($(this).parent().height() - 300)+'px');
-            
-            $('.commentpane', slide).css('height',$(window).height() - $('.global-header').height());
-            $('.commentpane .commentarea', slide).css('height', Math.round($(this).parent().height() - 110 )+'px');
-            
-            $('#about-text').height($('#dragarea').height()-73);
-            return;// don't try to size the images again
-        }
-        
-        
         $('video',slide).css({'left': 0, 'top': 0, 'margin': 0}).removeClass('tall');
+        
         // ( reset in case this is a resize )
         if(cType == 'video'||cType == 'intro')$('img',slide).css({'margin-left': 0, 'top': 0, 'left': 0}).removeClass('tall');
         
@@ -1858,13 +1950,13 @@ if ($(".gallerylabel").length) {
         });
         
         // set the infobox
-        $('.slideinfo', slide).css('height',$(window).height() - $('.global-header').height());
+        $('.slideinfo', slide).css('height',$(window).innerHeight() - $('.global-header').height() - 18);
         $('.slideinfo .infotext', slide).css('height', Math.round($(this).parent().height() - 300)+'px');
   $('#about-text').height($('#dragarea').height()-73);
         
         
         // set the comment pane
-        $('.commentpane', slide).css('height',$(window).height() - $('.global-header').height());
+        $('.commentpane', slide).css('height',$(window).innerHeight() - $('.global-header').height() - 18);
         $('.commentpane .commentarea', slide).css('height', Math.round($(this).parent().height() - 110)+'px');
         
         
@@ -1872,10 +1964,10 @@ if ($(".gallerylabel").length) {
     
    sizeElements = function(callback){
         
-        $('.navbuttons').css('height',$(window).height() - $('.global-header').height());
+        $('.navbuttons').css('height',$(window).innerHeight() - $('.global-header').height() - 18);
         
         $('.siteLoader h1').fadeIn(300);
-        $('.index_nav').css({'height': $(window).height(), 'width':'100%' });
+        $('.index_nav').css({'height': $(window).innerHeight() - 18, 'width':'100%' });
         
         setHeights($('#about'));
         setHeights();
@@ -1899,7 +1991,9 @@ if ($(".gallerylabel").length) {
     });
     
     $(window).on('resize',function(e){
-        $('#dragarea_container').height($(window).height() - $('.global-header').height()).width($(window).width());
+        $('.site-main').css("margin-top", 30);
+        $('.navbtn.index').css('bottom', 23);
+        $('#dragarea_container').height($(window).innerHeight() - $('.global-header').height() - 18).width($(window).innerWidth() + 2);
         $('#about').width($('#dragarea_container').width()).height($('#dragarea_container').height())
         
         var loadTop; 
@@ -1912,7 +2006,7 @@ if ($(".gallerylabel").length) {
         $('.siteLoader h1').fadeIn(300);
         //$('.preloader').css('top', loadTop);
         
-         $('.index_nav').css({'height': $(window).height(), 'width':'100%' });
+         $('.index_nav').css({'height': $(window).innerHeight() - 18, 'width':'100%' });
  
         resizeIndexImages();
         
@@ -1955,9 +2049,10 @@ if ($(".gallerylabel").length) {
             if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Click', 'Right Arrow']);
         }
         });
-                $("#about-nav li a").each(function(){
+        
+        
+        $("#about-nav li a").each(function(){
             var navID = $(this).attr('id');
-            
             var credWPos = 2053;
             var causeWPos = 1490;
             var credNPos = 2175;
@@ -1982,9 +2077,7 @@ if ($(".gallerylabel").length) {
                 $('#about-text').stop().animate({ scrollTop: scrollNum}, 600);
             
             });
-            
-            
-                    });
+        });
         $('#about-text').scroll(function(){
             
             if($(this).scrollTop() > 1410){
@@ -2015,9 +2108,12 @@ if ($(".gallerylabel").length) {
         
         // Show/hide the index screen 
         $('.navbtn.index').click(function(e){
-            $(this).addClass('open');
+            $(this).addClass('open-index');
             if(!indexFullRes)loadIndexFullRes();
             $('.index_nav').fadeIn(300);
+
+            $('.navbtn.leftarrow').hide(); // JF 
+            $('.navbtn.rightarrow').hide(); // JF
             
             if(videoLoading||slideTitleScreen){
                 $('.slide.current h2.title').hide();
@@ -2026,7 +2122,6 @@ if ($(".gallerylabel").length) {
             }
             
             if($('.slide.current .infobtn').hasClass('open'))$('.slide.current .infobtn').click();           
-            if($('.slide.current .comments').hasClass('open'))$('.slide.current .comments').click();
             if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'Index', 'Open']);
         });
         
@@ -2051,47 +2146,23 @@ if ($(".gallerylabel").length) {
         });
 
         $('#about .close_btn').click(function(e){
-         e.stopPropagation();
-   
-   
+            e.stopPropagation();
+            $('#about').fadeOut(300);
             $('.navbtn.about').removeClass('open');
-                       $('#about').fadeOut(300); 
+            if(slideTitleScreen){
+                $('.slide.current h2.title').show();
+                $('.playbtn').show();
+            }
            
-           if(slideTitleScreen){
-               $('.slide.current h2.title').show();
-               $('.playbtn').show();
-           }
-           
-           if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'About', 'Close']);
-           
-           
+            if(_gaq != undefined)_gaq.push(['_trackEvent', 'YIR', 'About', 'Close']);
+            
         });
         
         // KICK IT ALL OFF BY CREATING THE SLIDES
         createSlides();
         
         // ONLY NEED TO SET THE SIZES ONCE FOR DEVICES!!
-         sizeElements();
-                
-                // var lf_animals = '<script src="http://zor.fyre.co/wjs/v3.0/javascripts/livefyre.js" type="text/javascript"></script>';
-  //       lf_animals += '<script  type="text/javascript">';
-  //       lf_animals += 'var loadFyre = function() {';
-  //       lf_animals += '    fyre.conv.load({';
-  //       lf_animals += "        network: 'livefyre.com'";
-  //       lf_animals += "    }, [{";
-  //       lf_animals += "        app: 'main',";
-  //       lf_animals +=   "      siteId: '349436',";
-  //       lf_animals +=   "      articleId: 'animals',";
-  //       lf_animals +=   "      el: 'livefyre-app-animals',";
-  //       lf_animals +=   "      checksum: '3d21166bb46dd3921b0130e22f7a4abc',";
-  //       lf_animals +=   "      collectionMeta: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL2phby5jby9uZ3MveWlyIiwgInRhZ3MiOiBbXSwgImFydGljbGVJZCI6ICJhbmltYWxzIiwgInRpdGxlIjogIkFuaW1hbHMifQ.S0fj_H2SBklJv67w1EGMSkTwsqv2_POeIQYubziz2CM'";
-  //       lf_animals +=   '  }], function (widget) {';
-  //       lf_animals += '     });';
-  //       lf_animals += '};';
-  //       lf_animals += 'setTimeout(loadFyre, 1000);';
-  //       lf_animals += '</script>';
-        
-  //       $('#allcomments').append(lf_animals);
+        sizeElements();
         
     });
 }).call(this);
