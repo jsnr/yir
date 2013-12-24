@@ -1054,7 +1054,6 @@ $("#allcomments").height(commenth);
     fixGalleries = function(slide){
         var element = $('.slide.current .gi_wrapper.current');
         var elementPosition = element.position();
-        
         if($('.galleryholder .gi_wrapper', slide).length != 0){
             $('.galleryholder', slide).css('top', -elementPosition.top);
         }
@@ -1075,13 +1074,11 @@ $("#allcomments").height(commenth);
             loadNextSlide();
             return;
         }
-        
         fullResToLoad = 0;
         fullResLoaded = 0;
         
         $('.gi_wrapper',slide).each(function(indx, image){
             if(indx == 0)return true;
-            
             fullResToLoad++;
             
             var loRes = $('.lo-res',this);
@@ -1312,9 +1309,7 @@ $("#allcomments").height(commenth);
 
    changenav = function(){            
         // instead of changing ID, let's just use jquery animate on the background-color.
-
-
-		 if(window.location.href.indexOf("adventure") > -1) {
+         if(window.location.href.indexOf("adventure") > -1) {
 		  desiredColor="rgb(17,33,58)";
 
 		    }
@@ -1367,52 +1362,41 @@ $("#allcomments").height(commenth);
 		   desiredColor= "rgb(53,103,104)";
 
 		    }
-		     
-		     
-		      try {
+		    
+		    
+            //console.log(desiredColor);
+            $(".bottomNavBar").css({opacity: 1});
 
- 
-//console.log(desiredColor);
-$(".bottomNavBar").css({opacity: 1});
-
-
- $(".bottomNavBar .slide.previous, .bottomNavBar .slide.next").css({backgroundColor: desiredColor});
- $(".bottomNavBar").stop().animate({backgroundColor: desiredColor},1000);
- 
-//$(".rightarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
- 
-//$(".leftarrow").delay(50).stop().animate({backgroundColor: desiredColor},1000);
- 
-if ($(".slideinfo").length) {
-$(".slideinfo").stop().animate({backgroundColor: desiredColor},1000);
-}
-
-if ($(".gallerylabel").length) {
-	$(".gallerylabel").stop().css({backgroundColor: desiredColor},1000);
-}
-
-
- }catch (err){}
- 
- 
- 		
+            try {
+                
+                
+                $(".bottomNavBar .slide.previous, .bottomNavBar .slide.next").css({'background-color': desiredColor});
+                //$(".bottomNavBar").stop().animate({'backgroundColor': desiredColor},1000);
+                 if ($(".slideinfo").length) {
+                     $(".slideinfo").stop().animate({'backgroundColor': desiredColor},1000);
+                 }
+                 if ($(".gallerylabel").length) {
+                	$(".gallerylabel").stop().css({'background-color': desiredColor},1000);
+                 }
+                
+            
+            } catch (err){
+                // fail silently :(
+            }	
 	} 
-
 	
 	
     // Go to the bucket on the left
     changeLeft = function(){
-    
-		$(".info-headline, .headover").animate({right:"0"},500);
+        $(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
 				
         $('.index_nav .close_btn').click();
-    
+        
     	$(".infobtn").hide();
         
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
-        
         if(isTweening||$('.navbtn.about').hasClass('open'))return;
         
         if($('.slide.current').attr('id') == 'entry'){
@@ -1425,9 +1409,7 @@ if ($(".gallerylabel").length) {
         // cancel out current slide events/displays
         closeOutSlide();
         
-	   
-
-        // Set next slide
+	    // Set next slide
         if($('.slide.current').data('cID') == 2||$('.slide.current').attr('id') == "entry"){
             currentSlide = dataList.length;
            // $('.bottomNavBar').animate({bottom: -35}, 200);
@@ -1451,9 +1433,8 @@ if ($(".gallerylabel").length) {
         // show slide, pass direction
         showSlide(-1);
         // This changes the color of the nav depending on which section you are on
-  
-	    setTimeout(changenav,100);
-
+        
+        setTimeout(changenav,100);
 	
 			   
          
@@ -1653,7 +1634,7 @@ if ($(".gallerylabel").length) {
                         isTweening=false; 
                         cleanUp(); 
                         setTimeout(startContent, 300); 
-                        $('.slide.current h2.title, .slide.current .playbtn').addClass('active');
+                        $('.slide.current h2.title').addClass('active');
                     });
                 });
             }
