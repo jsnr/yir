@@ -1468,6 +1468,7 @@ if ($(".gallerylabel").length) {
     
     // Go to the bucket on the right
     changeRight = function(){
+		
 		$(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
 		
@@ -1475,15 +1476,17 @@ if ($(".gallerylabel").length) {
         $('.index_nav .close_btn').click();
 		
     	$(".infobtn").hide();
+		 $('.buttons li.infobtn, .info-plus').removeClass('open');
     
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
         if(isTweening||$('.navbtn.about').hasClass('open'))return;
         // alert($('.slide.current').attr('id'));
         
-        if($('.slide.current').attr('id') == 'entry'){
+        if($('.slide.current').attr('id') == 'entry'){		
             $('.leftarrow').delay(1500).show().animate({'left': '0px'}, 800, "easeInOutQuad");
             $('.rightarrow').delay(1500).show().animate({'right': '0px'}, 800, "easeInOutQuad");
+			
         }
         /* switch body id based on current category
          var currentcat = $('.slide.current').attr('id');
@@ -1501,7 +1504,6 @@ if ($(".gallerylabel").length) {
             currentSlide = 2;
             $('.slide.current').removeClass('current').addClass('previous').find('h2.active, .playbtn.active').removeClass('active');
             $('.slide').eq(currentSlide).addClass('current');//.find('h2.active, .playbtn.active').addClass('active').end();
-            
         } else {
             currentSlide++;
             $('.slide.current').addClass('previous').removeClass('current').find('h2.active, .playbtn.active').removeClass('active').end().next().addClass('current');
