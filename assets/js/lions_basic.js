@@ -1992,7 +1992,7 @@ if ($(".gallerylabel").length) {
     
     $(window).on('resize',function(e){
         $('.site-main').css("margin-top", 30);
-        $('.navbtn.index').css('bottom', 23);
+        $('.navbtn.index').css('bottom', 45);
         $('#dragarea_container').height($(window).innerHeight() - $('.global-header').height() - 18).width($(window).innerWidth() + 2);
         $('#about').width($('#dragarea_container').width()).height($('#dragarea_container').height())
         
