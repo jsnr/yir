@@ -1413,6 +1413,7 @@ if ($(".gallerylabel").length) {
         $('.index_nav .close_btn').click();
     
     	$(".infobtn").hide();
+		$('.buttons li.infobtn, .info-plus').removeClass('open');
         
                     $('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
                     $('#allcomments').animate({'right': '-444px'}, 500);
