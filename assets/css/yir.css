@@ -743,9 +743,36 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         background-color: transparent;
         opacity: .85;
     }
+	
+	 .touch .navbtn.index {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 110px;
+        height: 40px;
+        padding: 7px 20px 10px 30px;
+        background: url('../i/nav_buttons_sprite.png') no-repeat scroll 11px -918px;
+        cursor: pointer;
+        text-align: left;
+        text-indent: 10px;
+        font-size: 0.70em;
+        text-transform: uppercase;
+        color: #FFF;
+        font-weight: normal;
+        white-space: nowrap;
+        float: left;
+        letter-spacing: 1px;
+        line-height: 30px;
+        background-color: transparent;
+        opacity: .85;
+    }
     .navbtn.index.open-index {
         display: none !important;
-    }        
+    }  
+	
+	.touch .navbtn.index.open-index {
+        display: none !important;
+    }       
     .index_nav .close_btn {
         position: absolute;
         bottom: 0;
@@ -767,6 +794,14 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     }
     
     .no-touch .navbtn.index:hover, .ie10 .navbtn.index:hover {
+        background-position: 11px -951px;
+        background-color: rgba(255,255,255,1);
+        color: rgb(0,0,0);
+        opacity: 1;
+        
+    }
+	
+	 .touch .navbtn.index:hover {
         background-position: 11px -951px;
         background-color: rgba(255,255,255,1);
         color: rgb(0,0,0);
@@ -800,6 +835,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         .ie10 .navbtn.about {
             padding-top: 14px;
         }
+		
+
 
         .no-touch .navbtn.about:hover, .ie10 .navbtn.about:hover {
             background-color: rgba(255,255,255,1);
@@ -1485,7 +1522,8 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         position: absolute;
         top: 57px;
         width: 87%;               
-        overflow: visible; 
+        overflow: visible;
+		height:70%; 
     }
     
 /*    .caption p {
