@@ -268,7 +268,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             $('.navbtn.index').removeClass('open-index');
 			$(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
-            
+	
             if(slideTitleScreen){
                 $('.slide.current h2.title').show();
               //  $('.playbtn').show();
@@ -1112,6 +1112,7 @@ $("#allcomments").height(commenth);
         $('.index_nav .close_btn').click();
     
     	$('.bottomNavBar li.comments').fadeIn(500);
+		
         
         if($('.navbtn.about').hasClass('open'))return; // JF fix
 
@@ -1674,6 +1675,8 @@ if ($(".gallerylabel").length) {
                 
         
         $('.index_nav ul li').removeClass('current');
+		$('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
+		$('#allcomments').animate({'right': '-444px'}, 500);
         $('#'+slide.data('uID')+'_idx').addClass('current').addClass('visited');
         
     }
