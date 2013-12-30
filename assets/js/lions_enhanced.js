@@ -648,7 +648,7 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
 
                         	//$(".caption").css({'overflow-y':'auto', 'overflow-x':'visible', 'height': '90%'}); // JF
 
-        					'<div style="overflow:auto; height:35em">' + // JF zzz
+        					'<div style="overflow:auto; height:100%">' + // JF zzz
                         		'<p class="info-summary">'+ giWrap.data('info-summary') + '</p>' +
                         	'</div>'
                         )
@@ -1175,7 +1175,7 @@ $("#allcomments").height(commenth);
         $('.slide.current .caption').html(
         	'<p class="info-headline">'+element.data('info-headline') + '</p>' + 
 
-        	'<div style="overflow:auto; height:35em">' + // JF zzz
+        	'<div style="overflow:auto; height:100%">' + // JF zzz
         		'<p class="info-summary">'+element.data('info-summary') + '</p>' + 
         	'</div>'
 
