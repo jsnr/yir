@@ -259,6 +259,8 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
         // Set the close functionality when you click anywhere in the index but not a child
         $('.index_nav').click(function(e){
             $('.index_nav .close_btn').click();
+			
+			
         });
         
         // Set the close button functionality
@@ -266,9 +268,10 @@ $("#header_logo a").attr("href","http://www.nationalgeographic.com/year-in-revie
             e.stopPropagation();
             $('.index_nav').fadeOut(300);
             $('.navbtn.index').removeClass('open-index');
-			$(".info-headline, .headover").animate({right:"0"},500);
-		$(".info-plus").animate({right:"500px"},200);
 	
+		
+		
+            
             if(slideTitleScreen){
                 $('.slide.current h2.title').show();
               //  $('.playbtn').show();
@@ -1677,6 +1680,8 @@ if ($(".gallerylabel").length) {
         $('.index_nav ul li').removeClass('current');
 		$('.commentpane').animate({'right': '-501px'}, 500, function(){ $('.commentpane').hide(); });
 		$('#allcomments').animate({'right': '-444px'}, 500);
+		$(".info-headline, .headover").animate({right:"0"},500);
+		$(".info-plus").animate({right:"500px"},200);
         $('#'+slide.data('uID')+'_idx').addClass('current').addClass('visited');
         
     }
