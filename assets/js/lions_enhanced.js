@@ -1413,6 +1413,7 @@ if ($(".gallerylabel").length) {
     
 		$(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
+		$('.slideinfo').animate({'right': '-501px'}, 500, function(){ $('.slideinfo').hide(); });
 				
         $('.index_nav .close_btn').click();
     
@@ -1476,6 +1477,7 @@ if ($(".gallerylabel").length) {
 		
 		$(".info-headline, .headover").animate({right:"0"},500);
 		$(".info-plus").animate({right:"500px"},200);
+		$('.slideinfo').animate({'right': '-501px'}, 500, function(){ $('.slideinfo').hide(); });
 		
 		
         $('.index_nav .close_btn').click();
