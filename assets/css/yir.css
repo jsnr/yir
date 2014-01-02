@@ -1038,7 +1038,7 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
         text-align: left;
         text-indent: 32px;
         width: 117px;
-        display: none;
+        /*display: none;*/
     }
     .bottomNavBar li.comments:hover {
         background: #FFF url("../i/index/2013/icons/comment-over.png") no-repeat scroll 12px 15px;
@@ -1279,6 +1279,16 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     z-index: 20;
 	height:60%;
 } 
+/*LF Override */
+.fyre .fyre-livecount {
+	display:block!important;
+}
+
+
+#allcomments ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(187,187,187,.25);
+}
 #allcomments .collection {
     display: none;
     width: 100%;
@@ -1287,8 +1297,11 @@ text-shadow: 0px 1px 2px rgba(0,0,0,.5);
     top: 0;
 }
 
+
 #allcomments .collection.active {
     display: block;
+	overflow:auto;
+	padding-right:10px;
  }
 #nav1 .adventure-comments {
     top: 0;
@@ -2426,7 +2439,15 @@ section#the-cause_ct, section#credits_ct, section#the-project_ct{
     display: block;
 }
 
+.fb_iframe_widget iframe {
+	height:20px!important;
+	width:79px!important;
+}
 
+.fb_iframe_widget span {
+	height:20px!important;
+	width:79px!important;
+}
 
 /* -------- Vertical align, the hard way --------- */
 @media screen and (max-height: 549px ) {
